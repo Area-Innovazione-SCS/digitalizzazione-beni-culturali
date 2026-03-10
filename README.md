@@ -101,10 +101,10 @@ venv\Scripts\activate           # Windows
 pip install -r requirements.txt
 
 # 4. Compila i file di traduzione (se necessario)
-flask translate compile
+pybabel compile -d translations
 
 # 5. Avvia il server di sviluppo
-flask run
+python app.py
 ```
 
 Il portale sarà disponibile su `http://localhost:5000`.
