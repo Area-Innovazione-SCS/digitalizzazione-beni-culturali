@@ -1,0 +1,184 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+
+# =====================================
+# base.html
+# =====================================
+
+msgid "Digitalizzazione del patrimonio culturale"
+msgstr "Digitalizzazione del patrimonio culturale"
+
+msgid "Trasparenza e innovazione"
+msgstr "Trasparenza e innovazione"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Progetto"
+msgstr "Progetto"
+
+msgid "I Cantieri"
+msgstr "I Cantieri"
+
+msgid "Statistiche"
+msgstr "Statistiche"
+
+msgid "Mappe"
+msgstr "Mappe"
+
+msgid "Contatti"
+msgstr "Contatti"
+
+msgid "Link Rapidi"
+msgstr "Link Rapidi"
+
+msgid "Risorse"
+msgstr "Risorse"
+
+msgid "Il portale istituzionale per il monitoraggio trasparente delle opere pubbliche e dei cantieri sul territorio. Un servizio al cittadino per la massima trasparenza."
+msgstr "Il portale istituzionale per il monitoraggio trasparente delle opere pubbliche e dei cantieri sul territorio. Un servizio al cittadino per la massima trasparenza."
+
+msgid "Amministrazione Trasparente"
+msgstr "Amministrazione Trasparente"
+
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+msgid "Note Legali"
+msgstr "Note Legali"
+
+msgid "Cookie Policy"
+msgstr "Cookie Policy"
+
+msgid "Lun-Ven: 9:00 - 17:00"
+msgstr "Lun-Ven: 9:00 - 17:00"
+
+msgid "Tutti i diritti riservati."
+msgstr "Tutti i diritti riservati."
+
+# =====================================
+# index.html
+# =====================================
+
+msgid "Digitalizzazione del Patrimonio Culturale"
+msgstr "Digitalizzazione del Patrimonio Culturale"
+
+msgid "Un progetto completato con successo: oltre 1,9 milioni di beni culturali siciliani digitalizzati e resi accessibili a tutti attraverso tecnologie innovative."
+msgstr "Un progetto completato con successo: oltre 1,9 milioni di beni culturali siciliani digitalizzati e resi accessibili a tutti attraverso tecnologie innovative."
+
+msgid "Scopri il Progetto"
+msgstr "Scopri il Progetto"
+
+msgid "Visualizza i Cantieri"
+msgstr "Visualizza i Cantieri"
+
+msgid "Cantieri Completati"
+msgstr "Cantieri Completati"
+
+msgid "Beni Digitalizzati"
+msgstr "Beni Digitalizzati"
+
+msgid "Province Coinvolte"
+msgstr "Province Coinvolte"
+
+msgid "Investimento PNRR"
+msgstr "Investimento PNRR"
+
+msgid "Il Progetto Realizzato"
+msgstr "Il Progetto Realizzato"
+
+msgid "Un percorso di eccellenza nella digitalizzazione del patrimonio culturale siciliano"
+msgstr "Un percorso di eccellenza nella digitalizzazione del patrimonio culturale siciliano"
+
+msgid "Pianificazione Strategica"
+msgstr "Pianificazione Strategica"
+
+msgid "Censimento completo di 1.904.538 beni culturali distribuiti in 9 province siciliane, con definizione di priorità e roadmap operativa secondo gli standard del Piano Nazionale di Digitalizzazione."
+msgstr "Censimento completo di 1.904.538 beni culturali distribuiti in 9 province siciliane, con definizione di priorità e roadmap operativa secondo gli standard del Piano Nazionale di Digitalizzazione."
+
+msgid "Digitalizzazione di Eccellenza"
+msgstr "Digitalizzazione di Eccellenza"
+
+msgid "40 cantieri attivati su tutto il territorio regionale utilizzando tecnologie avanzate: scansione 3D ad alta risoluzione, fotogrammetria professionale e catalogazione secondo standard ICCD."
+msgstr "40 cantieri attivati su tutto il territorio regionale utilizzando tecnologie avanzate: scansione 3D ad alta risoluzione, fotogrammetria professionale e catalogazione secondo standard ICCD."
+
+msgid "Accesso Universale"
+msgstr "Accesso Universale"
+
+msgid "Patrimonio culturale reso accessibile online attraverso piattaforme digitali interoperabili, con metadatazione METS-ECOMiC e integrazione nell'ecosistema digitale nazionale ed europeo."
+msgstr "Patrimonio culturale reso accessibile online attraverso piattaforme digitali interoperabili, con metadatazione METS-ECOMiC e integrazione nell'ecosistema digitale nazionale ed europeo."
+
+msgid "Risultati Conseguiti"
+msgstr "Risultati Conseguiti"
+
+msgid "I traguardi raggiunti e l'impatto sul territorio"
+msgstr "I traguardi raggiunti e l'impatto sul territorio"
+
+msgid "Conservazione Digitale"
+msgstr "Conservazione Digitale"
+
+msgid "Archivi fotografici storici"
+msgstr "Archivi fotografici storici"
+
+msgid "completamente digitalizzati"
+msgstr "completamente digitalizzati"
+
+msgid "Oggetti museali"
+msgstr "Oggetti museali"
+
+msgid "archeologici e storico-artistici documentati"
+msgstr "archeologici e storico-artistici documentati"
+
+msgid "Backup permanenti"
+msgstr "Backup permanenti"
+
+msgid "ad alta risoluzione creati"
+msgstr "ad alta risoluzione creati"
+
+msgid "Standard di qualità"
+msgstr "Standard di qualità"
+
+msgid "nazionali e internazionali rispettati"
+msgstr "nazionali e internazionali rispettati"
+
+msgid "Impatto Territoriale"
+msgstr "Impatto Territoriale"
+
+msgid "Patrimonio accessibile"
+msgstr "Patrimonio accessibile"
+
+msgid "da remoto a cittadini e studiosi"
+msgstr "da remoto a cittadini e studiosi"
+
+msgid "Competenze digitali"
+msgstr "Competenze digitali"
+
+msgid "sviluppate nel settore culturale"
+msgstr "sviluppate nel settore culturale"
+
+msgid "Turismo culturale"
+msgstr "Turismo culturale"
+
+msgid "valorizzato attraverso l'innovazione"
+msgstr "valorizzato attraverso l'innovazione"
+
+msgid "Ecosistema digitale"
+msgstr "Ecosistema digitale"
+
+msgid "nazionale integrato"
+msgstr "nazionale integrato"
+
+msgid "Esplora il Patrimonio Digitalizzato"
+msgstr "Esplora il Patrimonio Digitalizzato"
+
+msgid "Scopri i dettagli del progetto, visualizza i cantieri completati e accedi alla documentazione tecnica"
+msgstr "Scopri i dettagli del progetto, visualizza i cantieri completati e accedi alla documentazione tecnica"
+
+msgid "Il Progetto"
+msgstr "Il Progetto"
+
+msgid "Il tuo browser non supporta il tag video."
+msgstr "Il tuo browser non supporta il tag video."

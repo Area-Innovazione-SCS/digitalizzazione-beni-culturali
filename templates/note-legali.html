@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+
+{% block title %}{{ _("Note Legali - Digitalizzazione del patrimonio culturale") }}{% endblock %}
+
+{% block meta_tags %}
+<meta name="description" content="Note Legali - Termini e condizioni d'uso del portale, copyright e limitazioni di responsabilità">
+<meta name="keywords" content="note legali, termini d'uso, copyright, disclaimer">
+{% endblock %}
+
+{% block breadcrumb %}
+<nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+                <a href="/"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <strong>{{ _("Note Legali") }}</strong>
+            </li>
+        </ol>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>{{ _("Note Legali") }}</h1>
+            <p>
+                {{ _("Termini e condizioni d'uso del portale, informazioni legali e limitazioni di responsabilità") }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Informazioni Generali -->
+<section class="section">
+    <div class="container">
+        <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+            <h2 style="margin-bottom: 1.5rem; font-size: 1.75rem; color: var(--text-primary);">{{ _("1. Informazioni Generali sul Sito") }}</h2>
+            <p style="margin-bottom: 1.5rem; line-height: 1.8; color: var(--text-primary);">
+                {{ _("Il presente sito web è il portale ufficiale del progetto di digitalizzazione del patrimonio culturale della Regione Siciliana, realizzato dall'Assessorato dei Beni Culturali e dell'Identità Siciliana.") }}
+            </p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div>
+                    <p style="margin-bottom: 0.5rem;"><strong>{{ _("Titolare del sito:") }}</strong> Regione Siciliana</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>{{ _("Sede:") }}</strong> Via delle Croci, 6 - 90139 Palermo</p>
+                    <p style="margin: 0;"><strong>{{ _("P.IVA:") }}</strong> [Da inserire]</p>
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.5rem;"><strong>{{ _("Email:") }}</strong> <a href="mailto:info@regione.sicilia.it">info@regione.sicilia.it</a></p>
+                    <p style="margin: 0;"><strong>{{ _("PEC:") }}</strong> <a href="mailto:assessorato.bca@certmail.regione.sicilia.it">assessorato.bca@certmail.regione.sicilia.it</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Oggetto e Condizioni d'Uso -->
+<section class="section section-alt">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+            <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--primary-color);">
+                <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--text-primary);">{{ _("2. Oggetto e Finalità") }}</h2>
+                <p style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 1rem;">
+                    {{ _("Il portale è dedicato alla presentazione e documentazione del progetto di digitalizzazione del patrimonio culturale siciliano.") }}
+                </p>
+                <p style="margin: 0; font-weight: 600; color: var(--text-primary);">{{ _("Finalità principali:") }}</p>
+                <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Informazioni sul progetto") }}</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Presentazione cantieri attivi") }}</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Accessibilità ai dati") }}</li>
+                    <li style="padding: 0.5rem 0;">• {{ _("Comunicazione con cittadini") }}</li>
+                </ul>
+            </div>
+
+            <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--success-color);">
+                <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--text-primary);">{{ _("3. Condizioni d'Uso") }}</h2>
+                <p style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 1rem;">
+                    {{ _("L'accesso e l'utilizzo del presente sito web comportano l'accettazione integrale delle presenti note legali.") }}
+                </p>
+                <p style="margin: 0; font-weight: 600; color: var(--text-primary);">{{ _("Utilizzo consentito:") }}</p>
+                <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Consultare informazioni") }}</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Accedere ai contenuti") }}</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Scaricare documenti pubblici") }}</li>
+                    <li style="padding: 0.5rem 0;">• {{ _("Contattare l'amministrazione") }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Proprietà Intellettuale -->
+<section class="section">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("4. Proprietà Intellettuale e Copyright") }}</h2>
+        <p style="text-align: center; color: var(--text-secondary); margin: 0 auto 3rem auto; max-width: 700px;">
+            {{ _("Informazioni sui diritti d'autore e sull'utilizzo dei contenuti del sito") }}
+        </p>
+
+        <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); margin-bottom: 2rem;">
+            <div style="display: flex; align-items: start; gap: 1rem; margin-bottom: 2rem;">
+                <i class="fas fa-copyright" style="font-size: 2rem; color: var(--primary-color); margin-top: 0.25rem;"></i>
+                <div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-primary);">{{ _("Contenuti del sito") }}</h3>
+                    <p style="line-height: 1.8; color: var(--text-secondary); margin: 0;">
+                        {{ _("Tutti i contenuti presenti sul sito (testi, immagini, grafici, loghi, icone, fotografie, video, database, software) sono di proprietà della Regione Siciliana o di terzi che ne hanno concesso l'utilizzo e sono protetti dalle leggi italiane ed internazionali sul diritto d'autore e sulla proprietà intellettuale.") }}
+                    </p>
+                </div>
+            </div>
+
+            <div style="background: var(--bg-light); padding: 2rem; border-radius: var(--radius-md); border-left: 4px solid var(--success-color);">
+                <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-primary);">
+                    <i class="fab fa-creative-commons" style="margin-right: 0.5rem;"></i>{{ _("Licenza Creative Commons") }}
+                </h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.8;">
+                    {{ _("Salvo ove diversamente indicato, i contenuti pubblicati sul sito sono soggetti a licenza <strong>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</strong>.") }}
+                </p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
+                    <div>
+                        <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-primary);">{{ _("È consentito:") }}</p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);"><i class="fas fa-check" style="color: var(--success-color); margin-right: 0.5rem;"></i>{{ _("Condividere e distribuire") }}</li>
+                            <li style="padding: 0.5rem 0;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 0.5rem;"></i>{{ _("Modificare e trasformare") }}</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-primary);">{{ _("Alle condizioni:") }}</p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.5rem 0;"><i class="fas fa-exclamation-circle" style="color: var(--warning-color); margin-right: 0.5rem;"></i>{{ _("Attribuzione della paternità") }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Collegamenti e Limitazioni -->
+<section class="section section-alt">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+            <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--text-primary);">{{ _("5. Collegamenti Esterni") }}</h2>
+                <p style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 1rem;">
+                    {{ _("Il sito può contenere collegamenti ipertestuali verso siti web di terze parti. La Regione Siciliana non ha alcun controllo sui contenuti di tali siti e non è responsabile per il loro contenuto.") }}
+                </p>
+                <p style="margin: 0; color: var(--text-primary); font-weight: 600;">
+                    {{ _("I link sono forniti esclusivamente per comodità dell'utente.") }}
+                </p>
+            </div>
+
+            <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--text-primary);">{{ _("6. Limitazione di Responsabilità") }}</h2>
+                <p style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 1rem;">
+                    {{ _("La Regione Siciliana si impegna a mantenere aggiornati i contenuti del sito, tuttavia non garantisce la completezza, l'esattezza o l'attualità delle informazioni pubblicate.") }}
+                </p>
+                <p style="margin: 0; color: var(--text-primary); font-weight: 600;">
+                    {{ _("L'utilizzo delle informazioni è sotto la responsabilità esclusiva dell'utente.") }}
+                </p>
+            </div>
+        </div>
+
+        <div style="background: var(--bg-light); padding: 2rem; border-radius: var(--radius-md); border-left: 4px solid var(--info-color);">
+            <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-primary);">
+                <i class="fas fa-shield-alt" style="margin-right: 0.5rem;"></i>{{ _("Disponibilità del Servizio") }}
+            </h3>
+            <p style="margin: 0; line-height: 1.8; color: var(--text-secondary);">
+                {{ _("La Regione Siciliana si riserva il diritto di modificare, sospendere o interrompere, temporaneamente o permanentemente, il servizio offerto dal sito (o parte di esso) con o senza preavviso. Non sarà responsabile per eventuali modifiche, sospensioni o interruzioni del servizio.") }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Normative e Accessibilità -->
+<section class="section">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+            <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--text-primary);">{{ _("7. Legge Applicabile") }}</h2>
+                <p style="line-height: 1.8; color: var(--text-secondary); margin: 0;">
+                    {{ _("Le presenti note legali sono regolate dalla <strong>legge italiana</strong>. Per qualsiasi controversia sarà competente in via esclusiva il <strong>Foro di Palermo</strong>.") }}
+                </p>
+            </div>
+
+            <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--text-primary);">{{ _("8. Accessibilità") }}</h2>
+                <p style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 1rem;">
+                    {{ _("La Regione Siciliana si impegna a rendere il proprio sito web accessibile, in conformità alla <strong>Legge 4/2004</strong> e al <strong>D.Lgs. 106/2018</strong>.") }}
+                </p>
+                <p style="margin: 0;">
+                    <strong>{{ _("Segnalazioni:") }}</strong> <a href="mailto:accessibilita@regione.sicilia.it">accessibilita@regione.sicilia.it</a>
+                </p>
+            </div>
+        </div>
+
+        <div style="background: #fff3cd; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--warning-color); margin-top: 2rem; display: flex; align-items: start; gap: 1rem;">
+            <i class="fas fa-exclamation-triangle" style="font-size: 1.5rem; color: var(--warning-color); margin-top: 0.25rem;"></i>
+            <p style="margin: 0; color: #856404;">
+                {{ _("<strong>Importante:</strong> L'utilizzo di questo sito implica l'accettazione delle presenti note legali e della <a href=\"/privacy-policy\" style=\"color: #856404; font-weight: 600;\">Privacy Policy</a>. Si consiglia di leggerle attentamente prima di procedere.") }}
+            </p>
+        </div>
+
+        <div style="background: var(--bg-secondary); padding: 1.5rem; border-radius: var(--radius-md); margin-top: 1rem;">
+            <p style="margin-bottom: 0.5rem; font-size: 0.938rem;">{{ _("<strong>Versione:</strong> 1.0") }}</p>
+            <p style="margin-bottom: 0.5rem; font-size: 0.938rem;">{{ _("<strong>Data pubblicazione:</strong> Dicembre 2025") }}</p>
+            <p style="margin: 0; font-size: 0.938rem;">{{ _("<strong>Ultimo aggiornamento:</strong> Dicembre 2025") }}</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

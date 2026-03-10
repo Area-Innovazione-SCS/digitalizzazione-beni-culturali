@@ -1,0 +1,15 @@
+app_v1.py
+cantieri_data_v1.py
+cantieri_data_v2.py
+cantieri_data_v3.py
+cantieri_data.py.backup
+test.py
+__pycache__/
+templates/dettaglio-cantiere_v1.html
+templates/dettaglio-cantiere_v2.html
+templates/dettaglio-cantiere.html.backup
+templates/mappa_v1.html
+venv/
+converti_tutti_cantieri.py
+static/video/beni-culturali.mp4
+static/models/bugatti.glb

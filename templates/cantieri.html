@@ -1,0 +1,372 @@
+{% extends "base.html" %}
+
+{% block title %}I Cantieri - Digitalizzazione del patrimonio culturale{% endblock %}
+
+{% block meta_tags %}
+<meta name="description" content="Visualizza tutti i cantieri di digitalizzazione del patrimonio culturale siciliano">
+<meta name="keywords" content="cantieri, digitalizzazione, patrimonio culturale, beni culturali, fotografie, musei, sicilia">
+{% endblock %}
+
+{% block nav_cantieri %}active{% endblock %}
+
+{% block breadcrumb %}
+<nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+                <a href="/"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <strong>{{ _("I Cantieri") }}</strong>
+            </li>
+        </ol>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>{{ _("I Cantieri del Patrimonio Culturale Digitale") }}</h1>
+            <p>
+                {{ _("Una panoramica dei siti, delle collezioni e dei materiali digitalizzati in Sicilia. Utilizza i filtri per esplorare i progetti per categoria o provincia.") }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Cantieri Section -->
+<section class="cantieri-section">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <h2 class="section-title">{{ _("Tutti i Cantieri di Digitalizzazione") }}</h2>
+            <p class="section-subtitle">
+                {{ _("Esplora i cantieri filtrando per tipologia di beni o provincia") }}
+            </p>
+        </div>
+        
+        <!-- Filters -->
+        <div class="cantieri-filters">
+            <select class="filter-select" id="filter-category" aria-label="{{ _('Filtra per tipologia') }}">
+                <option value="">{{ _("Tutte le tipologie") }}</option>
+                <option value="negativi-pellicola">{{ _("Negativi su pellicola") }}</option>
+                <option value="negativi-lastre">{{ _("Negativi su lastre di vetro") }}</option>
+                <option value="diapositive">{{ _("Diapositive") }}</option>
+                <option value="disegni-grafici-mappe">{{ _("Disegni, grafici, mappe") }}</option>
+                <option value="reperti-archeologici">{{ _("Reperti archeologici") }}</option>
+                <option value="stampe-fotografiche">{{ _("Stampe fotografiche") }}</option>
+                <option value="sculture">{{ _("Sculture") }}</option>
+                <option value="dipinti">{{ _("Dipinti") }}</option>
+                <option value="beni-naturalistici">{{ _("Beni naturalistici") }}</option>
+                <option value="beni-demoetno">{{ _("Beni demoetnoantropologici") }}</option>
+            </select>
+            
+            <select class="filter-select" id="filter-provincia" aria-label="{{ _('Filtra per provincia') }}">
+                <option value="">{{ _("Tutte le province") }}</option>
+                <option value="AG">Agrigento</option>
+                <option value="CL">Caltanissetta</option>
+                <option value="CT">Catania</option>
+                <option value="EN">Enna</option>
+                <option value="ME">Messina</option>
+                <option value="PA">Palermo</option>
+                <option value="RG">Ragusa</option>
+                <option value="SR">Siracusa</option>
+                <option value="TP">Trapani</option>
+            </select>
+            
+            <input 
+                type="search" 
+                class="search-input" 
+                id="search-cantieri" 
+                placeholder="{{ _('Cerca per nome o istituto...') }}"
+                aria-label="{{ _('Cerca cantieri') }}"
+            >
+        </div>
+        
+        <!-- Cantieri Grid -->
+        <div class="cantieri-grid" id="cantieri-container">
+            <!-- I cantieri verranno caricati dinamicamente -->
+            <div class="loading-state" style="text-align: center; padding: 3rem; grid-column: 1 / -1;">
+                <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: var(--primary-color);"></i>
+                <p style="margin-top: 1rem; color: var(--text-secondary);">Caricamento cantieri...</p>
+            </div>
+        </div>
+        
+        <!-- Pagination -->
+        <div class="pagination" id="pagination"></div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// JavaScript per gestire filtri e caricamento cantieri
+document.addEventListener('DOMContentLoaded', function() {
+    const cantieriContainer = document.getElementById('cantieri-container');
+    const filterCategory = document.getElementById('filter-category');
+    const filterProvincia = document.getElementById('filter-provincia');
+    const searchInput = document.getElementById('search-cantieri');
+    
+    // Lingua corrente dalla sessione Flask
+    const currentLang = '{{ session.get("lang", "it") }}';
+
+    let currentPage = 1;
+    let allCantieri = [];
+    
+    // ========================================
+    // FUNZIONE PER CARICARE I CANTIERI
+    // ========================================
+    async function loadCantieri() {
+        try {
+            // Mostra stato di caricamento
+            cantieriContainer.innerHTML = `
+                <div class="loading-state" style="text-align: center; padding: 3rem; grid-column: 1 / -1;">
+                    <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: var(--primary-color);"></i>
+                    <p style="margin-top: 1rem; color: var(--text-secondary);">${currentLang === 'en' ? 'Loading...' : 'Caricamento cantieri...'}</p>
+                </div>
+            `;
+            
+            // Costruisci l'URL con i parametri di filtro
+            const params = new URLSearchParams();
+            
+            if (filterCategory.value) params.append('categoria', filterCategory.value);
+            if (filterProvincia.value) params.append('provincia', filterProvincia.value);
+            if (searchInput.value) params.append('search', searchInput.value);
+            params.append('page', currentPage);
+            params.append('per_page', 9); // âœ… 9 cantieri per pagina
+            
+            const response = await fetch(`/api/cantieri?${params.toString()}`);
+            const data = await response.json();
+            
+            if (data.success) {
+                allCantieri = data.cantieri || [];
+                renderCantieri(allCantieri);
+                renderPagination(data.total_pages || 1, currentPage);
+            } else {
+                throw new Error(data.error || 'Errore nel caricamento');
+            }
+        } catch (error) {
+            console.error('Errore nel caricamento dei cantieri:', error);
+            cantieriContainer.innerHTML = `
+                <div class="error-state" style="text-align: center; padding: 3rem; grid-column: 1 / -1;">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 2rem; color: var(--danger-color);"></i>
+                    <p style="margin-top: 1rem; color: var(--text-secondary);">
+                        ${currentLang === 'en' ? 'Error loading sites. Please try again later.' : 'Errore nel caricamento dei cantieri. Riprova più tardi.'}
+                    </p>
+                    <button onclick="location.reload()" style="margin-top: 1rem; padding: 0.5rem 1rem; background: var(--primary-color); color: white; border: none; border-radius: 4px; cursor: pointer;">
+                        ${currentLang === 'en' ? 'Reload Page' : 'Ricarica Pagina'}
+                    </button>
+                </div>
+            `;
+        }
+    }
+    
+    // ========================================
+    // FUNZIONE PER RENDERIZZARE I CANTIERI
+    // ========================================
+    function renderCantieri(cantieri) {
+        if (!cantieri || cantieri.length === 0) {
+            cantieriContainer.innerHTML = `
+                <div class="empty-state" style="text-align: center; padding: 3rem; grid-column: 1 / -1;">
+                    <i class="fas fa-search" style="font-size: 3rem; color: var(--text-muted); margin-bottom: 1rem;"></i>
+                    <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;">${currentLang === 'en' ? 'No sites found' : 'Nessun cantiere trovato'}</h3>
+                    <p style="color: var(--text-secondary);">
+                        ${currentLang === 'en' ? 'Try changing the search filters' : 'Prova a modificare i filtri di ricerca'}
+                    </p>
+                </div>
+            `;
+            return;
+        }
+        
+        cantieriContainer.innerHTML = cantieri.map(cantiere => {
+            const isEn = currentLang === 'en';
+            const categorie = cantiere.categorie || [];
+
+            // Selezione etichette categorie in base alla lingua
+            const categorieLabels = isEn && cantiere.categorie_labels_en && cantiere.categorie_labels_en.every(l => l)
+                ? cantiere.categorie_labels_en
+                : (cantiere.categorie_labels || []);
+
+            // Selezione titolo in base alla lingua
+            const titolo = isEn && cantiere.titolo_en ? cantiere.titolo_en : cantiere.titolo;
+
+            // Selezione descrizione breve in base alla lingua
+            const descrizioneFallback = isEn ? 'No description available.' : 'Nessuna descrizione disponibile.';
+            const descrizione = isEn && cantiere.descrizione_breve_en
+                ? cantiere.descrizione_breve_en
+                : (cantiere.descrizione_breve || cantiere.descrizione || descrizioneFallback);
+
+            const beniDigitalizzati = cantiere.beni_digitalizzati_totale || cantiere.beni_digitalizzati || 0;
+            const beniLabel = isEn ? 'items' : 'beni';
+            
+            return `
+            <article class="cantiere-card" data-cantiere-id="${cantiere.id}">
+                <img 
+                    src="${cantiere.immagine || 'https://via.placeholder.com/400x200/0048ad/ffffff?text=Cantiere'}" 
+                    alt="${titolo}" 
+                    class="cantiere-image"
+                    onerror="this.src='https://via.placeholder.com/400x200/0048ad/ffffff?text=Immagine+Non+Disponibile'"
+                >
+                <div class="cantiere-content">
+                                        <h3 class="cantiere-title">${titolo}</h3>
+                    <p class="cantiere-description">
+                        ${descrizione}
+                    </p>
+
+                    <!-- Categorie multiple -->
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                        ${categorieLabels.map(label => `
+                            <span class="cantiere-category">${label}</span>
+                        `).join('')}
+                    </div>
+                    
+                    <div class="cantiere-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-map-marker-alt meta-icon"></i>
+                            <span>${cantiere.localita}${cantiere.provincia ? ' (' + cantiere.provincia + ')' : ''}</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-images meta-icon"></i>
+                            <span>${formatNumber(beniDigitalizzati)} ${beniLabel}</span>
+                        </div>
+                    </div>
+                    
+                    ${cantiere.tags && cantiere.tags.length > 0 ? `
+                    <div class="cantiere-tags">
+                        ${cantiere.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                    </div>
+                    ` : ''}
+                    
+                    <div class="cantiere-footer">
+                        <a href="/cantieri/${cantiere.id}" class="cantiere-link">
+                            ${isEn ? 'Details' : 'Dettagli'} <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            `;
+        }).join('');
+    }
+    
+    // ========================================
+    // FUNZIONE PER RENDERIZZARE LA PAGINAZIONE
+    // ========================================
+    function renderPagination(totalPages, currentPageNum) {
+        const paginationContainer = document.getElementById('pagination');
+        
+        if (totalPages <= 1) {
+            paginationContainer.innerHTML = '';
+            return;
+        }
+        
+        let paginationHTML = '<ul class="pagination-list">';
+        
+        // Pulsante precedente
+        if (currentPageNum > 1) {
+            paginationHTML += `
+                <li class="pagination-item">
+                    <button class="pagination-link" data-page="${currentPageNum - 1}" aria-label="${currentLang === 'en' ? 'Previous page' : 'Pagina precedente'}">
+                        <i class="fas fa-chevron-left"></i> <span>${currentLang === 'en' ? 'Previous' : 'Precedente'}</span>
+                    </button>
+                </li>
+            `;
+        }
+        
+        // Numeri di pagina
+        for (let i = 1; i <= totalPages; i++) {
+            if (i === currentPageNum) {
+                paginationHTML += `
+                    <li class="pagination-item">
+                        <span class="pagination-link active" aria-current="page">${i}</span>
+                    </li>
+                `;
+            } else if (i === 1 || i === totalPages || (i >= currentPageNum - 2 && i <= currentPageNum + 2)) {
+                paginationHTML += `
+                    <li class="pagination-item">
+                        <button class="pagination-link" data-page="${i}" aria-label="Vai a pagina ${i}">${i}</button>
+                    </li>
+                `;
+            } else if (i === currentPageNum - 3 || i === currentPageNum + 3) {
+                paginationHTML += `
+                    <li class="pagination-item">
+                        <span class="pagination-ellipsis" aria-hidden="true">...</span>
+                    </li>
+                `;
+            }
+        }
+        
+        // Pulsante successivo
+        if (currentPageNum < totalPages) {
+            paginationHTML += `
+                <li class="pagination-item">
+                    <button class="pagination-link" data-page="${currentPageNum + 1}" aria-label="${currentLang === 'en' ? 'Next page' : 'Pagina successiva'}">
+                        <span>${currentLang === 'en' ? 'Next' : 'Successivo'}</span> <i class="fas fa-chevron-right"></i>
+                    </button>
+                </li>
+            `;
+        }
+        
+        paginationHTML += '</ul>';
+        paginationContainer.innerHTML = paginationHTML;
+        
+        // âœ… CRITICO: Aggiungi event listener ai pulsanti di paginazione
+        paginationContainer.querySelectorAll('.pagination-link[data-page]').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const newPage = parseInt(this.dataset.page);
+                console.log('Cambiamento pagina da', currentPage, 'a', newPage); // Debug
+                
+                if (newPage !== currentPage && newPage >= 1 && newPage <= totalPages) {
+                    currentPage = newPage;
+                    loadCantieri();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+        });
+    }
+    
+    // ========================================
+    // FUNZIONI HELPER
+    // ========================================
+    function formatNumber(num) {
+        if (!num || num === 'N/A') return 'N/A';
+        return new Intl.NumberFormat('it-IT').format(num);
+    }
+    
+    // ========================================
+    // EVENT LISTENERS PER I FILTRI
+    // ========================================
+    filterCategory.addEventListener('change', function() {
+        console.log('Filtro categoria cambiato:', this.value);
+        currentPage = 1;
+        loadCantieri();
+    });
+    
+    filterProvincia.addEventListener('change', function() {
+        console.log('Filtro provincia cambiato:', this.value);
+        currentPage = 1;
+        loadCantieri();
+    });
+    
+    // Debounce per il campo di ricerca
+    let searchTimeout;
+    searchInput.addEventListener('input', function() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+            console.log('Ricerca:', this.value);
+            currentPage = 1;
+            loadCantieri();
+        }, 300);
+    });
+    
+    // ========================================
+    // CARICAMENTO INIZIALE
+    // ========================================
+    console.log('Inizializzazione pagina cantieri...');
+    loadCantieri();
+});
+</script>
+{% endblock %}

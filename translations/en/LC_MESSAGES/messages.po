@@ -1,0 +1,1697 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+
+msgid "Digitalizzazione del patrimonio culturale"
+msgstr "Digitisation of Cultural Heritage"
+
+msgid "Trasparenza e innovazione"
+msgstr "Transparency and innovation"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Progetto"
+msgstr "Project"
+
+msgid "I Cantieri"
+msgstr "The Sites"
+
+msgid "Statistiche"
+msgstr "Statistics"
+
+msgid "Mappe"
+msgstr "Maps"
+
+msgid "Contatti"
+msgstr "Contacts"
+
+msgid "Link Rapidi"
+msgstr "Quick Links"
+
+msgid "Risorse"
+msgstr "Resources"
+
+msgid "Il portale istituzionale per il monitoraggio trasparente delle opere pubbliche e dei cantieri sul territorio. Un servizio al cittadino per la massima trasparenza."
+msgstr "The institutional portal for transparent monitoring of public works and construction sites across the territory. A service for citizens ensuring maximum transparency."
+
+
+msgid "Amministrazione Trasparente"
+msgstr "Transparent Administration"
+
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+msgid "Note Legali"
+msgstr "Legal Notes"
+
+msgid "Cookie Policy"
+msgstr "Cookie Policy"
+
+msgid "Lun-Ven: 9:00 - 17:00"
+msgstr "Mon-Fri: 9:00 - 17:00"
+
+msgid "Tutti i diritti riservati."
+msgstr "All rights reserved."
+
+# =====================================
+# index.html
+# =====================================
+
+msgid "Digitalizzazione del Patrimonio Culturale"
+msgstr "Digitisation of Cultural Heritage"
+
+msgid "Un progetto completato con successo: oltre 1,9 milioni di beni culturali siciliani digitalizzati e resi accessibili a tutti attraverso tecnologie innovative."
+msgstr "A successfully completed project: over 1.9 million Sicilian cultural assets digitised and made accessible to all through innovative technologies."
+
+msgid "Scopri il Progetto"
+msgstr "Discover the Project"
+
+msgid "Visualizza i Cantieri"
+msgstr "View the Sites"
+
+msgid "Cantieri Completati"
+msgstr "Completed Sites"
+
+msgid "Beni Digitalizzati"
+msgstr "Digitised Assets"
+
+msgid "Province Coinvolte"
+msgstr "Provinces Involved"
+
+msgid "Investimento PNRR"
+msgstr "PNRR Investment"
+
+msgid "Il Progetto Realizzato"
+msgstr "The Completed Project"
+
+msgid "Un percorso di eccellenza nella digitalizzazione del patrimonio culturale siciliano"
+msgstr "A path of excellence in the digitisation of Sicilian cultural heritage"
+
+msgid "Pianificazione Strategica"
+msgstr "Strategic Planning"
+
+msgid "Censimento completo di 1.904.538 beni culturali distribuiti in 9 province siciliane, con definizione di priorità e roadmap operativa secondo gli standard del Piano Nazionale di Digitalizzazione."
+msgstr "Complete census of 1,904,538 cultural assets distributed across 9 Sicilian provinces, with defined priorities and operational roadmap in accordance with the National Digitisation Plan standards."
+
+msgid "Digitalizzazione di Eccellenza"
+msgstr "Excellence in Digitisation"
+
+msgid "40 cantieri attivati su tutto il territorio regionale utilizzando tecnologie avanzate: scansione 3D ad alta risoluzione, fotogrammetria professionale e catalogazione secondo standard ICCD."
+msgstr "40 sites activated across the entire regional territory using advanced technologies: high-resolution 3D scanning, professional photogrammetry and cataloguing according to ICCD standards."
+
+msgid "Accesso Universale"
+msgstr "Universal Access"
+
+msgid "Patrimonio culturale reso accessibile online attraverso piattaforme digitali interoperabili, con metadatazione METS-ECOMiC e integrazione nell'ecosistema digitale nazionale ed europeo."
+msgstr "Cultural heritage made accessible online through interoperable digital platforms, with METS-ECOMiC metadata and integration into the national and European digital ecosystem."
+
+msgid "Risultati Conseguiti"
+msgstr "Results Achieved"
+
+msgid "I traguardi raggiunti e l'impatto sul territorio"
+msgstr "The milestones reached and the impact on the territory"
+
+msgid "Conservazione Digitale"
+msgstr "Digital Preservation"
+
+msgid "Archivi fotografici storici"
+msgstr "Historical photographic archives"
+
+msgid "completamente digitalizzati"
+msgstr "completely digitised"
+
+msgid "Oggetti museali"
+msgstr "Museum objects"
+
+msgid "archeologici e storico-artistici documentati"
+msgstr "archaeological and historical-artistic assets documented"
+
+msgid "Backup permanenti"
+msgstr "Permanent backups"
+
+msgid "ad alta risoluzione creati"
+msgstr "created at high resolution"
+
+msgid "Standard di qualità"
+msgstr "Quality standards"
+
+msgid "nazionali e internazionali rispettati"
+msgstr "national and international standards met"
+
+msgid "Impatto Territoriale"
+msgstr "Territorial Impact"
+
+msgid "Patrimonio accessibile"
+msgstr "Accessible heritage"
+
+msgid "da remoto a cittadini e studiosi"
+msgstr "remotely accessible to citizens and researchers"
+
+msgid "Competenze digitali"
+msgstr "Digital skills"
+
+msgid "sviluppate nel settore culturale"
+msgstr "developed in the cultural sector"
+
+msgid "Turismo culturale"
+msgstr "Cultural tourism"
+
+msgid "valorizzato attraverso l'innovazione"
+msgstr "enhanced through innovation"
+
+msgid "Ecosistema digitale"
+msgstr "Digital ecosystem"
+
+msgid "nazionale integrato"
+msgstr "nationally integrated"
+
+msgid "Esplora il Patrimonio Digitalizzato"
+msgstr "Explore the Digitised Heritage"
+
+msgid "Scopri i dettagli del progetto, visualizza i cantieri completati e accedi alla documentazione tecnica"
+msgstr "Discover the project details, view the completed sites and access the technical documentation"
+
+msgid "Il Progetto"
+msgstr "The Project"
+
+msgid "I Cantieri"
+msgstr "The Sites"
+
+msgid "Il tuo browser non supporta il tag video."
+msgstr "Your browser does not support the video tag."
+
+# =====================================
+# progetto.html
+# =====================================
+
+msgid "Il Progetto - Digitalizzazione del patrimonio culturale"
+msgstr "The Project - Digitalisation of Cultural Heritage"
+
+msgid "Il progetto di digitalizzazione del patrimonio culturale della Regione Siciliana nel quadro del PNRR"
+msgstr "The digitisation project of the cultural heritage of the Regione Siciliana within the framework of the PNRR"
+
+msgid "Il Progetto"
+msgstr "The Project"
+
+msgid "Digitalizzazione del Patrimonio Culturale"
+msgstr "Digitisation of Cultural Heritage"
+
+msgid "Un progetto strategico della Regione Siciliana per la trasformazione digitale del patrimonio culturale, finanziato dal PNRR nell'ambito della Missione 1 - Cultura 4.0"
+msgstr "A strategic project of the Regione Siciliana for the digital transformation of cultural heritage, funded by the PNRR within Mission 1 - Culture 4.0"
+
+msgid "Il progetto <strong>\"Digitalizzazione del Patrimonio Culturale - Regione Siciliana\"</strong> si inserisce nel quadro del <strong>Piano Nazionale di Ripresa e Resilienza (PNRR)</strong>, Missione 1 - Digitalizzazione, Innovazione, Competitività e Cultura, Componente 3 - Cultura 4.0, Investimento 1.1 \"Strategie digitali e piattaforme per il patrimonio culturale\"."
+msgstr "The project <strong>\"Digitisation of Cultural Heritage - Regione Siciliana\"</strong> falls within the framework of the <strong>National Recovery and Resilience Plan (PNRR)</strong>, Mission 1 - Digitalisation, Innovation, Competitiveness and Culture, Component 3 - Culture 4.0, Investment 1.1 \"Digital strategies and platforms for cultural heritage\"."
+
+msgid "Si tratta di un <strong>intervento di ampia portata strategica</strong>, volto a promuovere la trasformazione digitale del patrimonio culturale attraverso la creazione, la gestione e la valorizzazione di risorse digitali interoperabili, accessibili e di alta qualità."
+msgstr "This is a <strong>wide-ranging strategic intervention</strong>, aimed at promoting the digital transformation of cultural heritage through the creation, management and enhancement of interoperable, accessible and high-quality digital resources."
+
+msgid "Il progetto, coordinato dal <strong>Ministero della Cultura</strong> tramite l'Istituto Centrale per la Digitalizzazione del Patrimonio Culturale - Digital Library, rappresenta un pilastro fondamentale della strategia nazionale \"Cultura 4.0\" e un contributo diretto agli obiettivi europei di innovazione e transizione digitale."
+msgstr "The project, coordinated by the <strong>Ministry of Culture</strong> through the Central Institute for the Digitisation of Cultural Heritage - Digital Library, represents a fundamental pillar of the national \"Culture 4.0\" strategy and a direct contribution to the European objectives of innovation and digital transition."
+
+msgid "Dati del Progetto"
+msgstr "Project Data"
+
+msgid "Soggetto Attuatore"
+msgstr "Implementing Body"
+
+msgid "Regione Siciliana"
+msgstr "Regione Siciliana"
+
+msgid "Direzione"
+msgstr "Directorate"
+
+msgid "DG Beni Culturali e Identità Siciliana"
+msgstr "DG Cultural Heritage and Sicilian Identity"
+
+msgid "Scadenza"
+msgstr "Deadline"
+
+msgid "Dicembre 2025"
+msgstr "December 2025"
+
+msgid "Dotazione Finanziaria"
+msgstr "Financial Allocation"
+
+msgid "Beni da Digitalizzare"
+msgstr "Assets to be Digitised"
+
+msgid "Finanziamento"
+msgstr "Funding"
+
+msgid "PNRR - Fondi UE"
+msgstr "PNRR - EU Funds"
+
+msgid "Contesto e Finalità del Progetto"
+msgstr "Context and Purpose of the Project"
+
+msgid "La digitalizzazione come strumento strategico per preservare e valorizzare il patrimonio culturale"
+msgstr "Digitisation as a strategic tool to preserve and enhance cultural heritage"
+
+msgid "La <strong>digitalizzazione del patrimonio culturale</strong> è oggi una priorità strategica per l'Italia e per l'Unione Europea, poiché consente di preservare e valorizzare i beni culturali, favorendone l'accesso, la conoscenza e la fruizione da parte di cittadini, studiosi e istituzioni."
+msgstr "The <strong>digitisation of cultural heritage</strong> is today a strategic priority for Italy and the European Union, as it enables the preservation and enhancement of cultural assets, facilitating their access, knowledge and enjoyment by citizens, scholars and institutions."
+
+msgid "Nel quadro del <strong>Piano Nazionale di Digitalizzazione del Patrimonio Culturale (PND)</strong>, elaborato dalla Digital Library del Ministero della Cultura, è stato definito un modello operativo e metodologico comune per garantire uniformità, qualità e interoperabilità dei processi di digitalizzazione sull'intero territorio nazionale."
+msgstr "Within the framework of the <strong>National Plan for the Digitisation of Cultural Heritage (PND)</strong>, developed by the Digital Library of the Ministry of Culture, a common operational and methodological model has been defined to ensure uniformity, quality and interoperability of digitisation processes across the entire national territory."
+
+msgid "La Regione Siciliana, in qualità di soggetto attuatore, ha ricevuto una dotazione finanziaria complessiva pari a <strong>€ 7.571.738,10</strong>, destinata alla digitalizzazione di un numero minimo di <strong>1.892.935 beni culturali</strong> entro dicembre 2025."
+msgstr "The Regione Siciliana, as implementing body, has received a total financial allocation of <strong>€ 7.571.738,10</strong>, intended for the digitisation of a minimum of <strong>1.892.935 cultural assets</strong> by December 2025."
+
+msgid "L'obiettivo generale è realizzare la <strong>completa digitalizzazione e descrizione</strong> di archivi fotografici e oggetti museali conservati presso i principali musei, gallerie e soprintendenze dell'isola, restituendo così in formato digitale una parte significativa del patrimonio culturale siciliano."
+msgstr "The general objective is to achieve the <strong>complete digitisation and description</strong> of photographic archives and museum objects held at the main museums, galleries and superintendencies of the island, thus returning a significant part of Sicily's cultural heritage in digital format."
+
+msgid "Ambito di Intervento"
+msgstr "Scope of Intervention"
+
+msgid "Le categorie di beni culturali interessati dal progetto di digitalizzazione"
+msgstr "The categories of cultural assets involved in the digitisation project"
+
+msgid "Archivi Fotografici"
+msgstr "Photographic Archives"
+
+msgid "Digitalizzazione completa di archivi fotografici storici e contemporanei, comprendenti diverse tipologie di supporti."
+msgstr "Complete digitisation of historical and contemporary photographic archives, comprising various types of media."
+
+msgid "Positivi fotografici"
+msgstr "Photographic positives"
+
+msgid "Negativi e lastre"
+msgstr "Negatives and plates"
+
+msgid "Diapositive"
+msgstr "Slides"
+
+msgid "Unicum e disegni fotografici"
+msgstr "Unique items and photographic drawings"
+
+msgid "Oggetti Museali"
+msgstr "Museum Objects"
+
+msgid "Repertorio completo dei beni conservati nei musei e nelle soprintendenze siciliane."
+msgstr "Complete inventory of assets held in Sicilian museums and superintendencies."
+
+msgid "Beni archeologici"
+msgstr "Archaeological assets"
+
+msgid "Opere storico-artistiche"
+msgstr "Historical-artistic works"
+
+msgid "Materiali grafici e tessili"
+msgstr "Graphic and textile materials"
+
+msgid "Beni naturalistici e demoetnoantropologici"
+msgstr "Naturalistic and demo-ethno-anthropological assets"
+
+msgid "Copertura Territoriale"
+msgstr "Territorial Coverage"
+
+msgid "L'attività di digitalizzazione coinvolge numerosi istituti culturali distribuiti su tutto il territorio regionale, dai grandi musei archeologici e storico-artistici ai centri di conservazione fotografica, per un totale di <strong>1.904.538 oggetti da digitalizzare</strong>. L'intervento è suddiviso in <strong>due lotti geografici</strong>, che coprono in modo capillare le diverse province siciliane."
+msgstr "The digitisation activity involves numerous cultural institutions distributed across the entire regional territory, from the major archaeological and historical-artistic museums to photographic conservation centres, for a total of <strong>1.904.538 objects to be digitised</strong>. The intervention is divided into <strong>two geographical lots</strong>, covering the various Sicilian provinces in a comprehensive manner."
+
+msgid "Distribuzione Territoriale"
+msgstr "Territorial Distribution"
+
+msgid "Suddivisione per provincia dei beni da digitalizzare"
+msgstr "Breakdown by province of assets to be digitised"
+
+msgid "Provincia"
+msgstr "Province"
+
+msgid "Lotto"
+msgstr "Lot"
+
+msgid "%% sul Totale"
+msgstr "%% of Total"
+
+msgid "Lotto 1"
+msgstr "Lot 1"
+
+msgid "Lotto 2"
+msgstr "Lot 2"
+
+msgid "TOTALE"
+msgstr "TOTAL"
+
+msgid "Struttura e Organizzazione del Progetto"
+msgstr "Structure and Organisation of the Project"
+
+msgid "Il modello operativo e i cantieri di digitalizzazione"
+msgstr "The operational model and digitisation worksites"
+
+msgid "La realizzazione del progetto avviene mediante <strong>accordi quadro</strong> stipulati tra la Regione Siciliana (Direzione Generale dei Beni Culturali e dell'Identità Siciliana) e gli operatori economici aggiudicatari, selezionati attraverso una procedura di gara aperta ai sensi degli articoli 59, 71 e 132 del D.Lgs. 36/2023 - Codice dei contratti pubblici."
+msgstr "The project is implemented through <strong>framework agreements</strong> concluded between the Regione Siciliana (Directorate General of Cultural Heritage and Sicilian Identity) and the awarded economic operators, selected through an open tender procedure pursuant to Articles 59, 71 and 132 of Legislative Decree 36/2023 - Public Contracts Code."
+
+msgid "Gli appaltatori sono incaricati dell'esecuzione dei servizi di digitalizzazione del patrimonio culturale nelle due categorie previste, operando nel pieno rispetto delle specifiche tecniche e dei modelli operativi stabiliti dal Ministero della Cultura."
+msgstr "The contractors are responsible for carrying out the digitisation services for cultural heritage in the two planned categories, operating in full compliance with the technical specifications and operational models established by the Ministry of Culture."
+
+msgid "Le attività vengono realizzate attraverso veri e propri <strong>\"cantieri di digitalizzazione\"</strong>, che rappresentano le unità operative fondamentali del progetto."
+msgstr "The activities are carried out through actual <strong>\"digitisation worksites\"</strong>, which represent the fundamental operational units of the project."
+
+msgid "Workflow del Cantiere di Digitalizzazione"
+msgstr "Digitisation Worksite Workflow"
+
+msgid "Allestimento"
+msgstr "Setup"
+
+msgid "Allestimento del cantiere e ispezione preliminare degli ambienti di lavoro presso gli istituti detentori dei beni."
+msgstr "Worksite setup and preliminary inspection of the working environments at the institutions holding the assets."
+
+msgid "Preparazione"
+msgstr "Preparation"
+
+msgid "Preparazione e normalizzazione del materiale: pulizia, posizionamento, controllo dello stato di conservazione."
+msgstr "Preparation and normalisation of the material: cleaning, positioning, conservation status check."
+
+msgid "Catalogazione"
+msgstr "Cataloguing"
+
+msgid "Descrizione e catalogazione speditiva dei beni secondo gli standard ICCD (Istituto Centrale per il Catalogo e la Documentazione)."
+msgstr "Description and expeditious cataloguing of the assets according to ICCD standards (Central Institute for Catalogue and Documentation)."
+
+msgid "Digitalizzazione"
+msgstr "Digitisation"
+
+msgid "Digitalizzazione mediante scanner e fotocamere professionali ad alta risoluzione, nel rispetto delle specifiche tecniche."
+msgstr "Digitisation using professional high-resolution scanners and cameras, in compliance with technical specifications."
+
+msgid "Standard:"
+msgstr "Standard:"
+
+msgid "Alta risoluzione, formati interoperabili"
+msgstr "High resolution, interoperable formats"
+
+msgid "Metadatazione"
+msgstr "Metadata tagging"
+
+msgid "Metadatazione delle risorse digitali secondo il profilo METS-ECOMiC per tracciabilità e interoperabilità."
+msgstr "Metadata tagging of digital resources according to the METS-ECOMiC profile for traceability and interoperability."
+
+msgid "Collaudo"
+msgstr "Testing"
+
+msgid "Prototipazione e collaudo per verificare qualità e conformità ai requisiti tecnici e normativi del progetto."
+msgstr "Prototyping and testing to verify quality and compliance with the technical and regulatory requirements of the project."
+
+msgid "Supervisione e Coordinamento"
+msgstr "Supervision and Coordination"
+
+msgid "Ogni attività è svolta sotto la supervisione di un <strong>Responsabile di Istituto (DEC)</strong> e di un <strong>Responsabile tecnico</strong> nominato dall'appaltatore, con il coordinamento della Stazione Appaltante regionale e della Digital Library."
+msgstr "Each activity is carried out under the supervision of an <strong>Institute Manager (DEC)</strong> and a <strong>Technical Manager</strong> appointed by the contractor, with the coordination of the regional Contracting Authority and the Digital Library."
+
+msgid "Modello Operativo e Strumenti Digitali"
+msgstr "Operational Model and Digital Tools"
+
+msgid "Metodologia PM² e piattaforme per il monitoraggio e la gestione"
+msgstr "PM² methodology and platforms for monitoring and management"
+
+msgid "Il progetto adotta il <strong>Modello Operativo per la gestione dei progetti di digitalizzazione</strong>, elaborato dal Ministero della Cultura e basato sulla metodologia di project management <strong>PM²</strong>, sviluppata dalla Commissione Europea."
+msgstr "The project adopts the <strong>Operational Model for the management of digitisation projects</strong>, developed by the Ministry of Culture and based on the <strong>PM²</strong> project management methodology, developed by the European Commission."
+
+msgid "Tale modello definisce in modo chiaro le fasi del ciclo di vita del progetto (avvio, pianificazione, esecuzione, monitoraggio e chiusura) nonché le responsabilità, i deliverable e le milestone di ciascun cantiere."
+msgstr "This model clearly defines the phases of the project lifecycle (initiation, planning, execution, monitoring and closure) as well as the responsibilities, deliverables and milestones of each worksite."
+
+msgid "Al fine di garantire il <strong>monitoraggio e la trasparenza</strong> dell'intero processo, è prevista l'adozione di una piattaforma attraverso cui tutti gli attori coinvolti (Regione, Ministero, appaltatori, musei, soprintendenze) possono condividere dati, verificare lo stato di avanzamento, gestire i flussi documentali e assicurare la conformità agli standard di qualità e sicurezza."
+msgstr "In order to ensure the <strong>monitoring and transparency</strong> of the entire process, a platform is to be adopted through which all stakeholders involved (Region, Ministry, contractors, museums, superintendencies) can share data, verify the progress status, manage document flows and ensure compliance with quality and safety standards."
+
+msgid "Principi Fondamentali del PNRR"
+msgstr "Fundamental Principles of the PNRR"
+
+msgid "Principio <strong>Do No Significant Harm</strong>: sostenibilità ambientale delle azioni e minimizzazione degli impatti negativi."
+msgstr "Principle <strong>Do No Significant Harm</strong>: environmental sustainability of actions and minimisation of negative impacts."
+
+msgid "Parità e Inclusione"
+msgstr "Equality and Inclusion"
+
+msgid "Garanzia di <strong>pari opportunità</strong> nell'attuazione delle attività e nella composizione dei gruppi di lavoro."
+msgstr "Guarantee of <strong>equal opportunities</strong> in the implementation of activities and in the composition of working groups."
+
+msgid "Tracciabilità"
+msgstr "Traceability"
+
+msgid "<strong>Trasparenza e regolarità contabile</strong> nell'utilizzo delle risorse europee."
+msgstr "<strong>Transparency and accounting regularity</strong> in the use of European resources."
+
+msgid "Conformità Normativa"
+msgstr "Regulatory Compliance"
+
+msgid "Rispetto della normativa su <strong>appalti pubblici, sicurezza</strong> nei luoghi di lavoro e <strong>tutela dei dati personali</strong>."
+msgstr "Compliance with regulations on <strong>public procurement, workplace safety</strong> and <strong>personal data protection</strong>."
+
+msgid "Valore e Impatto del Progetto"
+msgstr "Value and Impact of the Project"
+
+msgid "I benefici strategici per il territorio e la comunità"
+msgstr "The strategic benefits for the territory and the community"
+
+msgid "La <strong>digitalizzazione del patrimonio culturale siciliano</strong> rappresenta un investimento strutturale nella conoscenza, nella tutela e nella valorizzazione del patrimonio artistico e storico dell'isola."
+msgstr "The <strong>digitisation of Sicily's cultural heritage</strong> represents a structural investment in the knowledge, protection and enhancement of the island's artistic and historical heritage."
+
+msgid "Conservazione e Tutela"
+msgstr "Conservation and Protection"
+
+msgid "Conservazione digitale permanente dei beni"
+msgstr "Permanent digital conservation of assets"
+
+msgid "Riduzione del rischio di deterioramento fisico"
+msgstr "Reduction of the risk of physical deterioration"
+
+msgid "Creazione di backup digitali ad alta risoluzione"
+msgstr "Creation of high-resolution digital backups"
+
+msgid "Documentazione scientifica del patrimonio"
+msgstr "Scientific documentation of the heritage"
+
+msgid "Accesso e Fruizione"
+msgstr "Access and Enjoyment"
+
+msgid "Accesso remoto al patrimonio culturale"
+msgstr "Remote access to cultural heritage"
+
+msgid "Diffusione della cultura digitale"
+msgstr "Promotion of digital culture"
+
+msgid "Supporto alla ricerca scientifica"
+msgstr "Support for scientific research"
+
+msgid "Strumenti per la didattica innovativa"
+msgstr "Tools for innovative teaching"
+
+msgid "Sviluppo Economico"
+msgstr "Economic Development"
+
+msgid "Promozione del turismo culturale"
+msgstr "Promotion of cultural tourism"
+
+msgid "Creazione di nuove opportunità di lavoro"
+msgstr "Creation of new employment opportunities"
+
+msgid "Sviluppo di competenze digitali specialistiche"
+msgstr "Development of specialised digital skills"
+
+msgid "Valorizzazione economica del territorio"
+msgstr "Economic enhancement of the territory"
+
+msgid "Integrazione Sistemica"
+msgstr "Systemic Integration"
+
+msgid "Integrazione nell'ecosistema digitale nazionale"
+msgstr "Integration into the national digital ecosystem"
+
+msgid "Interoperabilità con piattaforme europee"
+msgstr "Interoperability with European platforms"
+
+msgid "Standard condivisi e best practices"
+msgstr "Shared standards and best practices"
+
+msgid "Contributo alla strategia Cultura 4.0"
+msgstr "Contribution to the Culture 4.0 strategy"
+
+msgid "Ecosistema Digitale Nazionale"
+msgstr "National Digital Ecosystem"
+
+msgid "Grazie a questo intervento, la Regione Siciliana contribuisce attivamente alla costruzione di un <strong>ecosistema digitale nazionale della cultura</strong>, in cui la tecnologia diventa uno strumento di tutela, valorizzazione e innovazione, proiettando il patrimonio culturale siciliano nel futuro della fruizione digitale europea."
+msgstr "Thanks to this intervention, the Regione Siciliana actively contributes to the construction of a <strong>national digital ecosystem for culture</strong>, in which technology becomes a tool for protection, enhancement and innovation, projecting Sicily's cultural heritage into the future of European digital enjoyment."
+
+msgid "Esplora i Cantieri Attivi"
+msgstr "Explore the Active Worksites"
+
+msgid "Scopri lo stato di avanzamento dei cantieri di digitalizzazione attivi sul territorio regionale e accedi alla documentazione tecnica"
+msgstr "Discover the progress status of the digitisation worksites active across the regional territory and access the technical documentation"
+
+msgid "Visualizza i Cantieri"
+msgstr "View the Worksites"
+
+# =====================================
+# cantieri.html
+# =====================================
+
+msgid "I Cantieri - Digitalizzazione del patrimonio culturale"
+msgstr "The Worksites - Digitisation of Cultural Heritage"
+
+msgid "Visualizza tutti i cantieri di digitalizzazione del patrimonio culturale siciliano"
+msgstr "View all the digitisation worksites of Sicily's cultural heritage"
+
+msgid "I Cantieri"
+msgstr "The Worksites"
+
+msgid "I Cantieri del Patrimonio Culturale Digitale"
+msgstr "The Digital Cultural Heritage Worksites"
+
+msgid "Una panoramica dei siti, delle collezioni e dei materiali digitalizzati in Sicilia. Utilizza i filtri per esplorare i progetti per categoria o provincia."
+msgstr "An overview of the sites, collections and materials digitised in Sicily. Use the filters to explore the projects by category or province."
+
+msgid "I Cantieri Digitalizzati"
+msgstr "The Digitised Worksites"
+
+msgid "Esplora i cantieri filtrando per tipologia di beni o provincia"
+msgstr "Explore the worksites by filtering by asset type or province"
+
+msgid "Tutte le tipologie"
+msgstr "All types"
+
+msgid "Negativi su pellicola"
+msgstr "Film negatives"
+
+msgid "Negativi su lastre di vetro"
+msgstr "Glass plate negatives"
+
+msgid "Diapositive"
+msgstr "Slides"
+
+msgid "Disegni, grafici, mappe"
+msgstr "Drawings, graphics, maps"
+
+msgid "Reperti archeologici"
+msgstr "Archaeological finds"
+
+msgid "Stampe fotografiche"
+msgstr "Photographic prints"
+
+msgid "Sculture"
+msgstr "Sculptures"
+
+msgid "Dipinti"
+msgstr "Paintings"
+
+msgid "Beni naturalistici"
+msgstr "Naturalistic assets"
+
+msgid "Beni demoetnoantropologici"
+msgstr "Demo-ethno-anthropological assets"
+
+msgid "Tutte le province"
+msgstr "All provinces"
+
+msgid "Cerca per nome o istituto..."
+msgstr "Search by name or institution..."
+
+msgid "Caricamento cantieri..."
+msgstr "Loading worksites..."
+
+msgid "Nessun cantiere trovato"
+msgstr "No worksites found"
+
+msgid "Prova a modificare i filtri di ricerca"
+msgstr "Try changing the search filters"
+
+msgid "Nessuna descrizione disponibile."
+msgstr "No description available."
+
+msgid "beni"
+msgstr "assets"
+
+msgid "Dettagli"
+msgstr "Details"
+
+msgid "Errore nel caricamento dei cantieri. Riprova più tardi."
+msgstr "Error loading the worksites. Please try again later."
+
+msgid "Ricarica Pagina"
+msgstr "Reload Page"
+
+msgid "Precedente"
+msgstr "Previous"
+
+msgid "Successivo"
+msgstr "Next"
+
+# =====================================
+# dettaglio-cantiere.html
+# =====================================
+
+msgid "I Cantieri"
+msgstr "The Worksites"
+
+msgid "Informazioni per visitatori"
+msgstr "Visitor information"
+
+msgid "Orari di apertura"
+msgstr "Opening hours"
+
+msgid "Biglietto"
+msgstr "Ticket"
+
+msgid "Telefono"
+msgstr "Phone"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Accessibilità"
+msgstr "Accessibility"
+
+msgid "Torna all'elenco"
+msgstr "Back to the list"
+
+msgid "Sito Web"
+msgstr "Website"
+
+msgid "Descrizione del sito"
+msgstr "Site description"
+
+msgid "Composizione dei beni digitalizzati"
+msgstr "Composition of digitised assets"
+
+msgid "Raccolta dei beni digitalizzati"
+msgstr "Collection of digitised assets"
+
+msgid "Esplora una selezione di 5 beni digitalizzati rappresentativi di questo cantiere attraverso la nostra Story Map interattiva."
+msgstr "Explore a selection of 5 representative digitised assets from this worksite through our interactive Story Map."
+
+msgid "Visualizza a schermo intero"
+msgstr "View full screen"
+
+msgid "Modello 3D interattivo"
+msgstr "Interactive 3D model"
+
+msgid "Esplora il bene digitalizzato in tre dimensioni. Usa il mouse o le dita per ruotare, ingrandire e navigare liberamente attorno all'oggetto."
+msgstr "Explore the digitised asset in three dimensions. Use the mouse or fingers to rotate, zoom in and navigate freely around the object."
+
+msgid "Trascina per ruotare"
+msgstr "Drag to rotate"
+
+msgid "Scroll per zoom"
+msgstr "Scroll to zoom"
+
+msgid "Tasto destro per spostare"
+msgstr "Right-click to pan"
+
+msgid "Impossibile caricare il modello 3D. Verifica che il browser supporti WebGL."
+msgstr "Unable to load the 3D model. Please check that your browser supports WebGL."
+
+# =====================================
+# statistiche.html
+# =====================================
+
+msgid "Statistiche - Digitalizzazione del patrimonio culturale"
+msgstr "Statistics - Digitisation of Cultural Heritage"
+
+msgid "Statistiche e dati sul progetto di digitalizzazione del patrimonio culturale della Regione Siciliana"
+msgstr "Statistics and data on the digitisation project of the cultural heritage of the Regione Siciliana"
+
+msgid "Statistiche"
+msgstr "Statistics"
+
+msgid "Statistiche e Dati"
+msgstr "Statistics and Data"
+
+msgid "Analisi quantitative e monitoraggio dell'avanzamento del progetto di digitalizzazione del patrimonio culturale della Regione Siciliana"
+msgstr "Quantitative analysis and progress monitoring of the digitisation project of the cultural heritage of the Regione Siciliana"
+
+msgid "Sezione in Sviluppo"
+msgstr "Section Under Development"
+
+msgid "La sezione <strong>Statistiche</strong> è attualmente in fase di sviluppo e sarà presto disponibile con dati completi e aggiornati sul progetto di digitalizzazione."
+msgstr "The <strong>Statistics</strong> section is currently under development and will soon be available with complete and up-to-date data on the digitisation project."
+
+msgid "Stiamo lavorando per offrirti una panoramica dettagliata dell'avanzamento del progetto attraverso dashboard interattive e visualizzazioni dei dati."
+msgstr "We are working to provide you with a detailed overview of the project's progress through interactive dashboards and data visualisations."
+
+msgid "Cosa Troverai in Questa Sezione"
+msgstr "What You Will Find in This Section"
+
+msgid "Avanzamento Generale"
+msgstr "General Progress"
+
+msgid "Percentuale di completamento del progetto, numero di beni digitalizzati e timeline di avanzamento"
+msgstr "Project completion percentage, number of digitised assets and progress timeline"
+
+msgid "Distribuzione Territoriale"
+msgstr "Territorial Distribution"
+
+msgid "Dati sui cantieri attivi per provincia e distribuzione geografica degli interventi"
+msgstr "Data on active worksites by province and geographical distribution of interventions"
+
+msgid "Tipologie di Beni"
+msgstr "Asset Types"
+
+msgid "Classificazione per categorie: fotografie, reperti archeologici, opere storico-artistiche"
+msgstr "Classification by category: photographs, archaeological finds, historical-artistic works"
+
+msgid "Investimenti e Risorse"
+msgstr "Investments and Resources"
+
+msgid "Allocazione delle risorse finanziarie per cantiere e analisi costi-benefici"
+msgstr "Allocation of financial resources per worksite and cost-benefit analysis"
+
+msgid "Timeline e Milestone"
+msgstr "Timeline and Milestones"
+
+msgid "Cronologia degli obiettivi raggiunti e pianificazione delle attività future"
+msgstr "Chronology of achieved objectives and planning of future activities"
+
+msgid "Impatto e Accessibilità"
+msgstr "Impact and Accessibility"
+
+msgid "Statistiche sull'accesso pubblico ai beni digitalizzati e impatto sociale del progetto"
+msgstr "Statistics on public access to digitised assets and the social impact of the project"
+
+msgid "Rimani Aggiornato"
+msgstr "Stay Updated"
+
+msgid "Nel frattempo, puoi esplorare i cantieri attivi e seguire l'avanzamento del progetto"
+msgstr "In the meantime, you can explore the active worksites and follow the progress of the project"
+
+msgid "Esplora i Cantieri"
+msgstr "Explore the Worksites"
+
+msgid "Visualizza la Mappa"
+msgstr "View the Map"
+
+msgid "Hai Domande?"
+msgstr "Do You Have Questions?"
+
+msgid "Per informazioni sul progetto di digitalizzazione e sui dati che saranno disponibili, non esitare a contattarci"
+msgstr "For information on the digitisation project and the data that will be available, do not hesitate to contact us"
+
+msgid "Contattaci"
+msgstr "Contact Us"
+
+# =====================================
+# mappa.html
+# =====================================
+
+msgid "Story Maps - Digitalizzazione del patrimonio culturale"
+msgstr "Story Maps - Digitisation of Cultural Heritage"
+
+msgid "Esplora i siti digitalizzati della Sicilia attraverso tour interattivi organizzati per regioni e aree tematiche"
+msgstr "Explore the digitised sites of Sicily through interactive tours organised by regions and thematic areas"
+
+msgid "Mappe"
+msgstr "Maps"
+
+msgid "Mappa Interattiva dei Cantieri"
+msgstr "Interactive Map of the Worksites"
+
+msgid "Esplora la distribuzione geografica dei cantieri di digitalizzazione del patrimonio culturale siciliano attraverso una mappa interattiva. Scopri i progetti attivi nelle nove province e approfondisci i dettagli di ogni intervento."
+msgstr "Explore the geographical distribution of the digitisation worksites of Sicily's cultural heritage through an interactive map. Discover the active projects in the nine provinces and learn more about the details of each intervention."
+
+msgid "Caricamento Story Maps..."
+msgstr "Loading Story Maps..."
+
+msgid "Come Navigare"
+msgstr "How to Navigate"
+
+msgid "Seleziona una <strong>story map</strong> dalla raccolta"
+msgstr "Select a <strong>story map</strong> from the collection"
+
+msgid "Esplora i <strong>tour virtuali</strong> dei siti digitalizzati"
+msgstr "Explore the <strong>virtual tours</strong> of the digitised sites"
+
+msgid "Naviga per <strong>province</strong> o <strong>aree tematiche</strong>"
+msgstr "Browse by <strong>province</strong> or <strong>thematic areas</strong>"
+
+msgid "Organizzazione Tour"
+msgstr "Tour Organisation"
+
+msgid "Le story maps sono organizzate per facilitare l'esplorazione del patrimonio culturale siciliano digitalizzato:"
+msgstr "The story maps are organised to facilitate the exploration of Sicily's digitised cultural heritage:"
+
+msgid "<strong>Per Provincia:</strong> Tour dei 40 siti per area geografica"
+msgstr "<strong>By Province:</strong> Tour of the 40 sites by geographical area"
+
+msgid "<strong>Per Tipologia:</strong> Archivi fotografici, beni archeologici, opere storico-artistiche"
+msgstr "<strong>By Type:</strong> Photographic archives, archaeological assets, historical-artistic works"
+
+msgid "Cosa Scoprirai"
+msgstr "What You Will Discover"
+
+msgid "Ogni story map offre un'esperienza immersiva attraverso:"
+msgstr "Each story map offers an immersive experience through:"
+
+msgid "<strong>Immagini</strong> dei cantieri digitalizzati"
+msgstr "<strong>Images</strong> of the digitised worksites"
+
+msgid "<strong>Contesto storico</strong> e informazioni culturali"
+msgstr "<strong>Historical context</strong> and cultural information"
+
+msgid "<strong>Geolocalizzazione</strong> precisa dei siti"
+msgstr "Precise <strong>geolocation</strong> of the sites"
+
+msgid "Il Patrimonio Digitalizzato"
+msgstr "The Digitised Heritage"
+
+msgid "Cantieri Completati"
+msgstr "Completed Worksites"
+
+msgid "Beni Digitalizzati"
+msgstr "Digitised Assets"
+
+msgid "Province Siciliane"
+msgstr "Sicilian Provinces"
+
+msgid "Categorie di Beni"
+msgstr "Asset Categories"
+
+msgid "Vuoi scoprire i dettagli dei singoli cantieri di digitalizzazione?"
+msgstr "Would you like to discover the details of each individual digitisation worksite?"
+
+msgid "Visualizza Tutti i Cantieri"
+msgstr "View All Worksites"
+
+msgid "Errore di Caricamento"
+msgstr "Loading Error"
+
+msgid "Non è stato possibile caricare le Story Maps.<br>Per favore riprova più tardi."
+msgstr "It was not possible to load the Story Maps.<br>Please try again later."
+
+msgid "Ricarica Pagina"
+msgstr "Reload Page"
+
+# =====================================
+# contatti.html
+# =====================================
+
+msgid "Contatti - Digitalizzazione del patrimonio culturale"
+msgstr "Contacts - Digitisation of Cultural Heritage"
+
+msgid "Contatta il team del progetto di digitalizzazione del patrimonio culturale della Regione Siciliana. Informazioni, assistenza e supporto tecnico."
+msgstr "Contact the team of the digitisation project of the cultural heritage of the Regione Siciliana. Information, assistance and technical support."
+
+msgid "Contatti"
+msgstr "Contacts"
+
+msgid "Siamo qui per assisterti. Contattaci per informazioni sul progetto di digitalizzazione del patrimonio culturale della Regione Siciliana o per richiedere supporto tecnico."
+msgstr "We are here to assist you. Contact us for information on the digitisation project of the cultural heritage of the Regione Siciliana or to request technical support."
+
+msgid "Come Contattarci"
+msgstr "How to Contact Us"
+
+msgid "Scegli il canale di comunicazione più adatto alle tue esigenze"
+msgstr "Choose the most suitable communication channel for your needs"
+
+msgid "Sede Principale"
+msgstr "Main Office"
+
+msgid "Assessorato Regionale dei Beni Culturali<br>e dell'Identità Siciliana<br><strong>Via delle Croci, 6</strong><br>90139 Palermo (PA)<br>Sicilia - Italia"
+msgstr "Regional Department of Cultural Heritage<br>and Sicilian Identity<br><strong>Via delle Croci, 6</strong><br>90139 Palermo (PA)<br>Sicily - Italy"
+
+msgid "Telefono"
+msgstr "Phone"
+
+msgid "Centralino:"
+msgstr "Switchboard:"
+
+msgid "Supporto Tecnico:"
+msgstr "Technical Support:"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Informazioni generali:"
+msgstr "General information:"
+
+msgid "PEC:"
+msgstr "PEC:"
+
+msgid "Invia un Messaggio"
+msgstr "Send a Message"
+
+msgid "Compila il form sottostante e ti risponderemo al più presto"
+msgstr "Fill in the form below and we will get back to you as soon as possible"
+
+msgid "Nome"
+msgstr "First Name"
+
+msgid "Il tuo nome"
+msgstr "Your first name"
+
+msgid "Cognome"
+msgstr "Last Name"
+
+msgid "Il tuo cognome"
+msgstr "Your last name"
+
+msgid "tuaemail@esempio.it"
+msgstr "youremail@example.com"
+
+msgid "Telefono"
+msgstr "Phone"
+
+msgid "Oggetto"
+msgstr "Subject"
+
+msgid "Seleziona un'opzione"
+msgstr "Select an option"
+
+msgid "Richiesta di informazioni"
+msgstr "Information request"
+
+msgid "Supporto tecnico"
+msgstr "Technical support"
+
+msgid "Proposta di collaborazione"
+msgstr "Collaboration proposal"
+
+msgid "Accesso ai dati digitalizzati"
+msgstr "Access to digitised data"
+
+msgid "Altro"
+msgstr "Other"
+
+msgid "Messaggio"
+msgstr "Message"
+
+msgid "Scrivi qui il tuo messaggio..."
+msgstr "Write your message here..."
+
+msgid "Acconsento al trattamento dei miei dati personali in conformità con la "
+msgstr "I consent to the processing of my personal data in accordance with the "
+
+msgid "e il"
+msgstr "and the"
+
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+msgid "GDPR"
+msgstr "GDPR"
+
+msgid "Invia Messaggio"
+msgstr "Send Message"
+
+msgid "<i class=\"fas fa-check-circle\"></i> <strong>Messaggio inviato con successo!</strong><br>Ti risponderemo al più presto all'indirizzo email fornito."
+msgstr "<i class=\"fas fa-check-circle\"></i> <strong>Message sent successfully!</strong><br>We will get back to you as soon as possible at the email address provided."
+
+msgid "Uffici e Dipartimenti"
+msgstr "Offices and Departments"
+
+msgid "Contatta direttamente l'ufficio di competenza per le tue esigenze specifiche"
+msgstr "Contact the relevant office directly for your specific needs"
+
+msgid "Direzione Generale"
+msgstr "General Directorate"
+
+msgid "Coordinamento del progetto e gestione amministrativa"
+msgstr "Project coordination and administrative management"
+
+msgid "Ufficio Digitalizzazione"
+msgstr "Digitisation Office"
+
+msgid "Supporto tecnico e gestione operativa della digitalizzazione"
+msgstr "Technical support and operational management of digitisation"
+
+msgid "Ufficio Comunicazione"
+msgstr "Communications Office"
+
+msgid "Relazioni con i media e comunicazione istituzionale"
+msgstr "Media relations and institutional communication"
+
+# =====================================
+# amministrazione-trasparente.html
+# =====================================
+
+msgid "Amministrazione Trasparente - Digitalizzazione del patrimonio culturale"
+msgstr "Transparent Administration - Digitisation of Cultural Heritage"
+
+msgid "Sezione Amministrazione Trasparente - Informazioni su organizzazione, attività e utilizzo delle risorse pubbliche"
+msgstr "Transparent Administration Section - Information on organisation, activities and use of public resources"
+
+msgid "Amministrazione Trasparente"
+msgstr "Transparent Administration"
+
+msgid "Informazioni su organizzazione, attività e utilizzo delle risorse pubbliche secondo il D.Lgs. 33/2013"
+msgstr "Information on organisation, activities and use of public resources pursuant to Legislative Decree 33/2013"
+
+msgid "Cos'è l'Amministrazione Trasparente"
+msgstr "What is Transparent Administration"
+
+msgid "In ottemperanza al <strong>D.Lgs. 14 marzo 2013, n. 33</strong> e successive modifiche, questa sezione è dedicata alla pubblicazione di informazioni rilevanti concernenti l'organizzazione e l'attività della Regione Siciliana in merito al progetto di digitalizzazione del patrimonio culturale."
+msgstr "In compliance with <strong>Legislative Decree 14 March 2013, no. 33</strong> and subsequent amendments, this section is dedicated to the publication of relevant information concerning the organisation and activities of the Regione Siciliana in relation to the cultural heritage digitisation project."
+
+msgid "La trasparenza è intesa come accessibilità totale dei dati e delle informazioni detenute dalle pubbliche amministrazioni, allo scopo di tutelare i diritti dei cittadini, promuovere la partecipazione degli interessati all'attività amministrativa e favorire forme diffuse di controllo sul perseguimento delle funzioni istituzionali e sull'utilizzo delle risorse pubbliche."
+msgstr "Transparency is understood as total accessibility of data and information held by public administrations, with the aim of protecting citizens' rights, promoting the participation of interested parties in administrative activities and encouraging widespread forms of oversight over the pursuit of institutional functions and the use of public resources."
+
+msgid "Sezioni Principali"
+msgstr "Main Sections"
+
+msgid "Accesso diretto alle sezioni tematiche dell'Amministrazione Trasparente"
+msgstr "Direct access to the thematic sections of Transparent Administration"
+
+msgid "Organizzazione"
+msgstr "Organisation"
+
+msgid "Organigramma"
+msgstr "Organisational Chart"
+
+msgid "Articolazione degli uffici"
+msgstr "Office Structure"
+
+msgid "Telefono e posta elettronica"
+msgstr "Phone and email"
+
+msgid "Consulenti"
+msgstr "Consultants"
+
+msgid "Titolari di incarichi"
+msgstr "Holders of appointments"
+
+msgid "Personale"
+msgstr "Staff"
+
+msgid "Dirigenti"
+msgstr "Managers"
+
+msgid "Bandi e Contratti"
+msgstr "Tenders and Contracts"
+
+msgid "Bandi di gara e contratti"
+msgstr "Calls for tender and contracts"
+
+msgid "Sovvenzioni e contributi"
+msgstr "Grants and subsidies"
+
+msgid "Bilanci"
+msgstr "Financial Statements"
+
+msgid "Attività"
+msgstr "Activities"
+
+msgid "Provvedimenti"
+msgstr "Provisions"
+
+msgid "Controlli sulle imprese"
+msgstr "Controls on businesses"
+
+msgid "Tipologie di procedimento"
+msgstr "Types of procedure"
+
+msgid "Performance"
+msgstr "Performance"
+
+msgid "Piano della Performance"
+msgstr "Performance Plan"
+
+msgid "Relazione sulla Performance"
+msgstr "Performance Report"
+
+msgid "Obiettivi strategici"
+msgstr "Strategic objectives"
+
+msgid "Altri Contenuti"
+msgstr "Other Contents"
+
+msgid "Accessibilità e Catalogo dati"
+msgstr "Accessibility and Data Catalogue"
+
+msgid "Servizi erogati"
+msgstr "Services provided"
+
+msgid "Pagamenti amministrazione"
+msgstr "Administration payments"
+
+msgid "Responsabile della Trasparenza"
+msgstr "Transparency Officer"
+
+msgid "Nome:"
+msgstr "Name:"
+
+msgid "Email:"
+msgstr "Email:"
+
+msgid "Telefono:"
+msgstr "Phone:"
+
+msgid "Il Responsabile della Trasparenza garantisce il rispetto degli obblighi di pubblicazione e controlla l'attuazione delle disposizioni in materia di accesso civico."
+msgstr "The Transparency Officer ensures compliance with publication obligations and monitors the implementation of the provisions on civic access."
+
+msgid "Accesso Civico"
+msgstr "Civic Access"
+
+msgid "Ogni cittadino può richiedere documenti, informazioni o dati per i quali è prevista la pubblicazione obbligatoria, ma che non sono stati resi disponibili (accesso civico semplice), oppure può accedere a dati e documenti ulteriori rispetto a quelli oggetto di pubblicazione obbligatoria (accesso civico generalizzato)."
+msgstr "Every citizen may request documents, information or data subject to mandatory publication that have not been made available (simple civic access), or may access additional data and documents beyond those subject to mandatory publication (generalised civic access)."
+
+msgid "Come fare richiesta:"
+msgstr "How to submit a request:"
+
+msgid "Le istanze possono essere inviate a:"
+msgstr "Requests may be sent to:"
+
+msgid "Riferimenti Normativi"
+msgstr "Regulatory References"
+
+msgid "<strong>D.Lgs. 14 marzo 2013, n. 33</strong> - Riordino della disciplina riguardante il diritto di accesso civico e gli obblighi di pubblicità, trasparenza e diffusione di informazioni da parte delle pubbliche amministrazioni"
+msgstr "<strong>Legislative Decree 14 March 2013, no. 33</strong> - Reorganisation of the rules governing the right of civic access and the obligations of publicity, transparency and dissemination of information by public administrations"
+
+msgid "<strong>D.Lgs. 25 maggio 2016, n. 97</strong> - Revisione e semplificazione delle disposizioni in materia di prevenzione della corruzione, pubblicità e trasparenza"
+msgstr "<strong>Legislative Decree 25 May 2016, no. 97</strong> - Review and simplification of the provisions on the prevention of corruption, publicity and transparency"
+
+msgid "<strong>Delibera ANAC n. 1310/2016</strong> - Prime linee guida recanti indicazioni sull'attuazione degli obblighi di pubblicità, trasparenza e diffusione di informazioni contenute nel d.lgs. 33/2013"
+msgstr "<strong>ANAC Resolution no. 1310/2016</strong> - First guidelines providing indications on the implementation of the obligations of publicity, transparency and dissemination of information contained in Legislative Decree 33/2013"
+
+msgid "<strong>Nota:</strong> I contenuti di questa sezione vengono aggiornati periodicamente secondo le tempistiche previste dalla normativa vigente. Ultimo aggiornamento: Dicembre 2025"
+msgstr "<strong>Note:</strong> The contents of this section are updated periodically in accordance with the timescales provided for by current legislation. Last update: December 2025"
+
+# =====================================
+# privacy-policy.html
+# =====================================
+
+msgid "Privacy Policy - Digitalizzazione del patrimonio culturale"
+msgstr "Privacy Policy - Digitisation of Cultural Heritage"
+
+msgid "Informativa sulla Privacy - Trattamento dei dati personali secondo il GDPR"
+msgstr "Privacy Notice - Processing of personal data in accordance with the GDPR"
+
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+msgid "Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR)"
+msgstr "Notice on the processing of personal data pursuant to EU Regulation 2016/679 (GDPR)"
+
+msgid "1. Titolare del Trattamento"
+msgstr "1. Data Controller"
+
+msgid "Il Titolare del trattamento dei dati personali è la <strong>Regione Siciliana - Assessorato dei Beni Culturali e dell'Identità Siciliana</strong>"
+msgstr "The Data Controller is the <strong>Regione Siciliana - Department of Cultural Heritage and Sicilian Identity</strong>"
+
+msgid "Sede legale:"
+msgstr "Registered office:"
+
+msgid "Email:"
+msgstr "Email:"
+
+msgid "PEC:"
+msgstr "PEC:"
+
+msgid "2. Responsabile Protezione Dati"
+msgstr "2. Data Protection Officer"
+
+msgid "Il Responsabile della Protezione dei Dati (Data Protection Officer - DPO) può essere contattato:"
+msgstr "The Data Protection Officer (DPO) can be contacted at:"
+
+msgid "3. Tipi di Dati Raccolti"
+msgstr "3. Types of Data Collected"
+
+msgid "Il portale raccoglie e tratta le seguenti categorie di dati personali"
+msgstr "The portal collects and processes the following categories of personal data"
+
+msgid "Dati di Navigazione"
+msgstr "Browsing Data"
+
+msgid "I sistemi informatici acquisiscono alcuni dati la cui trasmissione è implicita nell'uso dei protocolli di comunicazione di Internet."
+msgstr "The computer systems collect certain data whose transmission is implicit in the use of Internet communication protocols."
+
+msgid "Indirizzi IP"
+msgstr "IP addresses"
+
+msgid "Tipo di browser e dispositivo"
+msgstr "Browser and device type"
+
+msgid "Sistema operativo"
+msgstr "Operating system"
+
+msgid "Pagine visitate"
+msgstr "Pages visited"
+
+msgid "Data e orario di accesso"
+msgstr "Date and time of access"
+
+msgid "Dati Forniti Volontariamente"
+msgstr "Voluntarily Provided Data"
+
+msgid "L'invio volontario di messaggi agli indirizzi di contatto del sito comporta l'acquisizione dei dati del mittente."
+msgstr "The voluntary sending of messages to the site's contact addresses entails the acquisition of the sender's data."
+
+msgid "Nome e cognome"
+msgstr "First and last name"
+
+msgid "Indirizzo email"
+msgstr "Email address"
+
+msgid "Numero di telefono"
+msgstr "Phone number"
+
+msgid "Messaggio o richiesta"
+msgstr "Message or request"
+
+msgid "4. Finalità del Trattamento"
+msgstr "4. Purposes of Processing"
+
+msgid "I dati personali vengono trattati per le seguenti finalità"
+msgstr "Personal data are processed for the following purposes"
+
+msgid "Funzionalità del sito"
+msgstr "Website functionality"
+
+msgid "Garantire il corretto funzionamento del portale e dei suoi servizi"
+msgstr "Ensuring the correct functioning of the portal and its services"
+
+msgid "<strong>Base giuridica:</strong> Esecuzione di un compito di interesse pubblico"
+msgstr "<strong>Legal basis:</strong> Performance of a task in the public interest"
+
+msgid "Risposta alle richieste"
+msgstr "Response to requests"
+
+msgid "Gestire e rispondere alle richieste di informazioni inviate tramite i moduli di contatto"
+msgstr "Managing and responding to information requests submitted through contact forms"
+
+msgid "<strong>Base giuridica:</strong> Consenso dell'interessato"
+msgstr "<strong>Legal basis:</strong> Consent of the data subject"
+
+msgid "Analisi statistiche"
+msgstr "Statistical analysis"
+
+msgid "Analizzare l'utilizzo del sito per migliorare i servizi offerti"
+msgstr "Analysing the use of the site to improve the services offered"
+
+msgid "<strong>Base giuridica:</strong> Legittimo interesse del titolare"
+msgstr "<strong>Legal basis:</strong> Legitimate interest of the controller"
+
+msgid "Sicurezza"
+msgstr "Security"
+
+msgid "Prevenire attività illecite e garantire la sicurezza del sistema informatico"
+msgstr "Preventing unlawful activities and ensuring the security of the computer system"
+
+msgid "<strong>Base giuridica:</strong> Obbligo legale e legittimo interesse"
+msgstr "<strong>Legal basis:</strong> Legal obligation and legitimate interest"
+
+msgid "8. Diritti dell'Interessato"
+msgstr "8. Rights of the Data Subject"
+
+msgid "In conformità al GDPR (artt. 15-22), l'interessato ha i seguenti diritti"
+msgstr "In accordance with the GDPR (arts. 15-22), the data subject has the following rights"
+
+msgid "Accesso"
+msgstr "Access"
+
+msgid "Conferma del trattamento dei dati personali"
+msgstr "Confirmation of the processing of personal data"
+
+msgid "Rettifica"
+msgstr "Rectification"
+
+msgid "Correzione dei dati inesatti"
+msgstr "Correction of inaccurate data"
+
+msgid "Cancellazione"
+msgstr "Erasure"
+
+msgid "Diritto all'oblio"
+msgstr "Right to be forgotten"
+
+msgid "Limitazione"
+msgstr "Restriction"
+
+msgid "Limitazione del trattamento"
+msgstr "Restriction of processing"
+
+msgid "Portabilità"
+msgstr "Portability"
+
+msgid "Ricezione in formato strutturato"
+msgstr "Receipt in a structured format"
+
+msgid "Opposizione"
+msgstr "Objection"
+
+msgid "Opporsi al trattamento"
+msgstr "Objecting to processing"
+
+msgid "Per esercitare i propri diritti, l'interessato può contattare il Titolare o il DPO ai recapiti indicati nella presente informativa. L'interessato ha inoltre il diritto di proporre reclamo all'Autorità Garante per la Protezione dei Dati Personali."
+msgstr "To exercise their rights, the data subject may contact the Controller or the DPO at the contact details indicated in this notice. The data subject also has the right to lodge a complaint with the Italian Data Protection Authority (Garante per la Protezione dei Dati Personali)."
+
+msgid "10. Contatti e Informazioni"
+msgstr "10. Contacts and Information"
+
+msgid "Per qualsiasi domanda riguardo la presente Privacy Policy o per esercitare i propri diritti, è possibile contattare il Titolare del trattamento o il Data Protection Officer."
+msgstr "For any questions regarding this Privacy Policy or to exercise your rights, you may contact the Data Controller or the Data Protection Officer."
+
+msgid "<strong>Ultimo aggiornamento:</strong> Dicembre 2025"
+msgstr "<strong>Last update:</strong> December 2025"
+
+msgid "<strong>Nota:</strong> Proseguendo nella navigazione del sito, l'utente accetta la presente Privacy Policy. Per maggiori informazioni sull'utilizzo dei cookie, consultare la <a href=\"/cookie-policy\" style=\"color: #01579b; font-weight: 600;\">Cookie Policy</a>."
+msgstr "<strong>Note:</strong> By continuing to browse the site, the user accepts this Privacy Policy. For more information on the use of cookies, please consult the <a href=\"/cookie-policy\" style=\"color: #01579b; font-weight: 600;\">Cookie Policy</a>."
+
+# =====================================
+# note-legali.html
+# =====================================
+
+msgid "Note Legali - Digitalizzazione del patrimonio culturale"
+msgstr "Legal Notice - Digitisation of Cultural Heritage"
+
+msgid "Note Legali - Termini e condizioni d'uso del portale, copyright e limitazioni di responsabilità"
+msgstr "Legal Notice - Terms and conditions of use of the portal, copyright and limitations of liability"
+
+msgid "Note Legali"
+msgstr "Legal Notice"
+
+msgid "Termini e condizioni d'uso del portale, informazioni legali e limitazioni di responsabilità"
+msgstr "Terms and conditions of use of the portal, legal information and limitations of liability"
+
+msgid "1. Informazioni Generali sul Sito"
+msgstr "1. General Information on the Website"
+
+msgid "Il presente sito web è il portale ufficiale del progetto di digitalizzazione del patrimonio culturale della Regione Siciliana, realizzato dall'Assessorato dei Beni Culturali e dell'Identità Siciliana."
+msgstr "This website is the official portal of the cultural heritage digitisation project of the Regione Siciliana, created by the Department of Cultural Heritage and Sicilian Identity."
+
+msgid "Titolare del sito:"
+msgstr "Website owner:"
+
+msgid "Sede:"
+msgstr "Address:"
+
+msgid "P.IVA:"
+msgstr "VAT number:"
+
+msgid "Email:"
+msgstr "Email:"
+
+msgid "PEC:"
+msgstr "PEC:"
+
+msgid "2. Oggetto e Finalità"
+msgstr "2. Subject and Purpose"
+
+msgid "Il portale è dedicato alla presentazione e documentazione del progetto di digitalizzazione del patrimonio culturale siciliano."
+msgstr "The portal is dedicated to the presentation and documentation of the digitisation project of Sicily's cultural heritage."
+
+msgid "Finalità principali:"
+msgstr "Main purposes:"
+
+msgid "Informazioni sul progetto"
+msgstr "Project information"
+
+msgid "Presentazione cantieri attivi"
+msgstr "Presentation of active worksites"
+
+msgid "Accessibilità ai dati"
+msgstr "Access to data"
+
+msgid "Comunicazione con cittadini"
+msgstr "Communication with citizens"
+
+msgid "3. Condizioni d'Uso"
+msgstr "3. Terms of Use"
+
+msgid "L'accesso e l'utilizzo del presente sito web comportano l'accettazione integrale delle presenti note legali."
+msgstr "Accessing and using this website implies full acceptance of these legal notices."
+
+msgid "Utilizzo consentito:"
+msgstr "Permitted use:"
+
+msgid "Consultare informazioni"
+msgstr "Consulting information"
+
+msgid "Accedere ai contenuti"
+msgstr "Accessing content"
+
+msgid "Scaricare documenti pubblici"
+msgstr "Downloading public documents"
+
+msgid "Contattare l'amministrazione"
+msgstr "Contacting the administration"
+
+msgid "4. Proprietà Intellettuale e Copyright"
+msgstr "4. Intellectual Property and Copyright"
+
+msgid "Informazioni sui diritti d'autore e sull'utilizzo dei contenuti del sito"
+msgstr "Information on copyright and the use of the site's content"
+
+msgid "Contenuti del sito"
+msgstr "Website content"
+
+msgid "Tutti i contenuti presenti sul sito (testi, immagini, grafici, loghi, icone, fotografie, video, database, software) sono di proprietà della Regione Siciliana o di terzi che ne hanno concesso l'utilizzo e sono protetti dalle leggi italiane ed internazionali sul diritto d'autore e sulla proprietà intellettuale."
+msgstr "All content on the site (texts, images, graphics, logos, icons, photographs, videos, databases, software) is the property of the Regione Siciliana or of third parties who have granted its use, and is protected by Italian and international laws on copyright and intellectual property."
+
+msgid "Licenza Creative Commons"
+msgstr "Creative Commons Licence"
+
+msgid "Salvo ove diversamente indicato, i contenuti pubblicati sul sito sono soggetti a licenza <strong>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</strong>."
+msgstr "Unless otherwise indicated, the content published on the site is subject to the <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong> licence."
+
+msgid "È consentito:"
+msgstr "Permitted:"
+
+msgid "Condividere e distribuire"
+msgstr "Share and distribute"
+
+msgid "Modificare e trasformare"
+msgstr "Modify and transform"
+
+msgid "Alle condizioni:"
+msgstr "Under the conditions:"
+
+msgid "Attribuzione della paternità"
+msgstr "Attribution of authorship"
+
+msgid "5. Collegamenti Esterni"
+msgstr "5. External Links"
+
+msgid "Il sito può contenere collegamenti ipertestuali verso siti web di terze parti. La Regione Siciliana non ha alcun controllo sui contenuti di tali siti e non è responsabile per il loro contenuto."
+msgstr "The site may contain hyperlinks to third-party websites. The Regione Siciliana has no control over the content of such sites and is not responsible for their content."
+
+msgid "I link sono forniti esclusivamente per comodità dell'utente."
+msgstr "Links are provided solely for the convenience of the user."
+
+msgid "6. Limitazione di Responsabilità"
+msgstr "6. Limitation of Liability"
+
+msgid "La Regione Siciliana si impegna a mantenere aggiornati i contenuti del sito, tuttavia non garantisce la completezza, l'esattezza o l'attualità delle informazioni pubblicate."
+msgstr "The Regione Siciliana endeavours to keep the content of the site up to date, however it does not guarantee the completeness, accuracy or currency of the information published."
+
+msgid "L'utilizzo delle informazioni è sotto la responsabilità esclusiva dell'utente."
+msgstr "The use of the information is under the sole responsibility of the user."
+
+msgid "Disponibilità del Servizio"
+msgstr "Service Availability"
+
+msgid "La Regione Siciliana si riserva il diritto di modificare, sospendere o interrompere, temporaneamente o permanentemente, il servizio offerto dal sito (o parte di esso) con o senza preavviso. Non sarà responsabile per eventuali modifiche, sospensioni o interruzioni del servizio."
+msgstr "The Regione Siciliana reserves the right to modify, suspend or discontinue, temporarily or permanently, the service offered by the site (or part of it) with or without notice. It shall not be liable for any modifications, suspensions or interruptions of the service."
+
+msgid "8. Legge Applicabile"
+msgstr "8. Applicable Law"
+
+msgid "Le presenti note legali sono regolate dalla <strong>legge italiana</strong>. Per qualsiasi controversia sarà competente in via esclusiva il <strong>Foro di Palermo</strong>."
+msgstr "These legal notices are governed by <strong>Italian law</strong>. For any dispute, the <strong>Court of Palermo</strong> shall have exclusive jurisdiction."
+
+msgid "9. Accessibilità"
+msgstr "9. Accessibility"
+
+msgid "La Regione Siciliana si impegna a rendere il proprio sito web accessibile, in conformità alla <strong>Legge 4/2004</strong> e al <strong>D.Lgs. 106/2018</strong>."
+msgstr "The Regione Siciliana is committed to making its website accessible, in accordance with <strong>Law 4/2004</strong> and <strong>Legislative Decree 106/2018</strong>."
+
+msgid "Segnalazioni:"
+msgstr "Reports:"
+
+msgid "<strong>Importante:</strong> L'utilizzo di questo sito implica l'accettazione delle presenti note legali e della <a href=\"/privacy-policy\" style=\"color: #856404; font-weight: 600;\">Privacy Policy</a>. Si consiglia di leggerle attentamente prima di procedere."
+msgstr "<strong>Important:</strong> The use of this site implies acceptance of these legal notices and the <a href=\"/privacy-policy\" style=\"color: #856404; font-weight: 600;\">Privacy Policy</a>. You are advised to read them carefully before proceeding."
+
+msgid "<strong>Versione:</strong> 1.0"
+msgstr "<strong>Version:</strong> 1.0"
+
+msgid "<strong>Data pubblicazione:</strong> Dicembre 2025"
+msgstr "<strong>Publication date:</strong> December 2025"
+
+msgid "<strong>Ultimo aggiornamento:</strong> Dicembre 2025"
+msgstr "<strong>Last update:</strong> December 2025"
+
+# =====================================
+# cookie-policy.html
+# =====================================
+
+msgid "Cookie Policy - Digitalizzazione del patrimonio culturale"
+msgstr "Cookie Policy - Digitisation of Cultural Heritage"
+
+msgid "Cookie Policy - Informazioni sull'utilizzo dei cookie sul portale"
+msgstr "Cookie Policy - Information on the use of cookies on the portal"
+
+msgid "Cookie Policy"
+msgstr "Cookie Policy"
+
+msgid "Informazioni sull'utilizzo dei cookie sul portale della digitalizzazione del patrimonio culturale"
+msgstr "Information on the use of cookies on the cultural heritage digitisation portal"
+
+msgid "1. Cosa sono i Cookie"
+msgstr "1. What are Cookies"
+
+msgid "I cookie sono piccoli file di testo che vengono memorizzati sul dispositivo dell'utente (computer, tablet, smartphone) durante la navigazione su un sito web. I cookie permettono al sito di riconoscere il dispositivo e memorizzare determinate informazioni sulle preferenze o azioni passate dell'utente."
+msgstr "Cookies are small text files that are stored on the user's device (computer, tablet, smartphone) while browsing a website. Cookies allow the site to recognise the device and store certain information about the user's preferences or past actions."
+
+msgid "I cookie possono essere <strong>\"di sessione\"</strong> (eliminati automaticamente alla chiusura del browser) o <strong>\"persistenti\"</strong> (rimangono memorizzati sul dispositivo fino alla loro scadenza o cancellazione manuale)."
+msgstr "Cookies can be <strong>\"session\"</strong> cookies (automatically deleted when the browser is closed) or <strong>\"persistent\"</strong> cookies (they remain stored on the device until they expire or are manually deleted)."
+
+msgid "2. Tipologie di Cookie Utilizzati"
+msgstr "2. Types of Cookies Used"
+
+msgid "Questo sito utilizza diverse tipologie di cookie, classificabili in base alla loro funzione e provenienza"
+msgstr "This site uses different types of cookies, classifiable according to their function and origin"
+
+msgid "Cookie Tecnici"
+msgstr "Technical Cookies"
+
+msgid "Necessari"
+msgstr "Necessary"
+
+msgid "Essenziali per il corretto funzionamento del sito. Senza questi cookie, il sito non funzionerebbe correttamente."
+msgstr "Essential for the correct functioning of the site. Without these cookies, the site would not work properly."
+
+msgid "Esempi:"
+msgstr "Examples:"
+
+msgid "Cookie di sessione"
+msgstr "Session cookies"
+
+msgid "Cookie di sicurezza"
+msgstr "Security cookies"
+
+msgid "Cookie di preferenze"
+msgstr "Preference cookies"
+
+msgid "<strong>Base giuridica:</strong> Non richiedono consenso"
+msgstr "<strong>Legal basis:</strong> Do not require consent"
+
+msgid "<strong>Durata:</strong> Sessione o fino a 12 mesi"
+msgstr "<strong>Duration:</strong> Session or up to 12 months"
+
+msgid "Cookie Analitici"
+msgstr "Analytical Cookies"
+
+msgid "Analitici"
+msgstr "Analytical"
+
+msgid "Utilizzati per raccogliere informazioni aggregate sull'utilizzo del sito (numero visitatori, pagine visitate, tempo di permanenza)."
+msgstr "Used to collect aggregate information on the use of the site (number of visitors, pages visited, time spent)."
+
+msgid "Servizi:"
+msgstr "Services:"
+
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+msgid "Statistiche interne"
+msgstr "Internal statistics"
+
+msgid "<strong>Base giuridica:</strong> Consenso se non anonimizzati"
+msgstr "<strong>Legal basis:</strong> Consent if not anonymised"
+
+msgid "<strong>Durata:</strong> Fino a 24 mesi"
+msgstr "<strong>Duration:</strong> Up to 24 months"
+
+msgid "Cookie di Profilazione"
+msgstr "Profiling Cookies"
+
+msgid "Non utilizzati"
+msgstr "Not used"
+
+msgid "Attualmente questo sito <strong>non utilizza</strong> cookie di profilazione per creare profili utente o mostrare pubblicità personalizzata."
+msgstr "This site currently <strong>does not use</strong> profiling cookies to create user profiles or display personalised advertising."
+
+msgid "Qualora in futuro venissero implementati, sarà richiesto il consenso esplicito dell'utente."
+msgstr "Should they be implemented in the future, the user's explicit consent will be required."
+
+msgid "Terze Parti"
+msgstr "Third Parties"
+
+msgid "Servizi di terze parti che installano propri cookie, gestiti direttamente dalle terze parti."
+msgstr "Third-party services that install their own cookies, managed directly by the third parties."
+
+msgid "ArcGIS Story Maps"
+msgstr "ArcGIS Story Maps"
+
+msgid "Google Fonts"
+msgstr "Google Fonts"
+
+msgid "Font Awesome"
+msgstr "Font Awesome"
+
+msgid "3. Elenco Dettagliato dei Cookie"
+msgstr "3. Detailed List of Cookies"
+
+msgid "Di seguito l'elenco dei cookie utilizzati dal sito"
+msgstr "Below is the list of cookies used by the site"
+
+msgid "Nome"
+msgstr "Name"
+
+msgid "Tipologia"
+msgstr "Type"
+
+msgid "Finalità"
+msgstr "Purpose"
+
+msgid "Durata"
+msgstr "Duration"
+
+msgid "Dominio"
+msgstr "Domain"
+
+msgid "Tecnico"
+msgstr "Technical"
+
+msgid "Mantenere la sessione utente attiva"
+msgstr "Maintaining the active user session"
+
+msgid "Sessione"
+msgstr "Session"
+
+msgid "12 mesi"
+msgstr "12 months"
+
+msgid "24 mesi"
+msgstr "24 months"
+
+msgid "24 ore"
+msgstr "24 hours"
+
+msgid "1 minuto"
+msgstr "1 minute"
+
+msgid "Proprio"
+msgstr "Own"
+
+msgid "Memorizzare preferenze sui cookie"
+msgstr "Storing cookie preferences"
+
+msgid "Analitico"
+msgstr "Analytical"
+
+msgid "Google Analytics - Distinguere utenti"
+msgstr "Google Analytics - Distinguishing users"
+
+msgid "Google Analytics - Limitare frequenza"
+msgstr "Google Analytics - Limiting request frequency"
+
+msgid "5. Gestione dei Cookie"
+msgstr "5. Managing Cookies"
+
+msgid "Come gestire le preferenze sui cookie attraverso il browser"
+msgstr "How to manage cookie preferences through the browser"
+
+msgid "Impostazioni → Privacy"
+msgstr "Settings → Privacy"
+
+msgid "Guida"
+msgstr "Guide"
+
+msgid "Opzioni → Privacy"
+msgstr "Options → Privacy"
+
+msgid "Preferenze → Privacy"
+msgstr "Preferences → Privacy"
+
+msgid "Impostazioni → Cookie"
+msgstr "Settings → Cookies"
+
+msgid "Conseguenze della disabilitazione"
+msgstr "Consequences of disabling cookies"
+
+msgid "La disabilitazione dei <strong>cookie tecnici</strong> può compromettere alcune funzionalità del sito. La disabilitazione dei <strong>cookie analitici</strong> non influisce sulla navigazione, ma impedisce di raccogliere statistiche anonime per migliorare il servizio."
+msgstr "Disabling <strong>technical cookies</strong> may compromise some of the site's functionality. Disabling <strong>analytical cookies</strong> does not affect browsing, but prevents the collection of anonymous statistics to improve the service."
+
+msgid "Gestisci le tue preferenze"
+msgstr "Manage your preferences"
+
+msgid "Puoi modificare le tue preferenze sui cookie in qualsiasi momento"
+msgstr "You can change your cookie preferences at any time"
+
+msgid "Gestisci Cookie"
+msgstr "Manage Cookies"
+
+msgid "Funzionalità di gestione cookie in fase di implementazione.\n\nAttualmente puoi gestire i cookie attraverso le impostazioni del tuo browser."
+msgstr "Cookie management functionality currently being implemented.\n\nYou can currently manage cookies through your browser settings."
+
+msgid "<strong>Nota:</strong> Per ulteriori informazioni sul trattamento dei dati personali, consultare la <a href=\"/privacy-policy\" style=\"color: #01579b; font-weight: 600;\">Privacy Policy</a> e le <a href=\"/note-legali\" style=\"color: #01579b; font-weight: 600;\">Note Legali</a> del sito. Ultimo aggiornamento: Dicembre 2025"
+msgstr "<strong>Note:</strong> For further information on the processing of personal data, please consult the <a href=\"/privacy-policy\" style=\"color: #01579b; font-weight: 600;\">Privacy Policy</a> and the <a href=\"/note-legali\" style=\"color: #01579b; font-weight: 600;\">Legal Notice</a> of the site. Last update: December 2025"

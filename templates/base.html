@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="{{ session.get('lang', 'it') }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    {% block meta_tags %}
+    <meta name="description" content="Portale della Digitalizzazione del patrimonio culturale - Progetti e opere pubbliche in corso">
+    <meta name="keywords" content="cantieri, opere pubbliche, progetti, infrastrutture, patrimonio culturale">
+    <meta name="author" content="Regione Siciliana">
+    {% endblock %}
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="{% block og_title %}Portale della Digitalizzazione del patrimonio culturale{% endblock %}">
+    <meta property="og:description" content="Monitora l'avanzamento dei cantieri e delle opere pubbliche">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.esempio.it">
+    <meta property="og:image" content="/static/img/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png">
+    
+    <!-- Title -->
+    <title>{% block title %}Digitalizzazione del patrimonio culturale{% endblock %}</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Cookie Consent CSS — caricato prima di tutto il resto per evitare FOUC -->
+    <link rel="stylesheet" href="/static/css/cookie-consent.css">
+    
+    <!-- Google Fonts - Titillium Web -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="site-header">
+        <!-- Header Top Bar -->
+        
+        
+        <!-- Header Main -->
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <!-- Logo and Site Title -->
+                    <div class="site-logo">
+                        <a href="/">
+                            <img src="/static/img/logo-regione-sicilia.png" alt="Logo Regione Siciliana" width="60" height="60">
+                        </a>
+                        <div>
+                            <h1 class="site-title">
+                                <a href="/" style="color: inherit; text-decoration: none;">
+                                    {{ _("Digitalizzazione del patrimonio culturale") }}
+                                </a>
+                            </h1>
+                            <p class="site-tagline" style="margin: 0; font-size: 0.875rem; color: var(--text-secondary);">
+                                {{ _("Trasparenza e innovazione") }}
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Search and Tools -->
+                    <div class="header-tools">
+                        <!-- Language Switcher -->
+                        <div class="lang-switcher">
+                            <a href="{{ url_for('set_language', lang='it') }}" 
+                               class="lang-btn {% if session.get('lang', 'it') == 'it' %}active{% endif %}">IT</a>
+                            <span class="lang-sep">|</span>
+                            <a href="{{ url_for('set_language', lang='en') }}" 
+                               class="lang-btn {% if session.get('lang', 'it') == 'en' %}active{% endif %}">EN</a>
+                        </div>
+
+                        <button class="mobile-menu-toggle" aria-label="Menu di navigazione" aria-expanded="false">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Navigation -->
+        <nav class="main-nav" aria-label="Navigazione principale">
+            <div class="container">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link {% block nav_home %}{% endblock %}">
+                            <i class="fas fa-home"></i> {{ _("Home") }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/progetto" class="nav-link {% block nav_progetto %}{% endblock %}">
+                            <i class="fas fa-project-diagram"></i> {{ _("Progetto") }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/cantieri" class="nav-link {% block nav_cantieri %}{% endblock %}">
+                            <i class="fas fa-hard-hat"></i> {{ _("I Cantieri") }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/statistiche" class="nav-link {% block nav_statistiche %}{% endblock %}">
+                            <i class="fas fa-chart-line"></i> {{ _("Statistiche") }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/mappa" class="nav-link {% block nav_mappa %}{% endblock %}">
+                            <i class="fas fa-map-marked-alt"></i> {{ _("Mappe") }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contatti" class="nav-link {% block nav_contatti %}{% endblock %}">
+                            <i class="fas fa-envelope"></i> {{ _("Contatti") }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- BREADCRUMB -->
+    {% block breadcrumb %}
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="/"><i class="fas fa-home"></i> {{ _("Home") }}</a>
+                </li>
+            </ol>
+        </div>
+    </nav>
+    {% endblock %}
+    
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
+        {% block content %}
+        <!-- Il contenuto specifico di ogni pagina va qui -->
+        {% endblock %}
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- About Section -->
+                <div class="footer-section">
+                    <h3>{{ _("Digitalizzazione del patrimonio culturale") }}</h3>
+                    <p>
+                        {{ _("Il portale istituzionale per il monitoraggio trasparente delle opere pubbliche e dei cantieri sul territorio. Un servizio al cittadino per la massima trasparenza.") }}   
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>{{ _("Link Rapidi") }}</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/cantieri">{{ _("I Cantieri") }}</a></li>
+                        <li><a href="/progetto">{{ _("Progetto") }}</a></li>
+                        <li><a href="/statistiche">{{ _("Statistiche") }}</a></li>
+                        <li><a href="/mappa">{{ _("Mappe") }}</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div class="footer-section">
+                    <h3>{{ _("Risorse") }}</h3>
+                    <ul class="footer-links">
+                        <li><a href="/amministrazione-trasparente">{{ _("Amministrazione Trasparente") }}</a></li>
+                        <li><a href="/privacy-policy">{{ _("Privacy Policy") }}</a></li>
+                        <li><a href="/note-legali">{{ _("Note Legali") }}</a></li>
+                        <li><a href="/cookie-policy">{{ _("Cookie Policy") }}</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3>{{ _("Contatti") }}</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Via Roma 123, 90100 Palermo
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+390123456789">+39 012 345 6789</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@portale.it">info@portale.it</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            {{ _("Lun-Ven: 9:00 - 17:00") }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+                        <!-- Footer Logos -->
+            <div class="footer-logos">
+                <img src="/static/img/logo-next-gen.png" alt="Next Generation EU" style="height: 110px;">
+                <img src="/static/img/logo-ministero-della-cultura.png" alt="Ministero della Cultura">
+                <img src="/static/img/logo-digital-library.png" alt="Digital Library">
+                <img src="/static/img/logo-regione-siciliana.png" alt="Regione Siciliana" style="height: 60px;">
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2025 Digitalizzazione del patrimonio culturale - Regione Siciliana. Tutti i diritti riservati.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="/static/js/script.js"></script>
+    <script src="/static/js/cookie-consent.js"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,616 @@
+{% extends "base.html" %}
+
+{% block title %}Il Progetto - Digitalizzazione del patrimonio culturale{% endblock %}
+
+{% block meta_tags %}
+<meta name="description" content="Il progetto di digitalizzazione del patrimonio culturale della Regione Siciliana nel quadro del PNRR">
+<meta name="keywords" content="digitalizzazione, patrimonio culturale, sicilia, PNRR, cultura 4.0, beni culturali">
+{% endblock %}
+
+{% block nav_progetto %}active{% endblock %}
+
+{% block breadcrumb %}
+<nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+                <a href="/"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <strong>{{_("Il Progetto") }}</strong>
+            </li>
+        </ol>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>{{ _("Digitalizzazione del Patrimonio Culturale") }}</h1>
+            <p>
+                {{_("Un progetto strategico della Regione Siciliana per la trasformazione digitale del patrimonio culturale, finanziato dal PNRR nell'ambito della Missione 1 - Cultura 4.0") }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Introduzione e Dati Chiave -->
+<section class="section">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: start;">
+            <div>
+                <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">{{ _("Il Progetto") }}</h2>
+                
+                <div style="line-height: 1.8; color: var(--text-primary);">
+                    <p style="margin-bottom: 1.5rem; font-size: 1.125rem;">
+                        {{_("Il progetto <strong>\"Digitalizzazione del Patrimonio Culturale - Regione Siciliana\"</strong> si inserisce nel quadro del <strong>Piano Nazionale di Ripresa e Resilienza (PNRR)</strong>, Missione 1 - Digitalizzazione, Innovazione, Competitività e Cultura, Componente 3 - Cultura 4.0, Investimento 1.1 \"Strategie digitali e piattaforme per il patrimonio culturale\".") }}
+                    </p>
+                    
+                    <p style="margin-bottom: 1.5rem;">
+                        {{_("Si tratta di un <strong>intervento di ampia portata strategica</strong>, volto a promuovere la trasformazione digitale del patrimonio culturale attraverso la creazione, la gestione e la valorizzazione di risorse digitali interoperabili, accessibili e di alta qualità.") }}
+                    </p>
+                    
+                    <p style="margin-bottom: 1.5rem;">
+                        {{_("Il progetto, coordinato dal <strong>Ministero della Cultura</strong> tramite l'Istituto Centrale per la Digitalizzazione del Patrimonio Culturale - Digital Library, rappresenta un pilastro fondamentale della strategia nazionale \"Cultura 4.0\" e un contributo diretto agli obiettivi europei di innovazione e transizione digitale.") }}
+                    </p>
+                </div>
+            </div>
+            
+            <div style="background: var(--bg-light); padding: 2rem; border-radius: var(--radius-lg); position: sticky; top: 100px;">
+                <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem; color: var(--text-primary);">
+                    <i class="fas fa-info-circle"></i> {{ _("Dati del Progetto") }}
+                </h3>
+                
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div>
+                        <div style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.25rem;">{{ _("Soggetto Attuatore") }}</div>
+                        <div style="font-weight: 600;">{{ _("Regione Siciliana") }}</div>
+                    </div>
+                    
+                    <div>
+                        <div style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.25rem;">{{ _("Direzione") }}</div>
+                        <div style="font-weight: 600;">{{ _("DG Beni Culturali e Identità Siciliana") }}</div>
+                    </div>
+                    
+                    <div>
+                        <div style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.25rem;">{{ _("Scadenza") }}</div>
+                        <div style="font-weight: 600;">{{ _("Dicembre 2025") }}</div>
+                    </div>
+                    
+                    <div>
+                        <div style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.25rem;">{{ _("Dotazione Finanziaria") }}</div>
+                        <div style="font-weight: 700; font-size: 1.5rem; color: var(--text-primary);">€7.571.738,10</div>
+                    </div>
+                    
+                    <div>
+                        <div style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.25rem;">{{ _("Beni da Digitalizzare") }}</div>
+                        <div style="font-weight: 700; font-size: 1.5rem; color: var(--text-primary);">1.904.538</div>
+                    </div>
+                    
+                    <div>
+                        <div style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.25rem;">{{ _("Finanziamento") }}</div>
+                        <div style="font-weight: 600;">{{ _("PNRR - Fondi UE") }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contesto e Finalità -->
+<section class="section section-alt">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("Contesto e Finalità del Progetto") }}</h2>
+        <p class="section-subtitle" style="text-align: center; margin: 0 auto 3rem auto; white-space: nowrap;">
+            {{ _("La digitalizzazione come strumento strategico per preservare e valorizzare il patrimonio culturale") }}
+        </p>
+        
+        <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); margin-bottom: 2rem;">
+            <div style="line-height: 1.8; color: var(--text-primary);">
+                <p style="margin-bottom: 1.5rem;">
+                    {{ _("La <strong>digitalizzazione del patrimonio culturale</strong> è oggi una priorità strategica per l'Italia e per l'Unione Europea, poiché consente di preservare e valorizzare i beni culturali, favorendone l'accesso, la conoscenza e la fruizione da parte di cittadini, studiosi e istituzioni.") }}
+                </p>
+                
+                <p style="margin-bottom: 1.5rem;">
+                    {{ _("Nel quadro del <strong>Piano Nazionale di Digitalizzazione del Patrimonio Culturale (PND)</strong>, elaborato dalla Digital Library del Ministero della Cultura, è stato definito un modello operativo e metodologico comune per garantire uniformità, qualità e interoperabilità dei processi di digitalizzazione sull'intero territorio nazionale.") }}
+                </p>
+                
+                <p style="margin-bottom: 1.5rem;">
+                    {{ _("La Regione Siciliana, in qualità di soggetto attuatore, ha ricevuto una dotazione finanziaria complessiva pari a <strong>€ 7.571.738,10</strong>, destinata alla digitalizzazione di un numero minimo di <strong>1.892.935 beni culturali</strong> entro dicembre 2025.") }}
+                </p>
+                
+                <p style="margin-bottom: 0;">
+                    {{ _("L'obiettivo generale è realizzare la <strong>completa digitalizzazione e descrizione</strong> di archivi fotografici e oggetti museali conservati presso i principali musei, gallerie e soprintendenze dell'isola, restituendo così in formato digitale una parte significativa del patrimonio culturale siciliano.") }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ambito di Intervento -->
+<section class="section">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("Ambito di Intervento") }}</h2>
+        <p class="section-subtitle" style="text-align: center; margin: 0 auto 3rem auto;">
+            {{ _("Le categorie di beni culturali interessati dal progetto di digitalizzazione") }}
+        </p>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
+            <!-- Categoria 1: Foto -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--primary-color);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="width: 60px; height: 60px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-camera-retro" style="font-size: 1.75rem; color: white;"></i>
+                    </div>
+                    <h3 style="font-size: 1.5rem; margin: 0; color: var(--text-primary);">{{ _("Archivi Fotografici") }}</h3>
+                </div>
+                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+                    {{ _("Digitalizzazione completa di archivi fotografici storici e contemporanei, comprendenti diverse tipologie di supporti.") }}
+                </p>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Positivi fotografici") }}</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Negativi e lastre") }}</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Diapositive") }}</li>
+                    <li style="padding: 0.5rem 0;">• {{ _("Unicum e disegni fotografici") }}\</li>
+                </ul>
+            </div>
+            
+            <!-- Categoria 2: Oggetti Museali -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--success-color);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="width: 60px; height: 60px; background: var(--success-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-landmark" style="font-size: 1.75rem; color: white;"></i>
+                    </div>
+                    <h3 style="font-size: 1.5rem; margin: 0; color: var(--text-primary);">{{ _("Oggetti Museali") }}</h3>
+                </div>
+                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+                    {{ _("Repertorio completo dei beni conservati nei musei e nelle soprintendenze siciliane.") }}
+                </p>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Beni archeologici") }}</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Opere storico-artistiche") }}</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Materiali grafici e tessili") }}</li>
+                    <li style="padding: 0.5rem 0;">• {{ _("Beni naturalistici e demoetnoantropologici") }}</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="background: var(--bg-light); padding: 2rem; border-radius: var(--radius-md); border-left: 4px solid var(--info-color);">
+            <div style="display: flex; align-items: start; gap: 1rem;">
+                <i class="fas fa-info-circle" style="font-size: 1.5rem; color: var(--info-color); margin-top: 0.25rem;"></i>
+                <div>
+                    <h4 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--text-primary);">{{ _("Copertura Territoriale") }}</h4>
+                    <p style="color: var(--text-secondary); margin: 0;">
+                        {{ _("L'attività di digitalizzazione coinvolge numerosi istituti culturali distribuiti su tutto il territorio regionale, dai grandi musei archeologici e storico-artistici ai centri di conservazione fotografica, per un totale di <strong>1.904.538 oggetti da digitalizzare</strong>. L'intervento è suddiviso in <strong>due lotti geografici</strong>, che coprono in modo capillare le diverse province siciliane.") }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Distribuzione Territoriale -->
+<section class="section section-alt">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("Distribuzione Territoriale") }}</h2>
+        <p class="section-subtitle" style="text-align: center; margin: 0 auto 3rem auto;">
+            {{ _("Suddivisione per provincia dei beni da digitalizzare") }}
+        </p>
+        
+        <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background: var(--bg-light);">
+                            <th style="padding: 1rem; text-align: left; font-weight: 600; border-bottom: 2px solid var(--border-color);">{{ _("Provincia") }}</th>
+                            <th style="padding: 1rem; text-align: center; font-weight: 600; border-bottom: 2px solid var(--border-color);">{{ _("Beni da Digitalizzare") }}</th>
+                            <th style="padding: 1rem; text-align: center; font-weight: 600; border-bottom: 2px solid var(--border-color);">{{ _("Lotto") }}</th>
+                            <th style="padding: 1rem; text-align: right; font-weight: 600; border-bottom: 2px solid var(--border-color);">{{ _("%% sul Totale") }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 1rem;"><strong>Agrigento (AG)</strong></td>
+                            <td style="padding: 1rem; text-align: center;">369.400</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="background: var(--info-color); color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-weight: 600;">{{ _("Lotto 1") }}</span></td>
+                            <td style="padding: 1rem; text-align: right; color: var(--text-secondary);">19.4%</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 1rem;"><strong>Caltanissetta (CL)</strong></td>
+                            <td style="padding: 1rem; text-align: center;">45.740</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="background: var(--info-color); color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-weight: 600;">{{ _("Lotto 1") }}</span></td>
+                            <td style="padding: 1rem; text-align: right; color: var(--text-secondary);">2.4%</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 1rem;"><strong>Enna (EN)</strong></td>
+                            <td style="padding: 1rem; text-align: center;">18.350</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="background: var(--info-color); color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-weight: 600;">{{ _("Lotto 1") }}</span></td>
+                            <td style="padding: 1rem; text-align: right; color: var(--text-secondary);">1.0%</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 1rem;"><strong>Messina (ME)</strong></td>
+                            <td style="padding: 1rem; text-align: center;">110.854</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="background: var(--info-color); color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-weight: 600;">{{ _("Lotto 1") }}</span></td>
+                            <td style="padding: 1rem; text-align: right; color: var(--text-secondary);">5.8%</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 1rem;"><strong>Palermo (PA)</strong></td>
+                            <td style="padding: 1rem; text-align: center;">281.627</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="background: var(--info-color); color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-weight: 600;">{{ _("Lotto 1") }}</span></td>
+                            <td style="padding: 1rem; text-align: right; color: var(--text-secondary);">14.8%</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 1rem;"><strong>Trapani (TP)</strong></td>
+                            <td style="padding: 1rem; text-align: center;">42.380</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="background: var(--info-color); color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-weight: 600;">{{ _("Lotto 1") }}</span></td>
+                            <td style="padding: 1rem; text-align: right; color: var(--text-secondary);">2.2%</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 1rem;"><strong>Catania (CT)</strong></td>
+                            <td style="padding: 1rem; text-align: center;">180.103</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="background: var(--success-color); color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-weight: 600;">{{ _("Lotto 2") }}</span></td>
+                            <td style="padding: 1rem; text-align: right; color: var(--text-secondary);">9.5%</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 1rem;"><strong>Ragusa (RG)</strong></td>
+                            <td style="padding: 1rem; text-align: center;">32.450</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="background: var(--success-color); color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-weight: 600;">{{ _("Lotto 2") }}</span></td>
+                            <td style="padding: 1rem; text-align: right; color: var(--text-secondary);">1.7%</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 1rem;"><strong>Siracusa (SR)</strong></td>
+                            <td style="padding: 1rem; text-align: center;">823.634</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="background: var(--success-color); color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-weight: 600;">{{ _("Lotto 2") }}</span></td>
+                            <td style="padding: 1rem; text-align: right; color: var(--text-secondary);">43.2%</td>
+                        </tr>
+                        <tr style="background: var(--bg-light); font-weight: 700;">
+                            <td style="padding: 1rem;"><strong>{{ _("TOTALE") }}</strong></td>
+                            <td style="padding: 1rem; text-align: center; color: var(--text-primary); font-size: 1.125rem;">1.904.538</td>
+                            <td style="padding: 1rem; text-align: center;">—</td>
+                            <td style="padding: 1rem; text-align: right;">100%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div style="margin-top: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div style="background: var(--bg-light); padding: 1.5rem; border-radius: var(--radius-md);">
+                    <h4 style="font-size: 1rem; margin-bottom: 1rem; color: var(--info-color);"><i class="fas fa-map-marker-alt"></i> {{ _("Lotto 1") }}</h4>
+                    <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0.5rem;">{{ _("Province: AG, CL, EN, ME, PA, TP") }}</p>
+                    <p style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin: 0;">868.351 beni (45.6%)</p>
+                </div>
+                <div style="background: var(--bg-light); padding: 1.5rem; border-radius: var(--radius-md);">
+                    <h4 style="font-size: 1rem; margin-bottom: 1rem; color: var(--success-color);"><i class="fas fa-map-marker-alt"></i> {{ _("Lotto 2") }}</h4>
+                    <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0.5rem;">{{ _("Province: CT, RG, SR") }}</p>
+                    <p style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin: 0;">1.036.187 beni (54.4%)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Struttura e Organizzazione -->
+<section class="section">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("Struttura e Organizzazione del Progetto") }}</h2>
+        <p class="section-subtitle" style="text-align: center; margin: 0 auto 3rem auto;">
+            {{ _("Il modello operativo e i cantieri di digitalizzazione") }}
+        </p>
+        
+        <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); margin-bottom: 2rem;">
+            <p style="line-height: 1.8; color: var(--text-primary); margin-bottom: 1.5rem;">
+                {{ _("La realizzazione del progetto avviene mediante <strong>accordi quadro</strong> stipulati tra la Regione Siciliana (Direzione Generale dei Beni Culturali e dell'Identità Siciliana) e gli operatori economici aggiudicatari, selezionati attraverso una procedura di gara aperta ai sensi degli articoli 59, 71 e 132 del D.Lgs. 36/2023 - Codice dei contratti pubblici.") }}
+            </p>
+            
+            <p style="line-height: 1.8; color: var(--text-primary); margin-bottom: 1.5rem;">
+                {{ _("Gli appaltatori sono incaricati dell'esecuzione dei servizi di digitalizzazione del patrimonio culturale nelle due categorie previste, operando nel pieno rispetto delle specifiche tecniche e dei modelli operativi stabiliti dal Ministero della Cultura.") }}
+            </p>
+            
+            <p style="line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">
+                {{ _("Le attività vengono realizzate attraverso veri e propri <strong>\"cantieri di digitalizzazione\"</strong>, che rappresentano le unità operative fondamentali del progetto.") }}
+            </p>
+        </div>
+        
+        <h3 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--text-primary); text-align: center;">{{ _("Workflow del Cantiere di Digitalizzazione") }}</h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+            <!-- Fase 1 -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); border-top: 4px solid var(--primary-color);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div style="width: 50px; height: 50px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.25rem;">1</div>
+                    <h4 style="font-size: 1.125rem; margin: 0; color: var(--text-primary);">{{ _("Allestimento") }}</h4>
+                </div>
+                <p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">
+                    {{ _("Allestimento del cantiere e ispezione preliminare degli ambienti di lavoro presso gli istituti detentori dei beni.") }}
+                </p>
+            </div>
+            
+            <!-- Fase 2 -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); border-top: 4px solid var(--success-color);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div style="width: 50px; height: 50px; background: var(--success-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.25rem;">2</div>
+                    <h4 style="font-size: 1.125rem; margin: 0; color: var(--text-primary);">{{ _("Preparazione") }}</h4>
+                </div>
+                <p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">
+                    {{ _("Preparazione e normalizzazione del materiale: pulizia, posizionamento, controllo dello stato di conservazione.") }}
+                </p>
+            </div>
+            
+            <!-- Fase 3 -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); border-top: 4px solid var(--info-color);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div style="width: 50px; height: 50px; background: var(--info-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.25rem;">3</div>
+                    <h4 style="font-size: 1.125rem; margin: 0; color: var(--text-primary);">{{ _("Catalogazione") }}</h4>
+                </div>
+                <p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">
+                    {{ _("Descrizione e catalogazione speditiva dei beni secondo gli standard ICCD (Istituto Centrale per il Catalogo e la Documentazione).") }}
+                </p>
+            </div>
+            
+            <!-- Fase 4 -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); border-top: 4px solid var(--warning-color);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div style="width: 50px; height: 50px; background: var(--warning-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.25rem;">4</div>
+                    <h4 style="font-size: 1.125rem; margin: 0; color: var(--text-primary);">{{ _("Digitalizzazione") }}</h4>
+                </div>
+                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+                    {{ _("Digitalizzazione mediante scanner e fotocamere professionali ad alta risoluzione, nel rispetto delle specifiche tecniche.") }}
+                </p>
+                <div style="background: var(--bg-light); padding: 0.75rem; border-radius: var(--radius-sm); font-size: 0.875rem;">
+                    <strong>{{ _("Standard:") }}</strong> {{ _("Alta risoluzione, formati interoperabili") }}
+                </div>
+            </div>
+            
+            <!-- Fase 5 -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); border-top: 4px solid var(--accent-color);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div style="width: 50px; height: 50px; background: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.25rem;">5</div>
+                    <h4 style="font-size: 1.125rem; margin: 0; color: var(--text-primary);">{{ _("Metadatazione") }}</h4>
+                </div>
+                <p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">
+                    {{ _("Metadatazione delle risorse digitali secondo il profilo METS-ECOMiC per tracciabilità e interoperabilità.") }}
+                </p>
+            </div>
+            
+            <!-- Fase 6 -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); border-top: 4px solid #9c27b0;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div style="width: 50px; height: 50px; background: #9c27b0; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.25rem;">6</div>
+                    <h4 style="font-size: 1.125rem; margin: 0; color: var(--text-primary);">{{ _("Collaudo") }}</h4>
+                </div>
+                <p style="color: var(--text-secondary); line-height: 1.6; margin: 0;">
+                    {{ _("Prototipazione e collaudo per verificare qualità e conformità ai requisiti tecnici e normativi del progetto.") }}
+                </p>
+            </div>
+        </div>
+        
+        <div style="background: var(--bg-light); padding: 2rem; border-radius: var(--radius-md); margin-top: 2rem; border-left: 4px solid var(--primary-color);">
+            <div style="display: flex; align-items: start; gap: 1rem;">
+                <i class="fas fa-user-tie" style="font-size: 1.5rem; color: var(--primary-color); margin-top: 0.25rem;"></i>
+                <div>
+                    <h4 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--text-primary);">{{ _("Supervisione e Coordinamento") }}</h4>
+                    <p style="color: var(--text-secondary); margin: 0;">
+                        {{ _("Ogni attività è svolta sotto la supervisione di un <strong>Responsabile di Istituto (DEC)</strong> e di un <strong>Responsabile tecnico</strong> nominato dall'appaltatore, con il coordinamento della Stazione Appaltante regionale e della Digital Library.") }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modello Operativo e Strumenti -->
+<section class="section section-alt">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("Modello Operativo e Strumenti Digitali") }}</h2>
+        <p class="section-subtitle" style="text-align: center; margin: 0 auto 3rem auto;">
+            {{ _("Metodologia PM² e piattaforme per il monitoraggio e la gestione") }}
+        </p>
+        
+        <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); margin-bottom: 2rem;">
+            <p style="line-height: 1.8; color: var(--text-primary); margin-bottom: 1.5rem;">
+                {{ _("Il progetto adotta il <strong>Modello Operativo per la gestione dei progetti di digitalizzazione</strong>, elaborato dal Ministero della Cultura e basato sulla metodologia di project management <strong>PM²</strong>, sviluppata dalla Commissione Europea.") }}
+            </p>
+            
+            <p style="line-height: 1.8; color: var(--text-primary); margin-bottom: 1.5rem;">
+                {{ _("Tale modello definisce in modo chiaro le fasi del ciclo di vita del progetto (avvio, pianificazione, esecuzione, monitoraggio e chiusura) nonché le responsabilità, i deliverable e le milestone di ciascun cantiere.") }}
+            </p>
+            
+            <p style="line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">
+                {{ _("Al fine di garantire il <strong>monitoraggio e la trasparenza</strong> dell'intero processo, è prevista l'adozione di una piattaforma attraverso cui tutti gli attori coinvolti (Regione, Ministero, appaltatori, musei, soprintendenze) possono condividere dati, verificare lo stato di avanzamento, gestire i flussi documentali e assicurare la conformità agli standard di qualità e sicurezza.") }}
+            </p>
+        </div>
+        
+        <h3 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--text-primary); text-align: center;">{{ _("Principi Fondamentali del PNRR") }}</h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <!-- Principio 1 -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                <div style="width: 50px; height: 50px; background: var(--bg-light); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                    <i class="fas fa-leaf" style="font-size: 1.5rem; color: var(--success-color);"></i>
+                </div>
+                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: var(--text-primary);">DNSH</h4>
+                <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.938rem;">
+                    {{ _("Principio <strong>Do No Significant Harm</strong>: sostenibilità ambientale delle azioni e minimizzazione degli impatti negativi.") }}
+                </p>
+            </div>
+            
+            <!-- Principio 2 -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                <div style="width: 50px; height: 50px; background: var(--bg-light); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                    <i class="fas fa-equals" style="font-size: 1.5rem; color: var(--primary-color);"></i>
+                </div>
+                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: var(--text-primary);">{{ _("Parità e Inclusione") }}</h4>
+                <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.938rem;">
+                    {{ _("Garanzia di <strong>pari opportunità</strong> nell'attuazione delle attività e nella composizione dei gruppi di lavoro.") }}
+                </p>
+            </div>
+            
+            <!-- Principio 3 -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                <div style="width: 50px; height: 50px; background: var(--bg-light); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                    <i class="fas fa-clipboard-check" style="font-size: 1.5rem; color: var(--info-color);"></i>
+                </div>
+                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: var(--text-primary);">{{ _("Tracciabilità") }}</h4>
+                <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.938rem;">
+                    {{ _("<strong>Trasparenza e regolarità contabile</strong> nell'utilizzo delle risorse europee.") }}
+                </p>
+            </div>
+            
+            <!-- Principio 4 -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                <div style="width: 50px; height: 50px; background: var(--bg-light); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                    <i class="fas fa-shield-alt" style="font-size: 1.5rem; color: var(--warning-color);"></i>
+                </div>
+                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: var(--text-primary);">{{ _("Conformità Normativa") }}</h4>
+                <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.938rem;">
+                    {{ _("Rispetto della normativa su <strong>appalti pubblici, sicurezza</strong> nei luoghi di lavoro e <strong>tutela dei dati personali</strong>.") }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Valore e Impatto -->
+<section class="section">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("Valore e Impatto del Progetto") }}</h2>
+        <p class="section-subtitle" style="text-align: center; margin: 0 auto 3rem auto;">
+            {{ _("I benefici strategici per il territorio e la comunità") }}
+        </p>
+        
+        <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+            <p style="line-height: 1.8; color: var(--text-primary); margin-bottom: 1.5rem; font-size: 1.125rem;">
+                {{ _("La <strong>digitalizzazione del patrimonio culturale siciliano</strong> rappresenta un investimento strutturale nella conoscenza, nella tutela e nella valorizzazione del patrimonio artistico e storico dell'isola.") }}
+            </p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                <div>
+                    <h4 style="font-size: 1.125rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-archive" style="color: var(--primary-color);"></i>
+                        {{ _("Conservazione e Tutela") }}
+                    </h4>
+                    <ul style="line-height: 2; color: var(--text-secondary);">
+                        <li>• {{ _("Conservazione digitale permanente dei beni") }}</li>
+                        <li>• {{ _("Riduzione del rischio di deterioramento fisico") }}</li>
+                        <li>• {{ _("Creazione di backup digitali ad alta risoluzione") }}</li>
+                        <li>• {{ _("Documentazione scientifica del patrimonio") }}</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="font-size: 1.125rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-users" style="color: var(--success-color);"></i>
+                        {{ _("Accesso e Fruizione") }}
+                    </h4>
+                    <ul style="line-height: 2; color: var(--text-secondary);">
+                        <li>• {{ _("Accesso remoto al patrimonio culturale") }}</li>
+                        <li>• {{ _("Diffusione della cultura digitale") }}</li>
+                        <li>• {{ _("Supporto alla ricerca scientifica") }}</li>
+                        <li>• {{ _("Strumenti per la didattica innovativa") }}</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="font-size: 1.125rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-chart-line" style="color: var(--info-color);"></i>
+                        {{ _("Sviluppo Economico") }}
+                    </h4>
+                    <ul style="line-height: 2; color: var(--text-secondary);">
+                        <li>• {{ _("Promozione del turismo culturale") }}</li>
+                        <li>• {{ _("Creazione di nuove opportunità di lavoro") }}</li>
+                        <li>• {{ _("Sviluppo di competenze digitali specialistiche") }}</li>
+                        <li>• {{ _("Valorizzazione economica del territorio") }}</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="font-size: 1.125rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-network-wired" style="color: var(--warning-color);"></i>
+                        {{ _("Integrazione Sistemica") }}
+                    </h4>
+                    <ul style="line-height: 2; color: var(--text-secondary);">
+                        <li>• {{ _("Integrazione nell'ecosistema digitale nazionale") }}</li>
+                        <li>• {{ _("Interoperabilità con piattaforme europee") }}</li>
+                        <li>• {{ _("Standard condivisi e best practices") }}</li>
+                        <li>• {{ _("Contributo alla strategia Cultura 4.0") }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div style="background: linear-gradient(135deg, var(--primary-color), var(--text-primary)); padding: 3rem; border-radius: var(--radius-lg); margin-top: 3rem; color: white; text-align: center;">
+            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">{{ _("Ecosistema Digitale Nazionale") }}</h3>
+            <p style="font-size: 1.125rem; opacity: 0.95; max-width: 800px; margin: 0 auto;">
+                {{ _("Grazie a questo intervento, la Regione Siciliana contribuisce attivamente alla costruzione di un <strong>ecosistema digitale nazionale della cultura</strong>, in cui la tecnologia diventa uno strumento di tutela, valorizzazione e innovazione, proiettando il patrimonio culturale siciliano nel futuro della fruizione digitale europea.") }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="section section-alt">
+    <div class="container">
+        <div style="background: white; padding: 4rem 3rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); text-align: center;">
+            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-primary);">{{ _("Esplora i Cantieri Attivi") }}</h2>
+            <p style="font-size: 1.125rem; margin-bottom: 2rem; color: var(--text-secondary); max-width: 700px; margin-left: auto; margin-right: auto;">
+                {{ _("Scopri lo stato di avanzamento dei cantieri di digitalizzazione attivi sul territorio regionale e accedi alla documentazione tecnica") }}
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="/cantieri" class="btn btn-secondary btn-large">
+                    <i class="fas fa-hard-hat"></i> {{ _("Visualizza i Cantieri") }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+/* Stili specifici per la pagina progetto */
+.section h2.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tabella responsive */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.875rem;
+    }
+    
+    table th,
+    table td {
+        padding: 0.75rem 0.5rem !important;
+    }
+}
+
+/* Hover effects per le card */
+.section div[style*="box-shadow: var(--shadow-sm)"] {
+    transition: all 0.3s ease;
+}
+
+.section div[style*="box-shadow: var(--shadow-sm)"]:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg) !important;
+}
+
+/* Timeline responsive */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 15px;
+    }
+    
+    .timeline-item {
+        padding-left: 50px;
+    }
+    
+    .timeline-marker {
+        left: 5px;
+    }
+}
+</style>
+{% endblock %}

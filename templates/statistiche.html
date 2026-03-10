@@ -1,0 +1,202 @@
+{% extends "base.html" %}
+
+{% block title %}Statistiche - Digitalizzazione del patrimonio culturale{% endblock %}
+
+{% block meta_tags %}
+<meta name="description" content="Statistiche e dati sul progetto di digitalizzazione del patrimonio culturale della Regione Siciliana">
+<meta name="keywords" content="statistiche, dati, digitalizzazione, patrimonio culturale, sicilia, analisi, monitoraggio">
+{% endblock %}
+
+{% block nav_statistiche %}active{% endblock %}
+
+{% block breadcrumb %}
+<nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+                <a href="/"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <strong>{{ _("Statistiche") }}</strong>
+            </li>
+        </ol>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>{{ _("Statistiche e Dati") }}</h1>
+            <p>
+                {{ _("Analisi quantitative e monitoraggio dell'avanzamento del progetto di digitalizzazione del patrimonio culturale della Regione Siciliana") }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Sezione In Costruzione -->
+<section class="section">
+    <div class="container">
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <!-- Icona principale -->
+            <div style="margin-bottom: 2rem;">
+                <i class="fas fa-chart-line" style="font-size: 5rem; color: var(--primary-color); opacity: 0.3;"></i>
+            </div>
+            
+            <!-- Titolo -->
+            <h2 class="section-title" style="margin-bottom: 1.5rem;">
+                {{ _("Sezione in Sviluppo") }}
+            </h2>
+            
+            <!-- Descrizione -->
+            <div style="background: var(--bg-light); padding: 2.5rem; border-radius: var(--radius-lg); margin-bottom: 3rem;">
+                <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 1.5rem;">
+                    {{ _("La sezione <strong>Statistiche</strong> è attualmente in fase di sviluppo e sarà presto disponibile con dati completi e aggiornati sul progetto di digitalizzazione.") }}
+                </p>
+                
+                <p style="font-size: 1rem; line-height: 1.8; color: var(--text-secondary);">
+                    {{ _("Stiamo lavorando per offrirti una panoramica dettagliata dell'avanzamento del progetto attraverso dashboard interattive e visualizzazioni dei dati.") }}
+                </p>
+            </div>
+            
+            <!-- Contenuti Futuri -->
+            <div style="text-align: left; margin-top: 3rem;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 2rem; text-align: center; color: var(--text-primary);">
+                    <i class="fas fa-clipboard-list"></i> {{ _("Cosa Troverai in Questa Sezione") }}
+                </h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                    <!-- Card 1 -->
+                    <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 4px solid var(--primary-color);">
+                        <div style="display: flex; align-items: start; gap: 1rem;">
+                            <i class="fas fa-chart-bar" style="font-size: 2rem; color: var(--primary-color); margin-top: 0.25rem;"></i>
+                            <div>
+                                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: var(--text-primary);">
+                                    {{ _("Avanzamento Generale") }}
+                                </h4>
+                                <p style="font-size: 0.9375rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
+                                    {{ _("Percentuale di completamento del progetto, numero di beni digitalizzati e timeline di avanzamento") }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 4px solid var(--secondary-color);">
+                        <div style="display: flex; align-items: start; gap: 1rem;">
+                            <i class="fas fa-map-marked-alt" style="font-size: 2rem; color: var(--secondary-color); margin-top: 0.25rem;"></i>
+                            <div>
+                                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: var(--text-primary);">
+                                    {{ _("Distribuzione Territoriale") }}
+                                </h4>
+                                <p style="font-size: 0.9375rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
+                                    {{ _("Dati sui cantieri attivi per provincia e distribuzione geografica degli interventi") }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 4px solid var(--accent-color);">
+                        <div style="display: flex; align-items: start; gap: 1rem;">
+                            <i class="fas fa-layer-group" style="font-size: 2rem; color: var(--accent-color); margin-top: 0.25rem;"></i>
+                            <div>
+                                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: var(--text-primary);">
+                                    {{ _("Tipologie di Beni") }}
+                                </h4>
+                                <p style="font-size: 0.9375rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
+                                    {{ _("Classificazione per categorie: fotografie, reperti archeologici, opere storico-artistiche") }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 4px solid #28a745;">
+                        <div style="display: flex; align-items: start; gap: 1rem;">
+                            <i class="fas fa-euro-sign" style="font-size: 2rem; color: #28a745; margin-top: 0.25rem;"></i>
+                            <div>
+                                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: var(--text-primary);">
+                                    {{ _("Investimenti e Risorse") }}
+                                </h4>
+                                <p style="font-size: 0.9375rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
+                                    {{ _("Allocazione delle risorse finanziarie per cantiere e analisi costi-benefici") }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 5 -->
+                    <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 4px solid #17a2b8;">
+                        <div style="display: flex; align-items: start; gap: 1rem;">
+                            <i class="fas fa-clock" style="font-size: 2rem; color: #17a2b8; margin-top: 0.25rem;"></i>
+                            <div>
+                                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: var(--text-primary);">
+                                    {{ _("Timeline e Milestone") }}
+                                </h4>
+                                <p style="font-size: 0.9375rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
+                                    {{ _("Cronologia degli obiettivi raggiunti e pianificazione delle attività future") }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 6 -->
+                    <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 4px solid #6c757d;">
+                        <div style="display: flex; align-items: start; gap: 1rem;">
+                            <i class="fas fa-users" style="font-size: 2rem; color: #6c757d; margin-top: 0.25rem;"></i>
+                            <div>
+                                <h4 style="font-size: 1.125rem; margin-bottom: 0.75rem; color: var(--text-primary);">
+                                    {{ _("Impatto e Accessibilità") }}
+                                </h4>
+                                <p style="font-size: 0.9375rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
+                                    {{ _("Statistiche sull'accesso pubblico ai beni digitalizzati e impatto sociale del progetto") }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div style="margin-top: 4rem; padding: 2rem; background: linear-gradient(135deg, var(--primary-color), var(--text-primary)); border-radius: var(--radius-lg); color: white;">
+                <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">
+                    <i class="fas fa-bell"></i> {{ _("Rimani Aggiornato") }}
+                </h3>
+                <p style="font-size: 1rem; margin-bottom: 1.5rem; opacity: 0.95;">
+                    {{ _("Nel frattempo, puoi esplorare i cantieri attivi e seguire l'avanzamento del progetto") }}
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="/cantieri" class="btn btn-primary btn-large">
+                        <i class="fas fa-hard-hat"></i> {{ _("Esplora i Cantieri") }}
+                    </a>
+                    <a href="/mappa" class="btn btn-primary btn-large">
+                        <i class="fas fa-map-marked-alt"></i> {{ _("Visualizza la Mappa") }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sezione Informazioni di Contatto -->
+<section class="section" style="background: var(--bg-light); padding: 3rem 0;">
+    <div class="container">
+        <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">
+                <i class="fas fa-question-circle"></i> {{ _("Hai Domande?") }}
+            </h3>
+            <p style="font-size: 1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                {{ _("Per informazioni sul progetto di digitalizzazione e sui dati che saranno disponibili, non esitare a contattarci") }}
+            </p>
+            <a href="/contatti" class="btn btn-custom">
+                <i class="fas fa-envelope"></i> {{ _("Contattaci") }}
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

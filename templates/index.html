@@ -1,0 +1,249 @@
+{% extends "base.html" %}
+
+{% block title %}Digitalizzazione del patrimonio culturale - Home{% endblock %}
+
+{% block nav_home %}active{% endblock %}
+
+{% block breadcrumb %}
+<!-- Nessun breadcrumb nella homepage -->
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section with Video -->
+<section class="hero" style="position: relative; overflow: hidden; min-height: 600px;">
+    <!-- Video Background -->
+    <video autoplay muted loop playsinline style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); object-fit: cover; z-index: 0;">
+        <source src="/static/video/beni-culturali.mp4" type="video/mp4">
+        Il tuo browser non supporta il tag video.
+    </video>
+    
+    <!-- Overlay scuro per migliorare leggibilità -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; "></div>
+    
+    <!-- Contenuto Hero -->
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="hero-content">
+            <h1 class="fade-in">{{ _("Digitalizzazione del Patrimonio Culturale") }}</h1>
+            <p class="fade-in" style="font-size: 1.25rem; max-width: 800px;">
+                {{ _("Un progetto completato con successo: oltre 1,9 milioni di beni culturali siciliani digitalizzati e resi accessibili a tutti attraverso tecnologie innovative.") }}
+            </p>
+            <div class="hero-buttons">
+                <a href="/progetto" class="btn btn-primary btn-large">
+                    <i class="fas fa-info-circle"></i> {{ _("Scopri il Progetto") }}
+                </a>
+                <a href="/cantieri" class="btn btn-primary btn-large">
+                    <i class="fas fa-hard-hat"></i> {{ _("Visualizza i Cantieri") }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section - Dati Progetto Completato -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; text-align: center;">
+            <div class="stat-card">
+                <div class="stat-icon" style="font-size: 3rem; color: var(--success-color); margin-bottom: 1rem;">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="stat-number" style="font-size: 2.5rem; font-weight: 700; color: var(--text-primary);">
+                    40
+                </div>
+                <div class="stat-label" style="color: var(--text-secondary); font-size: 1rem;">
+                    {{ _("Cantieri Completati") }}
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon" style="font-size: 3rem; color: var(--info-color); margin-bottom: 1rem;">
+                    <i class="fas fa-images"></i>
+                </div>
+                <div class="stat-number" style="font-size: 2.5rem; font-weight: 700; color: var(--text-primary);">
+                    1.904.538
+                </div>
+                <div class="stat-label" style="color: var(--text-secondary); font-size: 1rem;">
+                    {{ _("Beni Digitalizzati") }}
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem;">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="stat-number" style="font-size: 2.5rem; font-weight: 700; color: var(--text-primary);">
+                    9
+                </div>
+                <div class="stat-label" style="color: var(--text-secondary); font-size: 1rem;">
+                    {{ _("Province Coinvolte") }}
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon" style="font-size: 3rem; color: var(--warning-color); margin-bottom: 1rem;">
+                    <i class="fas fa-euro-sign"></i>
+                </div>
+                <div class="stat-number" style="font-size: 2.5rem; font-weight: 700; color: var(--text-primary);">
+                    €7.6M
+                </div>
+                <div class="stat-label" style="color: var(--text-secondary); font-size: 1rem;">
+                    {{ _("Investimento PNRR") }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Il Progetto Realizzato -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">{{ _("Il Progetto Realizzato") }}</h2>
+            <p class="section-subtitle">
+                {{ _("Un percorso di eccellenza nella digitalizzazione del patrimonio culturale siciliano") }}
+            </p>
+        </div>
+        
+        <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="feature-card" style="text-align: center; padding: 2rem;">
+                <div class="feature-icon" style="font-size: 3rem; color: var(--text-primary); margin-bottom: 1rem;">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">{{ _("Pianificazione Strategica") }}</h3>
+                <p style="color: var(--text-secondary);">
+                    {{ _("Censimento completo di 1.904.538 beni culturali distribuiti in 9 province siciliane, con definizione di priorità e roadmap operativa secondo gli standard del Piano Nazionale di Digitalizzazione.") }}
+                </p>
+            </div>
+            
+            <div class="feature-card" style="text-align: center; padding: 2rem;">
+                <div class="feature-icon" style="font-size: 3rem; color: var(--text-primary); margin-bottom: 1rem;">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">{{ _("Digitalizzazione di Eccellenza") }}</h3>
+                <p style="color: var(--text-secondary);">
+                    {{ _("40 cantieri attivati su tutto il territorio regionale utilizzando tecnologie avanzate: scansione 3D ad alta risoluzione, fotogrammetria professionale e catalogazione secondo standard ICCD.") }}
+                </p>
+            </div>
+            
+            <div class="feature-card" style="text-align: center; padding: 2rem;">
+                <div class="feature-icon" style="font-size: 3rem; color: var(--text-primary); margin-bottom: 1rem;">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">{{ _("Accesso Universale") }}</h3>
+                <p style="color: var(--text-secondary);">
+                    {{ _("Patrimonio culturale reso accessibile online attraverso piattaforme digitali interoperabili, con metadatazione METS-ECOMiC e integrazione nell'ecosistema digitale nazionale ed europeo.") }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Risultati Conseguiti -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">{{ _("Risultati Conseguiti") }}</h2>
+            <p class="section-subtitle">
+                {{ _("I traguardi raggiunti e l'impatto sul territorio") }}
+            </p>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+            <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.75rem;">
+                    <i class="fas fa-archive"></i>
+                    {{ _("Conservazione Digitale") }}
+                </h3>
+                <ul style="line-height: 2; color: var(--text-secondary); list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>- {{ _("Archivi fotografici storici") }}</strong> {{ _("completamente digitalizzati") }}
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>- {{ _("Oggetti museali") }}</strong> {{ _("archeologici e storico-artistici documentati") }}
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>- {{ _("Backup permanenti") }}</strong> {{ _("ad alta risoluzione creati") }}
+                    </li>
+                    <li>
+                        <strong>- {{ _("Standard di qualità") }}</strong> {{ _("nazionali e internazionali rispettati") }}
+                    </li>
+                </ul>
+            </div>
+            
+            <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.75rem;">
+                    <i class="fas fa-chart-line"></i>
+                    {{ _("Impatto Territoriale") }}
+                </h3>
+                <ul style="line-height: 2; color: var(--text-secondary); list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>- {{ _("Patrimonio accessibile") }}</strong> {{ _("da remoto a cittadini e studiosi") }}
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>- {{ _("Competenze digitali") }}</strong> {{ _("sviluppate nel settore culturale") }}
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>- {{ _("Turismo culturale") }}</strong> {{ _("valorizzato attraverso l'innovazione") }}
+                    </li>
+                    <li>
+                        <strong>- {{ _("Ecosistema digitale") }}</strong> {{ _("nazionale integrato") }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section text-center">
+    <div class="container">
+        <div style="background: linear-gradient(135deg, var(--primary-color), var(--text-primary)); padding: 4rem 3rem; border-radius: var(--radius-lg); color: white;">
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">{{ _("Esplora il Patrimonio Digitalizzato") }}</h2>
+            <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.95; max-width: 700px; margin-left: auto; margin-right: auto;">
+                {{ _("Scopri i dettagli del progetto, visualizza i cantieri completati e accedi alla documentazione tecnica") }}
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="/progetto" class="btn btn-primary btn-large">
+                    <i class="fas fa-info-circle"></i> {{ _("Il Progetto") }}
+                </a>
+                <a href="/cantieri" class="btn btn-primary btn-large">
+                    <i class="fas fa-hard-hat"></i> {{ _("I Cantieri") }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+/* Stili per il video hero */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 500px !important;
+    }
+    
+    .hero h1 {
+        font-size: 1.75rem !important;
+    }
+    
+    .hero p {
+        font-size: 1rem !important;
+    }
+}
+
+/* Assicura che il video non causi problemi su mobile */
+video {
+    pointer-events: none;
+}
+
+/* Animazione per le stats */
+.stat-card {
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+</style>
+{% endblock %}

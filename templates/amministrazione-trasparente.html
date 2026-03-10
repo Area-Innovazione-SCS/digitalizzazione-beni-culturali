@@ -1,0 +1,212 @@
+{% extends "base.html" %}
+
+{% block title %}{{ _("Amministrazione Trasparente - Digitalizzazione del patrimonio culturale") }}{% endblock %}
+
+{% block meta_tags %}
+<meta name="description" content="Sezione Amministrazione Trasparente - Informazioni su organizzazione, attività e utilizzo delle risorse pubbliche">
+<meta name="keywords" content="amministrazione trasparente, trasparenza, dati pubblici, accountability">
+{% endblock %}
+
+{% block breadcrumb %}
+<nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+                <a href="/"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <strong>{{ _("Amministrazione Trasparente") }}</strong>
+            </li>
+        </ol>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>{{ _("Amministrazione Trasparente") }}</h1>
+            <p>
+                {{ _("Informazioni su organizzazione, attività e utilizzo delle risorse pubbliche secondo il D.Lgs. 33/2013") }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Introduzione -->
+<section class="section">
+    <div class="container">
+        <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+            <h2 style="margin-bottom: 1.5rem; font-size: 1.75rem; color: var(--text-primary);">{{ _("Cos'è l'Amministrazione Trasparente") }}</h2>
+            <p style="margin-bottom: 1.5rem; line-height: 1.8; color: var(--text-primary);">
+                {{ _("In ottemperanza al <strong>D.Lgs. 14 marzo 2013, n. 33</strong> e successive modifiche, questa sezione è dedicata alla pubblicazione di informazioni rilevanti concernenti l'organizzazione e l'attività della Regione Siciliana in merito al progetto di digitalizzazione del patrimonio culturale.") }}
+            </p>
+            <p style="margin: 0; line-height: 1.8; color: var(--text-secondary);">
+                {{ _("La trasparenza è intesa come accessibilità totale dei dati e delle informazioni detenute dalle pubbliche amministrazioni, allo scopo di tutelare i diritti dei cittadini, promuovere la partecipazione degli interessati all'attività amministrativa e favorire forme diffuse di controllo sul perseguimento delle funzioni istituzionali e sull'utilizzo delle risorse pubbliche.") }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Sezioni Principali -->
+<section class="section section-alt">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("Sezioni Principali") }}</h2>
+        <p style="text-align: center; color: var(--text-secondary); margin: 0 auto 3rem auto; max-width: 700px;">
+            {{ _("Accesso diretto alle sezioni tematiche dell'Amministrazione Trasparente") }}
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+            <!-- Organizzazione -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--primary-color);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="width: 50px; height: 50px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-sitemap" style="font-size: 1.5rem; color: white;"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin: 0; color: var(--text-primary);">{{ _("Organizzazione") }}</h3>
+                </div>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);"><a href="#organigramma" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Organigramma") }}</a></li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);"><a href="#articolazione-uffici" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Articolazione degli uffici") }}</a></li>
+                    <li style="padding: 0.5rem 0;"><a href="#telefono-posta" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Telefono e posta elettronica") }}</a></li>
+                </ul>
+            </div>
+
+            <!-- Consulenti -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--success-color);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="width: 50px; height: 50px; background: var(--success-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-users" style="font-size: 1.5rem; color: white;"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin: 0; color: var(--text-primary);">{{ _("Consulenti") }}</h3>
+                </div>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);"><a href="#titolari-incarichi" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Titolari di incarichi") }}</a></li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);"><a href="#personale" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Personale") }}</a></li>
+                    <li style="padding: 0.5rem 0;"><a href="#dirigenti" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Dirigenti") }}</a></li>
+                </ul>
+            </div>
+
+            <!-- Bandi -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--info-color);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="width: 50px; height: 50px; background: var(--info-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-euro-sign" style="font-size: 1.5rem; color: white;"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin: 0; color: var(--text-primary);">{{ _("Bandi e Contratti") }}</h3>
+                </div>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);"><a href="#bandi-gara" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Bandi di gara e contratti") }}</a></li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);"><a href="#sovvenzioni" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Sovvenzioni e contributi") }}</a></li>
+                    <li style="padding: 0.5rem 0;"><a href="#bilanci" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Bilanci") }}</a></li>
+                </ul>
+            </div>
+
+            <!-- Attività -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--warning-color);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="width: 50px; height: 50px; background: var(--warning-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-file-contract" style="font-size: 1.5rem; color: white;"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin: 0; color: var(--text-primary);">{{ _("Attività") }}</h3>
+                </div>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);"><a href="#provvedimenti" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Provvedimenti") }}</a></li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);"><a href="#controlli" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Controlli sulle imprese") }}</a></li>
+                    <li style="padding: 0.5rem 0;"><a href="#procedimenti" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Tipologie di procedimento") }}</a></li>
+                </ul>
+            </div>
+
+            <!-- Performance -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--accent-color);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="width: 50px; height: 50px; background: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-chart-bar" style="font-size: 1.5rem; color: white;"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin: 0; color: var(--text-primary);">{{ _("Performance") }}</h3>
+                </div>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);"><a href="#piano-performance" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Piano della Performance") }}</a></li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);"><a href="#relazione-performance" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Relazione sulla Performance") }}</a></li>
+                    <li style="padding: 0.5rem 0;"><a href="#obiettivi" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Obiettivi strategici") }}</a></li>
+                </ul>
+            </div>
+
+            <!-- Altri Contenuti -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--secondary-color);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="width: 50px; height: 50px; background: var(--secondary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-database" style="font-size: 1.5rem; color: white;"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin: 0; color: var(--text-primary);">{{ _("Altri Contenuti") }}</h3>
+                </div>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);"><a href="#accessibilita" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Accessibilità e Catalogo dati") }}</a></li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);"><a href="#servizi" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Servizi erogati") }}</a></li>
+                    <li style="padding: 0.5rem 0;"><a href="#pagamenti" style="color: var(--text-secondary); text-decoration: none;">• {{ _("Pagamenti amministrazione") }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Responsabile e Accesso -->
+<section class="section">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+            <!-- Responsabile -->
+            <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--text-primary);">{{ _("Responsabile della Trasparenza") }}</h2>
+                <div style="line-height: 1.8;">
+                    <p style="margin-bottom: 1rem;"><strong>{{ _("Nome:") }}</strong> [Da definire]</p>
+                    <p style="margin-bottom: 1rem;"><strong>{{ _("Email:") }}</strong> <a href="mailto:trasparenza@regione.sicilia.it">trasparenza@regione.sicilia.it</a></p>
+                    <p style="margin-bottom: 1.5rem;"><strong>{{ _("Telefono:") }}</strong> +39 091 XXX XXXX</p>
+                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.938rem;">
+                        {{ _("Il Responsabile della Trasparenza garantisce il rispetto degli obblighi di pubblicazione e controlla l'attuazione delle disposizioni in materia di accesso civico.") }}
+                    </p>
+                </div>
+            </div>
+
+            <!-- Accesso Civico -->
+            <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--text-primary);">{{ _("Accesso Civico") }}</h2>
+                <p style="margin-bottom: 1.5rem; line-height: 1.8; color: var(--text-secondary);">
+                    {{ _("Ogni cittadino può richiedere documenti, informazioni o dati per i quali è prevista la pubblicazione obbligatoria, ma che non sono stati resi disponibili (accesso civico semplice), oppure può accedere a dati e documenti ulteriori rispetto a quelli oggetto di pubblicazione obbligatoria (accesso civico generalizzato).") }}
+                </p>
+                <p style="margin: 0;">
+                    <strong>{{ _("Come fare richiesta:") }}</strong><br>
+                    {{ _("Le istanze possono essere inviate a:") }}<br>
+                    <a href="mailto:accessocivico@regione.sicilia.it">accessocivico@regione.sicilia.it</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Riferimenti Normativi -->
+        <div style="background: var(--bg-light); padding: 2rem; border-radius: var(--radius-md); border-left: 4px solid var(--info-color);">
+            <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-primary);">
+                <i class="fas fa-gavel" style="margin-right: 0.5rem;"></i>{{ _("Riferimenti Normativi") }}
+            </h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+                    {{ _("<strong>D.Lgs. 14 marzo 2013, n. 33</strong> - Riordino della disciplina riguardante il diritto di accesso civico e gli obblighi di pubblicità, trasparenza e diffusione di informazioni da parte delle pubbliche amministrazioni") }}
+                </li>
+                <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
+                    {{ _("<strong>D.Lgs. 25 maggio 2016, n. 97</strong> - Revisione e semplificazione delle disposizioni in materia di prevenzione della corruzione, pubblicità e trasparenza") }}
+                </li>
+                <li style="padding: 0.75rem 0;">
+                    {{ _("<strong>Delibera ANAC n. 1310/2016</strong> - Prime linee guida recanti indicazioni sull'attuazione degli obblighi di pubblicità, trasparenza e diffusione di informazioni contenute nel d.lgs. 33/2013") }}
+                </li>
+            </ul>
+        </div>
+
+        <div style="background: #e3f2fd; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--info-color); margin-top: 2rem; display: flex; align-items: start; gap: 1rem;">
+            <i class="fas fa-info-circle" style="font-size: 1.5rem; color: var(--info-color); margin-top: 0.25rem;"></i>
+            <p style="margin: 0; color: #01579b;">
+                {{ _("<strong>Nota:</strong> I contenuti di questa sezione vengono aggiornati periodicamente secondo le tempistiche previste dalla normativa vigente. Ultimo aggiornamento: Dicembre 2025") }}
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock %}

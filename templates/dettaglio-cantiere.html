@@ -1,0 +1,378 @@
+{% extends "base.html" %}
+
+{% block title %}{{ cantiere.titolo }} - Dettaglio Cantiere{% endblock %}
+
+{% block meta_tags %}
+<meta name="description" content="{{ cantiere.descrizione_breve or cantiere.descrizione }}">
+<meta name="keywords" content="cantiere, digitalizzazione, {{ cantiere.localita }}">
+{% endblock %}
+
+{% block nav_cantieri %}active{% endblock %}
+
+{% block breadcrumb %}
+<nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+                <a href="/"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="/cantieri">{{ _('I Cantieri') }}</a>
+            </li>
+            <li class="breadcrumb-item">
+                <strong>{{ cantiere.titolo }}</strong>
+            </li>
+        </ol>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<!-- Dettaglio Cantiere Header -->
+<section class="section">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start;">
+            <!-- Immagine -->
+            <div>
+                <img 
+                    src="{{ cantiere.immagine or 'https://via.placeholder.com/600x400/0048ad/ffffff?text=Cantiere' }}" 
+                    alt="{{ cantiere.titolo }}"
+                    style="width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);"
+                >
+            </div>
+            
+            <!-- Informazioni principali -->
+            <div>
+                <!-- Categorie multiple -->
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                    {% if cantiere.categorie_labels %}
+                        {% for label in cantiere.categorie_labels %}
+                        <span class="cantiere-category">{{ label }}</span>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                
+                
+                
+                <h1 style="font-size: 2rem; margin-bottom: 1rem;">{{ cantiere.titolo }}</h1>
+                
+                {% if cantiere.indirizzo %}
+                <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem; color: var(--text-secondary);">
+                    <div>
+                        <a href="https://www.google.com/maps/search/?api=1&query={{ cantiere.indirizzo|urlencode }}" 
+                           target=" _blank" 
+                           rel="noopener noreferrer"
+                           style="color: var(--primary-color); text-decoration: none; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span style="text-decoration: underline;">{{ cantiere.indirizzo }}</span>
+                        </a>
+                    </div>
+                </div>
+                {% endif %}
+                
+                <p style="line-height: 1.6; margin-bottom: 1.5rem;">
+                    {{ cantiere.descrizione_breve or cantiere.descrizione }}
+                </p>
+
+                <!-- Informazioni per visitatori -->
+                {% if cantiere.orari_apertura or cantiere.telefono or cantiere.email %}  
+                <div style="background: var(--bg-light); padding: 1.5rem; border-radius: var(--radius-md); margin-bottom: 1.5rem;">
+                    <h3 style="font-size: 1.125rem; margin-bottom: 1rem;">{{ _('Informazioni per visitatori') }}</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        {% if cantiere.orari_apertura %}
+                        <div>
+                            <div style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 0.25rem;">
+                                <i class="fas fa-clock"></i> {{ _('Orari di apertura') }}</div>
+                            <div style="font-size: 1rem; font-weight: 600;">
+                                {{ cantiere.orari_apertura|safe }}
+                            </div>
+                        </div>
+                        {% endif %}
+                        
+                        {% if cantiere.costo_biglietto %}
+                        <div>
+                            <div style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 0.25rem;">
+                                <i class="fas fa-ticket-alt"></i> {{ _('Biglietto') }}</div>
+                            <div style="font-size: 1rem; font-weight: 600;">
+                                {{ cantiere.costo_biglietto }}
+                            </div>
+                        </div>
+                        {% endif %}
+                        
+                        {% if cantiere.telefono %}
+                        <div>
+                            <div style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 0.25rem;">
+                                <i class="fas fa-phone"></i> {{ _('Telefono') }}</div>
+                            <div style="font-size: 1rem; font-weight: 600;">
+                                <a href="tel:{{ cantiere.telefono }}" style="color: var(--text-muted); text-decoration: underline;">
+                                    {{ cantiere.telefono }}
+                                </a>
+                            </div>
+                        </div>
+                        {% endif %}
+                        
+                        {% if cantiere.email %}
+                        <div>
+                            <div style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 0.25rem;">
+                                <i class="fas fa-envelope"></i> {{ _('Email') }}</div>
+                            <div style="font-size: 1rem; font-weight: 600;">
+                                <a href="mailto:{{ cantiere.email }}" style="color: var(--text-muted); text-decoration: underline;">
+                                    {{ cantiere.email }}
+                                </a>
+                            </div>
+                        </div>
+                        {% endif %}
+                        
+                        {% if cantiere.accessibilita %}
+                        <div>
+                            <div style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 0.25rem;">
+                                <i class="fas fa-wheelchair"></i> {{ _('Accessibilità') }}</div>
+                            <div style="font-size: 1rem; font-weight: 600;">{{ cantiere.accessibilita }}</div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+                <!-- Azioni -->
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="/cantieri" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> {{ _('Torna all\'elenco') }}
+                    </a>
+                    {% if cantiere.sito_web %}
+                    <a href="{{ cantiere.sito_web }}" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-external-link-alt"></i> {{ _('Sito Web') }}
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Descrizione completa -->
+{% if cantiere.descrizione_completa %}
+<section class="section section-alt">
+    <div class="container">
+        <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">{{ _('Descrizione del sito') }}</h2>
+            {{ cantiere.descrizione_completa|safe }}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- Composizione Beni -->
+{% if cantiere.composizione_beni %}
+<section class="section">
+    <div class="container">
+        <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">{{ _('Composizione dei beni digitalizzati') }}</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                {% for bene in cantiere.composizione_beni %}
+                <div style="background: var(--bg-light); padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--primary-color);">
+                    <div style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-primary);">
+                        {{ bene.nome }}
+                    </div>
+                    <div style="font-size: 1.75rem; font-weight: 700; color: var(--primary-color);">
+                        {{ "{:,}".format(bene.quantita).replace(',', '.') }}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- ArcGIS Story Map - Anteprima Beni Digitalizzati -->
+{% if cantiere.storymap_url %}
+<section class="section section-alt">
+    <div class="container">
+        <h2 style="font-size: 1.75rem; margin-bottom: 1.5rem; text-align: center;">
+            <i class="fas fa-images" style="color: var(--text-primary);"></i>
+            {{ _('Raccolta dei beni digitalizzati') }}
+        </h2>
+        <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+            {{ _('Esplora una selezione di 5 beni digitalizzati rappresentativi di questo cantiere attraverso la nostra Story Map interattiva.') }}
+        </p>
+        
+        <div class="storymap-container">
+            <iframe 
+                src="{{ cantiere.storymap_url }}" 
+                width="100%" 
+                height="800px" 
+                frameborder="0" 
+                allowfullscreen 
+                allow="geolocation"
+                title="Story Map - {{ cantiere.titolo }}"
+                loading="lazy"
+            ></iframe>
+        </div>
+        
+        <div style="text-align: center; margin-top: 1.5rem;">
+            <a href="{{ cantiere.storymap_url }}" target="_blank" class="btn btn-primary">
+                <i class="fas fa-expand"></i> {{ _('Visualizza a schermo intero') }}
+            </a>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- Visualizzatore 3D -->
+{% if cantiere.modello_3d_url %}
+<section class="section {% if not cantiere.storymap_url %}section-alt{% endif %}">
+    <div class="container">
+        <h2 style="font-size: 1.75rem; margin-bottom: 0.75rem; text-align: center;">
+            <i class="fas fa-cube" style="color: var(--primary-color);"></i>
+            {{ _('Modello 3D interattivo') }}
+        </h2>
+        <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+            {{ _('Esplora il bene digitalizzato in tre dimensioni. Usa il mouse o le dita per ruotare, ingrandire e navigare liberamente attorno all\'oggetto.') }}
+        </p>
+
+        <div class="model3d-container">
+            <div class="model3d-controls-hint">
+                <span><i class="fas fa-mouse-pointer"></i> {{ _('Trascina per ruotare') }}</span>
+                <span><i class="fas fa-search-plus"></i> {{ _('Scroll per zoom') }}</span>
+                <span><i class="fas fa-hand-paper"></i> {{ _('Tasto destro per spostare') }}</span>
+            </div>
+            <model-viewer
+                id="viewer3d-{{ cantiere.id }}"
+                src="{{ cantiere.modello_3d_url }}"
+                {% if cantiere.modello_3d_poster %}poster="{{ cantiere.modello_3d_poster }}"{% endif %}
+                alt="Modello 3D - {{ cantiere.titolo }}"
+                shadow-intensity="1"
+                camera-controls
+                auto-rotate
+                auto-rotate-delay="3000"
+                rotation-per-second="20deg"
+                environment-image="neutral"
+                exposure="1"
+                style="width: 100%; height: 550px; background: #f0f2f5;"
+            >
+                <div slot="progress-bar" class="model3d-progress">
+                    <div class="model3d-progress-bar" style="width: var(--progress-amount)"></div>
+                </div>
+                <div slot="error" class="model3d-error">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>{{ _('Impossibile caricare il modello 3D. Verifica che il browser supporti WebGL.') }}</p>
+                </div>
+            </model-viewer>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+
+{% endblock %}
+
+{% block extra_css %}
+<style>
+/* Container Story Map */
+.storymap-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    background: white;
+}
+
+.storymap-container iframe {
+    display: block;
+    border: none;
+}
+
+/* Responsive per schermi piccoli */
+@media (max-width: 768px) {
+    .section .container > div[style*="grid-template-columns: 1fr 1fr"],
+    .section .container > div[style*="grid-template-columns: 2fr 1fr"] {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* Story Map più compatta su mobile */
+    .storymap-container iframe {
+        height: 600px !important;
+    }
+    
+    h2 {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Story Map ancora più compatta su smartphone */
+    .storymap-container iframe {
+        height: 500px !important;
+    }
+}
+
+/* Hover su link esterni */
+a[target="_blank"]:hover {
+    background: var(--primary-color) !important;
+}
+
+a[target="_blank"]:hover * {
+    color: white !important;
+}
+
+/* ===================== MODELLO 3D ===================== */
+.model3d-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    background: #f0f2f5;
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.08);
+}
+.model3d-controls-hint {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 0.6rem 1rem;
+    background: rgba(0, 72, 173, 0.05);
+    border-bottom: 1px solid rgba(0, 72, 173, 0.1);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    flex-wrap: wrap;
+}
+.model3d-controls-hint span { display: flex; align-items: center; gap: 0.4rem; }
+.model3d-controls-hint i { color: var(--primary-color); }
+.model3d-progress {
+    width: 100%; height: 4px;
+    background: var(--border-color);
+    position: absolute; bottom: 0; left: 0;
+}
+.model3d-progress-bar {
+    height: 100%;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+}
+.model3d-error {
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    height: 300px; color: var(--text-muted);
+    gap: 1rem; font-size: 0.9rem;
+}
+.model3d-error i { font-size: 2rem; color: #e57373; }
+
+@media (max-width: 768px) {
+    model-viewer { height: 380px !important; }
+    .model3d-controls-hint { gap: 0.75rem; font-size: 0.75rem; }
+}
+@media (max-width: 480px) {
+    model-viewer { height: 300px !important; }
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+{% if cantiere.modello_3d_url %}
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+{% endif %}
+{% endblock %}
