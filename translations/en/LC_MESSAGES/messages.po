@@ -861,145 +861,6 @@ msgid "Ricarica Pagina"
 msgstr "Reload Page"
 
 # =====================================
-# contatti.html
-# =====================================
-
-msgid "Contatti - Digitalizzazione del patrimonio culturale"
-msgstr "Contacts - Digitisation of Cultural Heritage"
-
-msgid "Contatta il team del progetto di digitalizzazione del patrimonio culturale della Regione Siciliana. Informazioni, assistenza e supporto tecnico."
-msgstr "Contact the team of the digitisation project of the cultural heritage of the Regione Siciliana. Information, assistance and technical support."
-
-msgid "Contatti"
-msgstr "Contacts"
-
-msgid "Siamo qui per assisterti. Contattaci per informazioni sul progetto di digitalizzazione del patrimonio culturale della Regione Siciliana o per richiedere supporto tecnico."
-msgstr "We are here to assist you. Contact us for information on the digitisation project of the cultural heritage of the Regione Siciliana or to request technical support."
-
-msgid "Come Contattarci"
-msgstr "How to Contact Us"
-
-msgid "Scegli il canale di comunicazione più adatto alle tue esigenze"
-msgstr "Choose the most suitable communication channel for your needs"
-
-msgid "Sede Principale"
-msgstr "Main Office"
-
-msgid "Assessorato Regionale dei Beni Culturali<br>e dell'Identità Siciliana<br><strong>Via delle Croci, 6</strong><br>90139 Palermo (PA)<br>Sicilia - Italia"
-msgstr "Regional Department of Cultural Heritage<br>and Sicilian Identity<br><strong>Via delle Croci, 6</strong><br>90139 Palermo (PA)<br>Sicily - Italy"
-
-msgid "Telefono"
-msgstr "Phone"
-
-msgid "Centralino:"
-msgstr "Switchboard:"
-
-msgid "Supporto Tecnico:"
-msgstr "Technical Support:"
-
-msgid "Email"
-msgstr "Email"
-
-msgid "Informazioni generali:"
-msgstr "General information:"
-
-msgid "PEC:"
-msgstr "PEC:"
-
-msgid "Invia un Messaggio"
-msgstr "Send a Message"
-
-msgid "Compila il form sottostante e ti risponderemo al più presto"
-msgstr "Fill in the form below and we will get back to you as soon as possible"
-
-msgid "Nome"
-msgstr "First Name"
-
-msgid "Il tuo nome"
-msgstr "Your first name"
-
-msgid "Cognome"
-msgstr "Last Name"
-
-msgid "Il tuo cognome"
-msgstr "Your last name"
-
-msgid "tuaemail@esempio.it"
-msgstr "youremail@example.com"
-
-msgid "Telefono"
-msgstr "Phone"
-
-msgid "Oggetto"
-msgstr "Subject"
-
-msgid "Seleziona un'opzione"
-msgstr "Select an option"
-
-msgid "Richiesta di informazioni"
-msgstr "Information request"
-
-msgid "Supporto tecnico"
-msgstr "Technical support"
-
-msgid "Proposta di collaborazione"
-msgstr "Collaboration proposal"
-
-msgid "Accesso ai dati digitalizzati"
-msgstr "Access to digitised data"
-
-msgid "Altro"
-msgstr "Other"
-
-msgid "Messaggio"
-msgstr "Message"
-
-msgid "Scrivi qui il tuo messaggio..."
-msgstr "Write your message here..."
-
-msgid "Acconsento al trattamento dei miei dati personali in conformità con la "
-msgstr "I consent to the processing of my personal data in accordance with the "
-
-msgid "e il"
-msgstr "and the"
-
-msgid "Privacy Policy"
-msgstr "Privacy Policy"
-
-msgid "GDPR"
-msgstr "GDPR"
-
-msgid "Invia Messaggio"
-msgstr "Send Message"
-
-msgid "<i class=\"fas fa-check-circle\"></i> <strong>Messaggio inviato con successo!</strong><br>Ti risponderemo al più presto all'indirizzo email fornito."
-msgstr "<i class=\"fas fa-check-circle\"></i> <strong>Message sent successfully!</strong><br>We will get back to you as soon as possible at the email address provided."
-
-msgid "Uffici e Dipartimenti"
-msgstr "Offices and Departments"
-
-msgid "Contatta direttamente l'ufficio di competenza per le tue esigenze specifiche"
-msgstr "Contact the relevant office directly for your specific needs"
-
-msgid "Direzione Generale"
-msgstr "General Directorate"
-
-msgid "Coordinamento del progetto e gestione amministrativa"
-msgstr "Project coordination and administrative management"
-
-msgid "Ufficio Digitalizzazione"
-msgstr "Digitisation Office"
-
-msgid "Supporto tecnico e gestione operativa della digitalizzazione"
-msgstr "Technical support and operational management of digitisation"
-
-msgid "Ufficio Comunicazione"
-msgstr "Communications Office"
-
-msgid "Relazioni con i media e comunicazione istituzionale"
-msgstr "Media relations and institutional communication"
-
-# =====================================
 # amministrazione-trasparente.html
 # =====================================
 
@@ -1142,523 +1003,97 @@ msgid "<strong>Delibera ANAC n. 1310/2016</strong> - Prime linee guida recanti i
 msgstr "<strong>ANAC Resolution no. 1310/2016</strong> - First guidelines providing indications on the implementation of the obligations of publicity, transparency and dissemination of information contained in Legislative Decree 33/2013"
 
 msgid "<strong>Nota:</strong> I contenuti di questa sezione vengono aggiornati periodicamente secondo le tempistiche previste dalla normativa vigente. Ultimo aggiornamento: Dicembre 2025"
+
 msgstr "<strong>Note:</strong> The contents of this section are updated periodically in accordance with the timescales provided for by current legislation. Last update: December 2025"
-
-# =====================================
-# privacy-policy.html
-# =====================================
-
-msgid "Privacy Policy - Digitalizzazione del patrimonio culturale"
-msgstr "Privacy Policy - Digitisation of Cultural Heritage"
-
-msgid "Informativa sulla Privacy - Trattamento dei dati personali secondo il GDPR"
-msgstr "Privacy Notice - Processing of personal data in accordance with the GDPR"
-
-msgid "Privacy Policy"
-msgstr "Privacy Policy"
-
-msgid "Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR)"
-msgstr "Notice on the processing of personal data pursuant to EU Regulation 2016/679 (GDPR)"
-
-msgid "1. Titolare del Trattamento"
-msgstr "1. Data Controller"
-
-msgid "Il Titolare del trattamento dei dati personali è la <strong>Regione Siciliana - Assessorato dei Beni Culturali e dell'Identità Siciliana</strong>"
-msgstr "The Data Controller is the <strong>Regione Siciliana - Department of Cultural Heritage and Sicilian Identity</strong>"
-
-msgid "Sede legale:"
-msgstr "Registered office:"
-
-msgid "Email:"
-msgstr "Email:"
-
-msgid "PEC:"
-msgstr "PEC:"
-
-msgid "2. Responsabile Protezione Dati"
-msgstr "2. Data Protection Officer"
-
-msgid "Il Responsabile della Protezione dei Dati (Data Protection Officer - DPO) può essere contattato:"
-msgstr "The Data Protection Officer (DPO) can be contacted at:"
-
-msgid "3. Tipi di Dati Raccolti"
-msgstr "3. Types of Data Collected"
-
-msgid "Il portale raccoglie e tratta le seguenti categorie di dati personali"
-msgstr "The portal collects and processes the following categories of personal data"
-
-msgid "Dati di Navigazione"
-msgstr "Browsing Data"
-
-msgid "I sistemi informatici acquisiscono alcuni dati la cui trasmissione è implicita nell'uso dei protocolli di comunicazione di Internet."
-msgstr "The computer systems collect certain data whose transmission is implicit in the use of Internet communication protocols."
-
-msgid "Indirizzi IP"
-msgstr "IP addresses"
-
-msgid "Tipo di browser e dispositivo"
-msgstr "Browser and device type"
-
-msgid "Sistema operativo"
-msgstr "Operating system"
-
-msgid "Pagine visitate"
-msgstr "Pages visited"
-
-msgid "Data e orario di accesso"
-msgstr "Date and time of access"
-
-msgid "Dati Forniti Volontariamente"
-msgstr "Voluntarily Provided Data"
-
-msgid "L'invio volontario di messaggi agli indirizzi di contatto del sito comporta l'acquisizione dei dati del mittente."
-msgstr "The voluntary sending of messages to the site's contact addresses entails the acquisition of the sender's data."
-
-msgid "Nome e cognome"
-msgstr "First and last name"
-
-msgid "Indirizzo email"
-msgstr "Email address"
-
-msgid "Numero di telefono"
-msgstr "Phone number"
-
-msgid "Messaggio o richiesta"
-msgstr "Message or request"
-
-msgid "4. Finalità del Trattamento"
-msgstr "4. Purposes of Processing"
-
-msgid "I dati personali vengono trattati per le seguenti finalità"
-msgstr "Personal data are processed for the following purposes"
-
-msgid "Funzionalità del sito"
-msgstr "Website functionality"
-
-msgid "Garantire il corretto funzionamento del portale e dei suoi servizi"
-msgstr "Ensuring the correct functioning of the portal and its services"
-
-msgid "<strong>Base giuridica:</strong> Esecuzione di un compito di interesse pubblico"
-msgstr "<strong>Legal basis:</strong> Performance of a task in the public interest"
-
-msgid "Risposta alle richieste"
-msgstr "Response to requests"
-
-msgid "Gestire e rispondere alle richieste di informazioni inviate tramite i moduli di contatto"
-msgstr "Managing and responding to information requests submitted through contact forms"
-
-msgid "<strong>Base giuridica:</strong> Consenso dell'interessato"
-msgstr "<strong>Legal basis:</strong> Consent of the data subject"
-
-msgid "Analisi statistiche"
-msgstr "Statistical analysis"
-
-msgid "Analizzare l'utilizzo del sito per migliorare i servizi offerti"
-msgstr "Analysing the use of the site to improve the services offered"
-
-msgid "<strong>Base giuridica:</strong> Legittimo interesse del titolare"
-msgstr "<strong>Legal basis:</strong> Legitimate interest of the controller"
-
-msgid "Sicurezza"
-msgstr "Security"
-
-msgid "Prevenire attività illecite e garantire la sicurezza del sistema informatico"
-msgstr "Preventing unlawful activities and ensuring the security of the computer system"
-
-msgid "<strong>Base giuridica:</strong> Obbligo legale e legittimo interesse"
-msgstr "<strong>Legal basis:</strong> Legal obligation and legitimate interest"
-
-msgid "8. Diritti dell'Interessato"
-msgstr "8. Rights of the Data Subject"
-
-msgid "In conformità al GDPR (artt. 15-22), l'interessato ha i seguenti diritti"
-msgstr "In accordance with the GDPR (arts. 15-22), the data subject has the following rights"
-
-msgid "Accesso"
-msgstr "Access"
-
-msgid "Conferma del trattamento dei dati personali"
-msgstr "Confirmation of the processing of personal data"
-
-msgid "Rettifica"
-msgstr "Rectification"
-
-msgid "Correzione dei dati inesatti"
-msgstr "Correction of inaccurate data"
-
-msgid "Cancellazione"
-msgstr "Erasure"
-
-msgid "Diritto all'oblio"
-msgstr "Right to be forgotten"
-
-msgid "Limitazione"
-msgstr "Restriction"
-
-msgid "Limitazione del trattamento"
-msgstr "Restriction of processing"
-
-msgid "Portabilità"
-msgstr "Portability"
-
-msgid "Ricezione in formato strutturato"
-msgstr "Receipt in a structured format"
-
-msgid "Opposizione"
-msgstr "Objection"
-
-msgid "Opporsi al trattamento"
-msgstr "Objecting to processing"
-
-msgid "Per esercitare i propri diritti, l'interessato può contattare il Titolare o il DPO ai recapiti indicati nella presente informativa. L'interessato ha inoltre il diritto di proporre reclamo all'Autorità Garante per la Protezione dei Dati Personali."
-msgstr "To exercise their rights, the data subject may contact the Controller or the DPO at the contact details indicated in this notice. The data subject also has the right to lodge a complaint with the Italian Data Protection Authority (Garante per la Protezione dei Dati Personali)."
-
-msgid "10. Contatti e Informazioni"
-msgstr "10. Contacts and Information"
-
-msgid "Per qualsiasi domanda riguardo la presente Privacy Policy o per esercitare i propri diritti, è possibile contattare il Titolare del trattamento o il Data Protection Officer."
-msgstr "For any questions regarding this Privacy Policy or to exercise your rights, you may contact the Data Controller or the Data Protection Officer."
-
-msgid "<strong>Ultimo aggiornamento:</strong> Dicembre 2025"
-msgstr "<strong>Last update:</strong> December 2025"
-
-msgid "<strong>Nota:</strong> Proseguendo nella navigazione del sito, l'utente accetta la presente Privacy Policy. Per maggiori informazioni sull'utilizzo dei cookie, consultare la <a href=\"/cookie-policy\" style=\"color: #01579b; font-weight: 600;\">Cookie Policy</a>."
-msgstr "<strong>Note:</strong> By continuing to browse the site, the user accepts this Privacy Policy. For more information on the use of cookies, please consult the <a href=\"/cookie-policy\" style=\"color: #01579b; font-weight: 600;\">Cookie Policy</a>."
-
-# =====================================
-# note-legali.html
-# =====================================
-
-msgid "Note Legali - Digitalizzazione del patrimonio culturale"
-msgstr "Legal Notice - Digitisation of Cultural Heritage"
-
-msgid "Note Legali - Termini e condizioni d'uso del portale, copyright e limitazioni di responsabilità"
-msgstr "Legal Notice - Terms and conditions of use of the portal, copyright and limitations of liability"
-
-msgid "Note Legali"
-msgstr "Legal Notice"
-
-msgid "Termini e condizioni d'uso del portale, informazioni legali e limitazioni di responsabilità"
-msgstr "Terms and conditions of use of the portal, legal information and limitations of liability"
-
-msgid "1. Informazioni Generali sul Sito"
-msgstr "1. General Information on the Website"
-
-msgid "Il presente sito web è il portale ufficiale del progetto di digitalizzazione del patrimonio culturale della Regione Siciliana, realizzato dall'Assessorato dei Beni Culturali e dell'Identità Siciliana."
-msgstr "This website is the official portal of the cultural heritage digitisation project of the Regione Siciliana, created by the Department of Cultural Heritage and Sicilian Identity."
-
-msgid "Titolare del sito:"
-msgstr "Website owner:"
-
-msgid "Sede:"
-msgstr "Address:"
-
-msgid "P.IVA:"
-msgstr "VAT number:"
-
-msgid "Email:"
-msgstr "Email:"
-
-msgid "PEC:"
-msgstr "PEC:"
-
-msgid "2. Oggetto e Finalità"
-msgstr "2. Subject and Purpose"
-
-msgid "Il portale è dedicato alla presentazione e documentazione del progetto di digitalizzazione del patrimonio culturale siciliano."
-msgstr "The portal is dedicated to the presentation and documentation of the digitisation project of Sicily's cultural heritage."
-
-msgid "Finalità principali:"
-msgstr "Main purposes:"
-
-msgid "Informazioni sul progetto"
-msgstr "Project information"
-
-msgid "Presentazione cantieri attivi"
-msgstr "Presentation of active worksites"
-
-msgid "Accessibilità ai dati"
-msgstr "Access to data"
-
-msgid "Comunicazione con cittadini"
-msgstr "Communication with citizens"
-
-msgid "3. Condizioni d'Uso"
-msgstr "3. Terms of Use"
-
-msgid "L'accesso e l'utilizzo del presente sito web comportano l'accettazione integrale delle presenti note legali."
-msgstr "Accessing and using this website implies full acceptance of these legal notices."
-
-msgid "Utilizzo consentito:"
-msgstr "Permitted use:"
-
-msgid "Consultare informazioni"
-msgstr "Consulting information"
-
-msgid "Accedere ai contenuti"
-msgstr "Accessing content"
-
-msgid "Scaricare documenti pubblici"
-msgstr "Downloading public documents"
-
-msgid "Contattare l'amministrazione"
-msgstr "Contacting the administration"
-
-msgid "4. Proprietà Intellettuale e Copyright"
-msgstr "4. Intellectual Property and Copyright"
-
-msgid "Informazioni sui diritti d'autore e sull'utilizzo dei contenuti del sito"
-msgstr "Information on copyright and the use of the site's content"
-
-msgid "Contenuti del sito"
-msgstr "Website content"
-
-msgid "Tutti i contenuti presenti sul sito (testi, immagini, grafici, loghi, icone, fotografie, video, database, software) sono di proprietà della Regione Siciliana o di terzi che ne hanno concesso l'utilizzo e sono protetti dalle leggi italiane ed internazionali sul diritto d'autore e sulla proprietà intellettuale."
-msgstr "All content on the site (texts, images, graphics, logos, icons, photographs, videos, databases, software) is the property of the Regione Siciliana or of third parties who have granted its use, and is protected by Italian and international laws on copyright and intellectual property."
-
-msgid "Licenza Creative Commons"
-msgstr "Creative Commons Licence"
-
-msgid "Salvo ove diversamente indicato, i contenuti pubblicati sul sito sono soggetti a licenza <strong>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</strong>."
-msgstr "Unless otherwise indicated, the content published on the site is subject to the <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong> licence."
-
-msgid "È consentito:"
-msgstr "Permitted:"
-
-msgid "Condividere e distribuire"
-msgstr "Share and distribute"
-
-msgid "Modificare e trasformare"
-msgstr "Modify and transform"
-
-msgid "Alle condizioni:"
-msgstr "Under the conditions:"
-
-msgid "Attribuzione della paternità"
-msgstr "Attribution of authorship"
-
-msgid "5. Collegamenti Esterni"
-msgstr "5. External Links"
-
-msgid "Il sito può contenere collegamenti ipertestuali verso siti web di terze parti. La Regione Siciliana non ha alcun controllo sui contenuti di tali siti e non è responsabile per il loro contenuto."
-msgstr "The site may contain hyperlinks to third-party websites. The Regione Siciliana has no control over the content of such sites and is not responsible for their content."
-
-msgid "I link sono forniti esclusivamente per comodità dell'utente."
-msgstr "Links are provided solely for the convenience of the user."
-
-msgid "6. Limitazione di Responsabilità"
-msgstr "6. Limitation of Liability"
-
-msgid "La Regione Siciliana si impegna a mantenere aggiornati i contenuti del sito, tuttavia non garantisce la completezza, l'esattezza o l'attualità delle informazioni pubblicate."
-msgstr "The Regione Siciliana endeavours to keep the content of the site up to date, however it does not guarantee the completeness, accuracy or currency of the information published."
-
-msgid "L'utilizzo delle informazioni è sotto la responsabilità esclusiva dell'utente."
-msgstr "The use of the information is under the sole responsibility of the user."
-
-msgid "Disponibilità del Servizio"
-msgstr "Service Availability"
-
-msgid "La Regione Siciliana si riserva il diritto di modificare, sospendere o interrompere, temporaneamente o permanentemente, il servizio offerto dal sito (o parte di esso) con o senza preavviso. Non sarà responsabile per eventuali modifiche, sospensioni o interruzioni del servizio."
-msgstr "The Regione Siciliana reserves the right to modify, suspend or discontinue, temporarily or permanently, the service offered by the site (or part of it) with or without notice. It shall not be liable for any modifications, suspensions or interruptions of the service."
-
-msgid "8. Legge Applicabile"
-msgstr "8. Applicable Law"
-
-msgid "Le presenti note legali sono regolate dalla <strong>legge italiana</strong>. Per qualsiasi controversia sarà competente in via esclusiva il <strong>Foro di Palermo</strong>."
-msgstr "These legal notices are governed by <strong>Italian law</strong>. For any dispute, the <strong>Court of Palermo</strong> shall have exclusive jurisdiction."
-
-msgid "9. Accessibilità"
-msgstr "9. Accessibility"
-
-msgid "La Regione Siciliana si impegna a rendere il proprio sito web accessibile, in conformità alla <strong>Legge 4/2004</strong> e al <strong>D.Lgs. 106/2018</strong>."
-msgstr "The Regione Siciliana is committed to making its website accessible, in accordance with <strong>Law 4/2004</strong> and <strong>Legislative Decree 106/2018</strong>."
-
-msgid "Segnalazioni:"
-msgstr "Reports:"
-
-msgid "<strong>Importante:</strong> L'utilizzo di questo sito implica l'accettazione delle presenti note legali e della <a href=\"/privacy-policy\" style=\"color: #856404; font-weight: 600;\">Privacy Policy</a>. Si consiglia di leggerle attentamente prima di procedere."
-msgstr "<strong>Important:</strong> The use of this site implies acceptance of these legal notices and the <a href=\"/privacy-policy\" style=\"color: #856404; font-weight: 600;\">Privacy Policy</a>. You are advised to read them carefully before proceeding."
-
-msgid "<strong>Versione:</strong> 1.0"
-msgstr "<strong>Version:</strong> 1.0"
-
-msgid "<strong>Data pubblicazione:</strong> Dicembre 2025"
-msgstr "<strong>Publication date:</strong> December 2025"
-
-msgid "<strong>Ultimo aggiornamento:</strong> Dicembre 2025"
-msgstr "<strong>Last update:</strong> December 2025"
-
-# =====================================
-# cookie-policy.html
-# =====================================
-
 msgid "Cookie Policy - Digitalizzazione del patrimonio culturale"
-msgstr "Cookie Policy - Digitisation of Cultural Heritage"
-
-msgid "Cookie Policy - Informazioni sull'utilizzo dei cookie sul portale"
-msgstr "Cookie Policy - Information on the use of cookies on the portal"
+msgstr "Cookie Policy - Digitization of Cultural Heritage"
 
 msgid "Cookie Policy"
 msgstr "Cookie Policy"
 
 msgid "Informazioni sull'utilizzo dei cookie sul portale della digitalizzazione del patrimonio culturale"
-msgstr "Information on the use of cookies on the cultural heritage digitisation portal"
+msgstr "Information on the use of cookies on the cultural heritage digitization portal"
 
-msgid "1. Cosa sono i Cookie"
-msgstr "1. What are Cookies"
+msgid "Riferimenti normativi"
+msgstr "Legal References"
 
-msgid "I cookie sono piccoli file di testo che vengono memorizzati sul dispositivo dell'utente (computer, tablet, smartphone) durante la navigazione su un sito web. I cookie permettono al sito di riconoscere il dispositivo e memorizzare determinate informazioni sulle preferenze o azioni passate dell'utente."
-msgstr "Cookies are small text files that are stored on the user's device (computer, tablet, smartphone) while browsing a website. Cookies allow the site to recognise the device and store certain information about the user's preferences or past actions."
+msgid "La presente informativa è resa ai sensi dell'<strong>art. 13 del GDPR – Regolamento (UE) 2016/679</strong>, degli <strong>artt. 13 e 122 del D.Lgs. 196/2003</strong>, e in accordo con le modalità semplificate per l'informativa e l'acquisizione del consenso per l'utilizzo dei cookie, pubblicate sulla <strong>Gazzetta Ufficiale n. 126 del 3 giugno 2014</strong> e con il provvedimento generale del <strong>Garante Privacy dell'8 maggio 2014</strong>."
+msgstr "This notice is issued pursuant to <strong>Art. 13 of the GDPR – Regulation (EU) 2016/679</strong>, <strong>Arts. 13 and 122 of Legislative Decree 196/2003</strong>, and in accordance with the simplified procedures for cookie consent published in the <strong>Official Gazette No. 126 of 3 June 2014</strong> and the general measure of the <strong>Data Protection Authority of 8 May 2014</strong>."
 
-msgid "I cookie possono essere <strong>\"di sessione\"</strong> (eliminati automaticamente alla chiusura del browser) o <strong>\"persistenti\"</strong> (rimangono memorizzati sul dispositivo fino alla loro scadenza o cancellazione manuale)."
-msgstr "Cookies can be <strong>\"session\"</strong> cookies (automatically deleted when the browser is closed) or <strong>\"persistent\"</strong> cookies (they remain stored on the device until they expire or are manually deleted)."
+msgid "Cosa sono i Cookie"
+msgstr "What are Cookies"
 
-msgid "2. Tipologie di Cookie Utilizzati"
-msgstr "2. Types of Cookies Used"
+msgid "I cookie sono stringhe di testo di piccole dimensioni che i siti visitati dall'utente inviano al suo terminale (solitamente al browser), dove vengono memorizzati per essere poi ritrasmessi agli stessi siti alla successiva visita del medesimo utente."
+msgstr "Cookies are small text strings that the websites visited by the user send to their terminal (usually the browser), where they are stored and then retransmitted to the same websites on the user's next visit."
 
-msgid "Questo sito utilizza diverse tipologie di cookie, classificabili in base alla loro funzione e provenienza"
-msgstr "This site uses different types of cookies, classifiable according to their function and origin"
+msgid "I cookie sono costituiti da porzioni di codice installate all'interno del browser che assistono il Titolare nell'erogazione del servizio in base alle finalità descritte. Alcune finalità di installazione dei cookie potrebbero, inoltre, necessitare del consenso dell'utente."
+msgstr "Cookies consist of portions of code installed within the browser that assist the Data Controller in providing the service according to the purposes described. Some purposes for installing cookies may also require the user's consent."
+
+msgid "Tipologie di Cookie"
+msgstr "Types of Cookies"
+
+msgid "Per questo sito vengono utilizzati esclusivamente cookie tecnici e analitici di prima parte. Non vengono utilizzati cookie di profilazione né cookie di terze parti."
+msgstr "This site uses only first-party technical and analytical cookies. No profiling cookies or third-party cookies are used."
 
 msgid "Cookie Tecnici"
 msgstr "Technical Cookies"
 
-msgid "Necessari"
-msgstr "Necessary"
+msgid "In uso"
+msgstr "In use"
 
-msgid "Essenziali per il corretto funzionamento del sito. Senza questi cookie, il sito non funzionerebbe correttamente."
-msgstr "Essential for the correct functioning of the site. Without these cookies, the site would not work properly."
+msgid "Servono ad effettuare la navigazione o a fornire un servizio richiesto dall'utente. Il loro utilizzo non richiede il consenso dell'utente e non può essere rifiutato."
+msgstr "These are necessary to enable navigation or to provide a service requested by the user. Their use does not require user consent and cannot be refused."
 
-msgid "Esempi:"
-msgstr "Examples:"
+msgid "<strong>Cookie di sessione:</strong> identificativi numerici casuali, trasmessi esclusivamente per consentire l'esplorazione sicura ed efficiente del sito. Non consentono l'acquisizione di dati personali identificativi dell'utente e si eliminano alla chiusura del browser."
+msgstr "<strong>Session cookies:</strong> random numeric identifiers, transmitted solely to enable safe and efficient browsing of the site. They do not allow the acquisition of personally identifiable user data and are deleted when the browser is closed."
 
-msgid "Cookie di sessione"
-msgstr "Session cookies"
-
-msgid "Cookie di sicurezza"
-msgstr "Security cookies"
-
-msgid "Cookie di preferenze"
-msgstr "Preference cookies"
-
-msgid "<strong>Base giuridica:</strong> Non richiedono consenso"
-msgstr "<strong>Legal basis:</strong> Do not require consent"
-
-msgid "<strong>Durata:</strong> Sessione o fino a 12 mesi"
-msgstr "<strong>Duration:</strong> Session or up to 12 months"
+msgid "<strong>Base giuridica:</strong> legittimo interesse – non richiedono consenso."
+msgstr "<strong>Legal basis:</strong> legitimate interest – no consent required."
 
 msgid "Cookie Analitici"
 msgstr "Analytical Cookies"
 
-msgid "Analitici"
-msgstr "Analytical"
+msgid "Servono a monitorare l'uso del sito per finalità di ottimizzazione. Vengono utilizzati esclusivamente per raccogliere informazioni in <strong>forma aggregata</strong> sul numero degli utenti e sulle modalità di visita del sito."
+msgstr "These are used to monitor the use of the site for optimisation purposes. They are used exclusively to collect information in <strong>aggregate form</strong> on the number of users and how they visit the site."
 
-msgid "Utilizzati per raccogliere informazioni aggregate sull'utilizzo del sito (numero visitatori, pagine visitate, tempo di permanenza)."
-msgstr "Used to collect aggregate information on the use of the site (number of visitors, pages visited, time spent)."
+msgid "<strong>Prima parte:</strong> realizzati e gestiti direttamente da questo sito, senza l'intervento di soggetti terzi."
+msgstr "<strong>First party:</strong> created and managed directly by this site, without the involvement of third parties."
 
-msgid "Servizi:"
-msgstr "Services:"
-
-msgid "Google Analytics"
-msgstr "Google Analytics"
-
-msgid "Statistiche interne"
-msgstr "Internal statistics"
-
-msgid "<strong>Base giuridica:</strong> Consenso se non anonimizzati"
-msgstr "<strong>Legal basis:</strong> Consent if not anonymised"
-
-msgid "<strong>Durata:</strong> Fino a 24 mesi"
-msgstr "<strong>Duration:</strong> Up to 24 months"
+msgid "<strong>Dati raccolti:</strong> esclusivamente in forma aggregata e anonima."
+msgstr "<strong>Data collected:</strong> exclusively in aggregate and anonymous form."
 
 msgid "Cookie di Profilazione"
 msgstr "Profiling Cookies"
 
 msgid "Non utilizzati"
-msgstr "Not used"
+msgstr "Not in use"
 
-msgid "Attualmente questo sito <strong>non utilizza</strong> cookie di profilazione per creare profili utente o mostrare pubblicità personalizzata."
-msgstr "This site currently <strong>does not use</strong> profiling cookies to create user profiles or display personalised advertising."
+msgid "Questo sito <strong>non utilizza</strong> cookie di profilazione, ossia quelli volti a creare profili relativi all'utente e a inviare messaggi pubblicitari in linea con le preferenze manifestate durante la navigazione."
+msgstr "This site <strong>does not use</strong> profiling cookies, i.e. those designed to create user profiles and send advertising messages in line with preferences expressed during browsing."
 
-msgid "Qualora in futuro venissero implementati, sarà richiesto il consenso esplicito dell'utente."
-msgstr "Should they be implemented in the future, the user's explicit consent will be required."
+msgid "Cookie di Terze Parti"
+msgstr "Third-Party Cookies"
 
-msgid "Terze Parti"
-msgstr "Third Parties"
+msgid "Questo sito <strong>non consente</strong> l'invio di cookie di terze parti, ossia quelli installati da un dominio diverso per il tramite del presente sito."
+msgstr "This site <strong>does not allow</strong> third-party cookies to be set, i.e. those installed from a different domain through this site."
 
-msgid "Servizi di terze parti che installano propri cookie, gestiti direttamente dalle terze parti."
-msgstr "Third-party services that install their own cookies, managed directly by the third parties."
+msgid "Servizio Text to Speech"
+msgstr "Text to Speech Service"
 
-msgid "ArcGIS Story Maps"
-msgstr "ArcGIS Story Maps"
+msgid "Il servizio SaaS di <strong>Text to Speech</strong> elabora (legge) il contenuto testuale pubblicato nelle pagine del sito web, e nello specifico nelle pagine in cui il servizio è implementato. Considerato che il servizio elabora informazioni pubbliche, queste ultime non contengono alcun dato personale sensibile."
+msgstr "The <strong>Text to Speech</strong> SaaS service processes (reads) the textual content published on the website pages, specifically on those pages where the service is implemented. Since the service processes public information, such information does not contain any sensitive personal data."
 
-msgid "Google Fonts"
-msgstr "Google Fonts"
+msgid "Nel caso in cui l'utente cambi le <strong>impostazioni di personalizzazione del lettore</strong> (evidenziazione, dimensione del testo, ecc.), le informazioni vengono memorizzate nel cookie del browser della postazione utilizzata. Al fine di mantenere le impostazioni selezionate dall'utente, il cookie viene collegato al dominio specifico."
+msgstr "If the user changes the <strong>reader personalisation settings</strong> (highlighting, text size, etc.), the information is stored in the browser cookie of the device used. In order to retain the user's selected settings, the cookie is linked to the specific domain."
 
-msgid "Font Awesome"
-msgstr "Font Awesome"
+msgid "Gestione dei Cookie"
+msgstr "Cookie Management"
 
-msgid "3. Elenco Dettagliato dei Cookie"
-msgstr "3. Detailed List of Cookies"
+msgid "L'utente può in ogni istante e a suo piacimento impedire l'uso dei cookie modificando le opzioni del browser"
+msgstr "Users may at any time and at their discretion prevent the use of cookies by changing their browser settings"
 
-msgid "Di seguito l'elenco dei cookie utilizzati dal sito"
-msgstr "Below is the list of cookies used by the site"
-
-msgid "Nome"
-msgstr "Name"
-
-msgid "Tipologia"
-msgstr "Type"
-
-msgid "Finalità"
-msgstr "Purpose"
-
-msgid "Durata"
-msgstr "Duration"
-
-msgid "Dominio"
-msgstr "Domain"
-
-msgid "Tecnico"
-msgstr "Technical"
-
-msgid "Mantenere la sessione utente attiva"
-msgstr "Maintaining the active user session"
-
-msgid "Sessione"
-msgstr "Session"
-
-msgid "12 mesi"
-msgstr "12 months"
-
-msgid "24 mesi"
-msgstr "24 months"
-
-msgid "24 ore"
-msgstr "24 hours"
-
-msgid "1 minuto"
-msgstr "1 minute"
-
-msgid "Proprio"
-msgstr "Own"
-
-msgid "Memorizzare preferenze sui cookie"
-msgstr "Storing cookie preferences"
-
-msgid "Analitico"
-msgstr "Analytical"
-
-msgid "Google Analytics - Distinguere utenti"
-msgstr "Google Analytics - Distinguishing users"
-
-msgid "Google Analytics - Limitare frequenza"
-msgstr "Google Analytics - Limiting request frequency"
-
-msgid "5. Gestione dei Cookie"
-msgstr "5. Managing Cookies"
-
-msgid "Come gestire le preferenze sui cookie attraverso il browser"
-msgstr "How to manage cookie preferences through the browser"
+msgid "Chrome"
+msgstr "Chrome"
 
 msgid "Impostazioni → Privacy"
 msgstr "Settings → Privacy"
@@ -1666,11 +1101,20 @@ msgstr "Settings → Privacy"
 msgid "Guida"
 msgstr "Guide"
 
+msgid "Firefox"
+msgstr "Firefox"
+
 msgid "Opzioni → Privacy"
 msgstr "Options → Privacy"
 
+msgid "Safari"
+msgstr "Safari"
+
 msgid "Preferenze → Privacy"
 msgstr "Preferences → Privacy"
+
+msgid "Edge"
+msgstr "Edge"
 
 msgid "Impostazioni → Cookie"
 msgstr "Settings → Cookies"
@@ -1678,20 +1122,362 @@ msgstr "Settings → Cookies"
 msgid "Conseguenze della disabilitazione"
 msgstr "Consequences of disabling cookies"
 
-msgid "La disabilitazione dei <strong>cookie tecnici</strong> può compromettere alcune funzionalità del sito. La disabilitazione dei <strong>cookie analitici</strong> non influisce sulla navigazione, ma impedisce di raccogliere statistiche anonime per migliorare il servizio."
-msgstr "Disabling <strong>technical cookies</strong> may compromise some of the site's functionality. Disabling <strong>analytical cookies</strong> does not affect browsing, but prevents the collection of anonymous statistics to improve the service."
+msgid "La disabilitazione dei <strong>cookie tecnici</strong> può compromettere alcune funzionalità del sito, inclusa la navigazione sicura ed efficiente. La disabilitazione dei <strong>cookie analitici</strong> non influisce sulla navigazione, ma impedisce la raccolta di statistiche aggregate per l'ottimizzazione del servizio."
+msgstr "Disabling <strong>technical cookies</strong> may impair some site features, including safe and efficient navigation. Disabling <strong>analytical cookies</strong> does not affect browsing, but prevents the collection of aggregate statistics for service optimisation."
 
 msgid "Gestisci le tue preferenze"
 msgstr "Manage your preferences"
 
-msgid "Puoi modificare le tue preferenze sui cookie in qualsiasi momento"
+msgid "Puoi modificare le preferenze sui cookie in qualsiasi momento"
 msgstr "You can change your cookie preferences at any time"
 
 msgid "Gestisci Cookie"
 msgstr "Manage Cookies"
 
-msgid "Funzionalità di gestione cookie in fase di implementazione.\n\nAttualmente puoi gestire i cookie attraverso le impostazioni del tuo browser."
-msgstr "Cookie management functionality currently being implemented.\n\nYou can currently manage cookies through your browser settings."
+msgid "<strong>Nota:</strong> Per ulteriori informazioni sul trattamento dei dati personali, consultare la <a href=\"/privacy-policy\" style=\"color: #01579b; font-weight: 600;\">Privacy Policy</a> e le <a href=\"/note-legali\" style=\"color: #01579b; font-weight: 600;\">Note Legali</a> del sito. Ultimo aggiornamento: Dicembre 2025."
+msgstr "<strong>Note:</strong> For further information on the processing of personal data, please refer to the <a href=\"/privacy-policy\" style=\"color: #01579b; font-weight: 600;\">Privacy Policy</a> and the <a href=\"/note-legali\" style=\"color: #01579b; font-weight: 600;\">Legal Notice</a>. Last updated: December 2025."
 
-msgid "<strong>Nota:</strong> Per ulteriori informazioni sul trattamento dei dati personali, consultare la <a href=\"/privacy-policy\" style=\"color: #01579b; font-weight: 600;\">Privacy Policy</a> e le <a href=\"/note-legali\" style=\"color: #01579b; font-weight: 600;\">Note Legali</a> del sito. Ultimo aggiornamento: Dicembre 2025"
-msgstr "<strong>Note:</strong> For further information on the processing of personal data, please consult the <a href=\"/privacy-policy\" style=\"color: #01579b; font-weight: 600;\">Privacy Policy</a> and the <a href=\"/note-legali\" style=\"color: #01579b; font-weight: 600;\">Legal Notice</a> of the site. Last update: December 2025"
+msgid "Privacy Policy - Digitalizzazione del patrimonio culturale"
+msgstr "Privacy Policy - Digitization of Cultural Heritage"
+
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+msgid "Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR) e del D.Lgs. 196/2003"
+msgstr "Notice on the processing of personal data pursuant to EU Regulation 2016/679 (GDPR) and Legislative Decree 196/2003"
+
+msgid "Normativa di riferimento"
+msgstr "Applicable Legislation"
+
+msgid "Il trattamento dei dati personali contenuti nel portale internet della Regione Siciliana è effettuato in applicazione del <strong>Regolamento UE 2016/679</strong> del Parlamento Europeo e del Consiglio del 27/4/2016, in materia di protezione dei dati personali, e delle disposizioni di cui al <strong>D.Lgs. 196/2003</strong>, nonché delle indicazioni contenute nelle <em>«Linee guida in materia di trattamento di dati personali contenuti anche in atti e documenti amministrativi, effettuato da soggetti pubblici per finalità di pubblicazione e diffusione sul web»</em>, adottate con provvedimento n. 88 del 2 marzo 2011 del Garante per la Protezione dei dati personali."
+msgstr "The processing of personal data contained in the Regione Siciliana web portal is carried out in accordance with <strong>EU Regulation 2016/679</strong> of the European Parliament and of the Council of 27/4/2016 on the protection of personal data, and the provisions of <strong>Legislative Decree 196/2003</strong>, as well as the guidelines on the processing of personal data contained in administrative acts and documents by public bodies for web publication, adopted by the Data Protection Authority with measure No. 88 of 2 March 2011."
+
+msgid "Secondo la predetta normativa, il trattamento è improntato ai principi di <strong>correttezza, liceità, pertinenza e trasparenza</strong>, tutelando la riservatezza e i diritti dell'interessato ai sensi di legge."
+msgstr "In accordance with the aforementioned legislation, processing is based on the principles of <strong>fairness, lawfulness, relevance and transparency</strong>, protecting the confidentiality and rights of the data subject as required by law."
+
+msgid "Titolare del Trattamento e DPO"
+msgstr "Data Controller and DPO"
+
+msgid "Soggetti responsabili del trattamento dei dati personali"
+msgstr "Parties responsible for the processing of personal data"
+
+msgid "Titolare del Trattamento"
+msgstr "Data Controller"
+
+msgid "Ai sensi dell'art. 56 L.R. 27 aprile 1999, n. 10, il Titolare del trattamento dei dati personali è l'<strong>Assessorato Regionale dell'Economia</strong>, nella persona dell'Assessore pro-tempore."
+msgstr "Pursuant to Art. 56 of Regional Law No. 10 of 27 April 1999, the Data Controller is the <strong>Regional Department of Economy</strong>, represented by the acting Councillor."
+
+msgid "Sede:"
+msgstr "Address:"
+
+msgid "<strong>Nota:</strong> L'Assessorato dell'Economia della Regione Siciliana non ha alcuna responsabilità per quanto riguarda i siti esterni e/o istituzionali ai quali è possibile accedere tramite i collegamenti presenti nel sito. Dei siti collegati sono responsabili i rispettivi Titolari, ai cui termini e condizioni si rimanda."
+msgstr "<strong>Note:</strong> The Regional Department of Economy of Regione Siciliana bears no responsibility for the content of external and/or institutional websites accessible via links on this site. Linked sites are the sole responsibility of their respective owners, whose terms and conditions apply."
+
+msgid "Responsabile Protezione Dati (DPO)"
+msgstr "Data Protection Officer (DPO)"
+
+msgid "Il <strong>Regolamento UE 2016/679</strong>, entrato in vigore il 25 maggio 2018, ha previsto l'istituzione della figura del Responsabile della protezione dei dati (<strong>RPD</strong>) o <em>Data Protection Officer</em> (<strong>DPO</strong>)."
+msgstr "<strong>EU Regulation 2016/679</strong>, which entered into force on 25 May 2018, established the role of the Data Protection Officer (<strong>DPO</strong>)."
+
+msgid "Email:"
+msgstr "Email:"
+
+msgid "Per esercitare i diritti di cui all'art. 7 del D.Lgs. 196/2003 o ai sensi degli artt. 15-22 GDPR, dovrà rivolgere richiesta scritta al Titolare del Trattamento o al DPO ai recapiti sopra indicati."
+msgstr "To exercise the rights under Art. 7 of Legislative Decree 196/2003 or Arts. 15-22 of the GDPR, please submit a written request to the Data Controller or DPO at the contact details provided above."
+
+msgid "Dati Trattati"
+msgstr "Data Processed"
+
+msgid "Il portale tratta esclusivamente dati di navigazione e dati forniti volontariamente dall'utente, per finalità istituzionali"
+msgstr "The portal processes only browsing data and data voluntarily provided by the user, for institutional purposes"
+
+msgid "Dati di Navigazione"
+msgstr "Browsing Data"
+
+msgid "Acquisiti nel corso del normale utilizzo del portale, la cui trasmissione è implicita nell'uso dei protocolli di comunicazione di Internet. Non sono acquisiti per identificare gli interessati, ma potrebbero esserlo attraverso elaborazione con dati di terzi."
+msgstr "Collected during normal use of the portal, whose transmission is implicit in the use of Internet communication protocols. They are not collected to identify users, but could be used for that purpose through processing combined with third-party data."
+
+msgid "Indirizzi IP o nomi di dominio dei computer"
+msgstr "IP addresses or domain names of computers"
+
+msgid "Indirizzi URI delle risorse richieste"
+msgstr "URI addresses of requested resources"
+
+msgid "Orario della richiesta e metodo utilizzato"
+msgstr "Request time and method used"
+
+msgid "Dimensione del file ottenuto in risposta"
+msgstr "Size of the file obtained in response"
+
+msgid "Codice di stato del server e parametri del sistema operativo"
+msgstr "Server status code and operating system parameters"
+
+msgid "<strong>Finalità:</strong> solo statistiche anonime sull'utilizzo del sito e controllo del corretto funzionamento. Nessun dato personale è acquisito tramite cookie di sessione."
+msgstr "<strong>Purpose:</strong> anonymous statistics on site usage and monitoring of correct operation only. No personal data is collected via session cookies."
+
+msgid "Dati Forniti Volontariamente"
+msgstr "Voluntarily Provided Data"
+
+msgid "L'invio facoltativo, esplicito e volontario di dati mediante messaggi di posta elettronica o tramite form dedicate comporta l'inevitabile acquisizione dei dati del mittente, inclusi eventuali altri dati personali inseriti nella comunicazione."
+msgstr "The optional, explicit and voluntary submission of data via email or dedicated forms inevitably results in the acquisition of the sender's data, including any other personal data included in the communication."
+
+msgid "<strong>Dati sensibili e giudiziari:</strong> qualora forniti dall'utente, saranno rimossi. Il Titolare tratta esclusivamente dati di carattere anagrafico, identificativo, personale e di navigazione."
+msgstr "<strong>Sensitive and judicial data:</strong> if provided by the user, they will be removed. The Data Controller processes only personal, identification, and browsing data."
+
+msgid "<strong>Finalità:</strong> i dati sono utilizzati al solo fine di fruire del servizio richiesto e comunicati a terzi solo ove strettamente necessario a tal fine."
+msgstr "<strong>Purpose:</strong> data are used solely to provide the requested service and shared with third parties only where strictly necessary for that purpose."
+
+msgid "Modalità di trattamento"
+msgstr "Processing Methods"
+
+msgid "Il trattamento dei dati avverrà con l'ausilio di <strong>procedure informatizzate e/o manuali e/o sistemi automatizzati</strong> atti a memorizzare, gestire e/o trasmettere gli stessi, nei limiti necessari per perseguire le finalità istituzionali. I dati sono mantenuti per il periodo minimo richiesto dalla normativa vigente."
+msgstr "Data processing will be carried out using <strong>computerised and/or manual and/or automated systems</strong> capable of storing, managing and/or transmitting data, to the extent necessary to pursue institutional purposes. Data are retained for the minimum period required by applicable law."
+
+msgid "I dati potranno essere comunicati a responsabili e/o incaricati di altri soggetti pubblici o incaricati di pubblico servizio che debbano partecipare al procedimento amministrativo, anche a seguito di ispezioni o verifiche. Nessun dato derivante dal servizio web viene comunicato o diffuso al di fuori dei casi espressamente previsti dalla legge. L'interessato è chiamato a comunicare tempestivamente eventuali correzioni o aggiornamenti dei propri dati personali."
+msgstr "Data may be disclosed to officers and/or agents of other public bodies or public service providers who must participate in the administrative procedure, including during inspections or audits. No data derived from the web service is communicated or disclosed outside the cases expressly provided for by law. Users are required to promptly notify any corrections or updates to their personal data."
+
+msgid "Diritti dell'Interessato"
+msgstr "Rights of the Data Subject"
+
+msgid "Ai sensi dell'art. 7 del D.Lgs. 30 giugno 2003, n. 196, l'interessato può esercitare i seguenti diritti con richiesta rivolta senza formalità al Titolare o al Responsabile del Trattamento, anche tramite lettera raccomandata, telefax o posta elettronica (art. 9 D.Lgs. 196/2003)"
+msgstr "Pursuant to Art. 7 of Legislative Decree No. 196 of 30 June 2003, the data subject may exercise the following rights by submitting an informal request to the Data Controller or Processor, including by registered letter, fax or email (Art. 9, Legislative Decree 196/2003)"
+
+msgid "Conoscenza"
+msgstr "Access"
+
+msgid "Conoscere l'esistenza dei propri dati personali e la loro comunicazione in forma intelligibile"
+msgstr "Know whether personal data exist and obtain them in an intelligible form"
+
+msgid "Informazione"
+msgstr "Information"
+
+msgid "Essere informato sul Titolare, sulle finalità, sulle modalità del trattamento e sui soggetti a cui i dati possono essere comunicati"
+msgstr "Be informed about the Controller, the purposes, methods of processing and the parties to whom data may be disclosed"
+
+msgid "Aggiornamento e rettifica"
+msgstr "Update and rectification"
+
+msgid "Ottenere l'aggiornamento, la rettificazione o l'integrazione dei propri dati"
+msgstr "Obtain the update, rectification or integration of personal data"
+
+msgid "Cancellazione e blocco"
+msgstr "Erasure and blocking"
+
+msgid "Ottenere la cancellazione, la trasformazione in forma anonima o il blocco dei dati trattati in violazione di legge"
+msgstr "Obtain the erasure, anonymisation or blocking of data processed in violation of the law"
+
+msgid "Opposizione"
+msgstr "Objection"
+
+msgid "Opporsi per motivi legittimi al trattamento dei dati, salvi i limiti stabiliti dalla legge"
+msgstr "Object on legitimate grounds to the processing of data, subject to the limits established by law"
+
+msgid "Opposizione al marketing"
+msgstr "Objection to marketing"
+
+msgid "Opporsi all'invio di materiale pubblicitario o per il compimento di ricerche di mercato o comunicazioni commerciali"
+msgstr "Object to the sending of advertising material or the carrying out of market research or commercial communications"
+
+msgid "Il testo completo dell'art. 7 relativo ai diritti dell'interessato, dell'art. 13 relativo all'informativa e degli artt. 23, 26 e 27 relativi al consenso e alle garanzie, è disponibile sul sito <a href=\"https://www.garanteprivacy.it\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--secondary-color); font-weight: 600;\">www.garanteprivacy.it</a>."
+msgstr "The full text of Art. 7 on the rights of data subjects, Art. 13 on the privacy notice, and Arts. 23, 26 and 27 on consent and safeguards is available at <a href=\"https://www.garanteprivacy.it\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--secondary-color); font-weight: 600;\">www.garanteprivacy.it</a>."
+
+msgid "Obbligatorietà del conferimento"
+msgstr "Mandatory nature of data provision"
+
+msgid "I dati forniti sono obbligatori per abilitare l'accesso e l'utilizzo dei servizi erogati dal portale. <strong>In caso di rifiuto</strong> a fornire i dati o ad acconsentire al loro trattamento – inclusa la loro comunicazione nei limiti sopra indicati – ne deriva l'<strong>impossibilità di accesso</strong> ai servizi previsti dal portale istituzionale."
+msgstr "The data provided are mandatory to enable access to and use of the portal's services. <strong>Refusal</strong> to provide data or to consent to their processing – including their disclosure within the limits indicated above – results in the <strong>inability to access</strong> the services provided by the institutional portal."
+
+msgid "<strong>Nota:</strong> Per ulteriori informazioni sull'utilizzo dei cookie, consultare la <a href=\"/cookie-policy\" style=\"color: #01579b; font-weight: 600;\">Cookie Policy</a> e le <a href=\"/note-legali\" style=\"color: #01579b; font-weight: 600;\">Note Legali</a> del sito. Ultimo aggiornamento: Dicembre 2025."
+msgstr "<strong>Note:</strong> For further information on the use of cookies, please refer to the <a href=\"/cookie-policy\" style=\"color: #01579b; font-weight: 600;\">Cookie Policy</a> and the <a href=\"/note-legali\" style=\"color: #01579b; font-weight: 600;\">Legal Notice</a>. Last updated: December 2025."
+
+msgid "Note Legali - Digitalizzazione del patrimonio culturale"
+msgstr "Legal Notice - Digitization of Cultural Heritage"
+
+msgid "Note Legali"
+msgstr "Legal Notice"
+
+msgid "Proprietà intellettuale, diritto d'autore e condizioni d'uso del portale della Regione Siciliana"
+msgstr "Intellectual property, copyright and terms of use of the Regione Siciliana portal"
+
+msgid "Proprietà Intellettuale e Diritto d'Autore"
+msgstr "Intellectual Property and Copyright"
+
+msgid "I dati, le informazioni testuali e gli elementi multimediali contenuti nel Portale Internet della Regione Siciliana sono protetti dalla <strong>legge 22 aprile 1941 n. 633</strong> e successive modificazioni in materia di «Protezione del diritto d'autore», fatta salva la protezione garantita dall'<strong>art. 615-ter del codice penale</strong> (accesso abusivo ad un sistema informatico o telematico)."
+msgstr "The data, textual information and multimedia elements contained in the Regione Siciliana Internet Portal are protected by <strong>Law No. 633 of 22 April 1941</strong> and its subsequent amendments on the protection of copyright, without prejudice to the protection provided by <strong>Art. 615-ter of the Penal Code</strong> (unauthorised access to a computer or telecommunications system)."
+
+msgid "Le informazioni testuali e gli elementi multimediali sono di <strong>proprietà della Regione Siciliana</strong> e dei loro autori e aventi diritto. L'utilizzatore dei contenuti di questo portale è tenuto a rispettare i diritti di proprietà intellettuale della Regione Siciliana e di terzi."
+msgstr "Textual information and multimedia elements are the <strong>property of Regione Siciliana</strong> and their respective authors and rights holders. Users of this portal's content are required to respect the intellectual property rights of Regione Siciliana and third parties."
+
+msgid "Utilizzo dei Contenuti"
+msgstr "Use of Content"
+
+msgid "Condizioni e limiti per la riproduzione e distribuzione dei contenuti del portale"
+msgstr "Conditions and limits for the reproduction and distribution of portal content"
+
+msgid "Utilizzo Autorizzato"
+msgstr "Permitted Use"
+
+msgid "L'utilizzazione, la riproduzione, l'estrazione di copia e la distribuzione delle informazioni testuali e degli elementi multimediali sono autorizzate esclusivamente a condizione che:"
+msgstr "The use, reproduction, copying and distribution of textual information and multimedia elements are authorised exclusively provided that:"
+
+msgid "Avvengano nel rispetto dell'interesse pubblico all'informazione"
+msgstr "They take place in the public interest in the right to information"
+
+msgid "Siano effettuate per finalità non commerciali"
+msgstr "They are carried out for non-commercial purposes"
+
+msgid "Garantiscano l'integrità degli elementi riprodotti"
+msgstr "They guarantee the integrity of the reproduced elements"
+
+msgid "Riportino la indicazione della fonte"
+msgstr "They indicate the source"
+
+msgid "L'amministrazione individua le ipotesi di possibile utilizzo anche a fini commerciali."
+msgstr "The administration identifies cases where commercial use may also be permitted."
+
+msgid "Utilizzo Vietato"
+msgstr "Prohibited Use"
+
+msgid "È espressamente vietato:"
+msgstr "The following are expressly prohibited:"
+
+msgid "Utilizzare i contenuti in testi che ledano il diritto all'immagine, all'onore, al decoro o alla reputazione delle persone fotografate, riprese o citate"
+msgstr "Using the content in texts that infringe the right to image, honour, dignity or reputation of persons photographed, filmed or cited"
+
+msgid "Alterare forma e senso delle informazioni testuali e degli elementi multimediali"
+msgstr "Altering the form and meaning of textual information and multimedia elements"
+
+msgid "Utilizzare la testata del portale o parte di essa senza specifica autorizzazione"
+msgstr "Using the portal masthead or any part of it without specific authorisation"
+
+msgid "La Regione Siciliana si riserva ogni azione legale a tutela dell'uso improprio del logo ufficiale e della testata del proprio portale internet."
+msgstr "Regione Siciliana reserves all legal remedies to protect against improper use of the official logo and masthead of its internet portal."
+
+msgid "Condizioni particolari per alcuni dati"
+msgstr "Special conditions for certain data"
+
+msgid "L'utilizzazione, la riproduzione, l'estrazione di copia e la distribuzione di alcuni dati possono essere soggette – ove ricorrano i presupposti previsti dalla legge – a condizioni diverse, quali il <strong>consenso delle persone fotografate, riprese o citate</strong>."
+msgstr "The use, reproduction, copying and distribution of certain data may be subject – where the conditions provided for by law are met – to different conditions, such as the <strong>consent of the persons photographed, filmed or cited</strong>."
+
+msgid "Fonti Normative"
+msgstr "Legal Sources"
+
+msgid "Per quel che attiene alle fonti normative, la Regione Siciliana non risponde dell'utilizzazione dei contenuti effettuata in modo da discostarsi dalla versione ufficiale degli atti, che è solo quella risultante dai testi della <strong>Gazzetta Ufficiale della Repubblica Italiana</strong> e della <strong>Raccolta ufficiale delle leggi e dei decreti</strong> (artt. 6-8 d.p.r. 1092/1985), nonché dalla <strong>Gazzetta Ufficiale della Regione Siciliana</strong>."
+msgstr "With regard to legislative sources, Regione Siciliana is not responsible for any use of content that departs from the official version of acts, which is only that contained in the <strong>Official Gazette of the Italian Republic</strong>, the <strong>Official Collection of Laws and Decrees</strong> (Arts. 6-8 of Presidential Decree 1092/1985), and the <strong>Official Gazette of the Regione Siciliana</strong>."
+
+msgid "Siti Esterni"
+msgstr "External Websites"
+
+msgid "La Regione Siciliana non risponde dei dati e delle informazioni riportate su siti esterni raggiungibili tramite i collegamenti proposti all'interno del portale. Il collegamento apre una nuova finestra come ulteriore servizio agli utenti."
+msgstr "Regione Siciliana is not responsible for the data and information published on external websites accessible via links within the portal. Links open in a new window as an additional service to users."
+
+msgid "Della completezza e precisione delle informazioni disponibili in tali siti – così come della loro grafica e funzionalità – sono da ritenersi <strong>responsabili i soggetti titolari degli stessi</strong>."
+msgstr "The completeness and accuracy of the information available on those sites – as well as their design and functionality – are the sole responsibility of <strong>their respective owners</strong>."
+
+msgid "Disponibilità del Servizio"
+msgstr "Service Availability"
+
+msgid "La Regione Siciliana si riserva il diritto di interrompere, sospendere o modificare la funzionalità del sito in qualsiasi momento, nonché la disponibilità di qualsiasi elemento di esso, ovvero, all'occorrenza, di approntarvi in qualsiasi momento tutti gli aggiornamenti e le modifiche del caso."
+msgstr "Regione Siciliana reserves the right to interrupt, suspend or modify the functionality of the site at any time, as well as the availability of any element thereof, or to make any necessary updates and changes at any time."
+
+msgid "Logo e Testata del Portale"
+msgstr "Portal Logo and Masthead"
+
+msgid "L'uso della testata del Portale o di parte di essa <strong>deve essere specificamente autorizzata</strong>. La Regione Siciliana si riserva ogni azione legale a tutela dell'uso improprio del logo ufficiale e della testata del proprio portale internet."
+msgstr "The use of the Portal masthead or any part of it <strong>must be specifically authorised</strong>. Regione Siciliana reserves all legal remedies to protect against improper use of the official logo and masthead of its internet portal."
+
+msgid "Qualsiasi uso non autorizzato del logo, della testata o degli elementi grafici identificativi del portale potrà essere perseguito nelle sedi competenti."
+msgstr "Any unauthorised use of the portal's logo, masthead or identifying graphic elements may be pursued before the competent authorities."
+
+msgid "<strong>Nota:</strong> Per informazioni sul trattamento dei dati personali, consultare la <a href=\"/privacy-policy\" style=\"color: #01579b; font-weight: 600;\">Privacy Policy</a> e la <a href=\"/cookie-policy\" style=\"color: #01579b; font-weight: 600;\">Cookie Policy</a> del sito. Ultimo aggiornamento: Dicembre 2025."
+msgstr "<strong>Note:</strong> For information on the processing of personal data, please refer to the <a href=\"/privacy-policy\" style=\"color: #01579b; font-weight: 600;\">Privacy Policy</a> and the <a href=\"/cookie-policy\" style=\"color: #01579b; font-weight: 600;\">Cookie Policy</a>. Last updated: December 2025."
+
+msgid "Contatti"
+msgstr "Contacts"
+
+msgid "Contattaci per informazioni sul progetto di digitalizzazione del patrimonio culturale della Regione Siciliana."
+msgstr "Contact us for information on the cultural heritage digitization project of Regione Siciliana."
+
+msgid "Come Contattarci"
+msgstr "How to Contact Us"
+
+msgid "Scegli il canale di comunicazione più adatto alle tue esigenze"
+msgstr "Choose the communication channel best suited to your needs"
+
+msgid "Sede"
+msgstr "Address"
+
+msgid "Palazzo Orleans<br><strong>Piazza Indipendenza, 21</strong><br>90129 Palermo (PA)"
+msgstr "Palazzo Orleans<br><strong>Piazza Indipendenza, 21</strong><br>90129 Palermo (PA)"
+
+msgid "Telefono"
+msgstr "Phone"
+
+msgid "Centralino:"
+msgstr "Switchboard:"
+
+msgid "Numero Verde Cittadino:"
+msgstr "Freephone:"
+
+msgid "Gratuito da rete fissa"
+msgstr "Free from landlines"
+
+msgid "Posta Certificata"
+msgstr "Certified Email (PEC)"
+
+msgid "Invia un Messaggio"
+msgstr "Send a Message"
+
+msgid "Compila il form sottostante e ti risponderemo al più presto"
+msgstr "Fill in the form below and we will get back to you as soon as possible"
+
+msgid "Nome"
+msgstr "First name"
+
+msgid "Il tuo nome"
+msgstr "Your first name"
+
+msgid "Cognome"
+msgstr "Last name"
+
+msgid "Il tuo cognome"
+msgstr "Your last name"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "tuaemail@esempio.it"
+msgstr "youremail@example.com"
+
+msgid "Oggetto"
+msgstr "Subject"
+
+msgid "Seleziona un'opzione"
+msgstr "Select an option"
+
+msgid "Richiesta di informazioni"
+msgstr "Request for information"
+
+msgid "Supporto tecnico"
+msgstr "Technical support"
+
+msgid "Proposta di collaborazione"
+msgstr "Collaboration proposal"
+
+msgid "Accesso ai dati digitalizzati"
+msgstr "Access to digitized data"
+
+msgid "Altro"
+msgstr "Other"
+
+msgid "Messaggio"
+msgstr "Message"
+
+msgid "Scrivi qui il tuo messaggio..."
+msgstr "Write your message here..."
+
+msgid "Acconsento al trattamento dei miei dati personali in conformità con la "
+msgstr "I consent to the processing of my personal data in accordance with the "
+
+msgid "Invia Messaggio"
+msgstr "Send Message"

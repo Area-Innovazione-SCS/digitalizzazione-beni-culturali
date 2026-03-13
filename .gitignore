@@ -9,6 +9,7 @@ templates/dettaglio-cantiere_v1.html
 templates/dettaglio-cantiere_v2.html
 templates/dettaglio-cantiere.html.backup
 templates/mappa_v1.html
+templates/contatti_faq.html
 venv/
 converti_tutti_cantieri.py
 static/video/beni-culturali.mp4

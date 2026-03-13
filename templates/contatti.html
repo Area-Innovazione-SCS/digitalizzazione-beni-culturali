@@ -3,8 +3,8 @@
 {% block title %}Contatti - Digitalizzazione del patrimonio culturale{% endblock %}
 
 {% block meta_tags %}
-<meta name="description" content="Contatta il team del progetto di digitalizzazione del patrimonio culturale della Regione Siciliana. Informazioni, assistenza e supporto tecnico.">
-<meta name="keywords" content="contatti, supporto, assistenza, regione siciliana, digitalizzazione, patrimonio culturale">
+<meta name="description" content="Contatta la Regione Siciliana per informazioni sul progetto di digitalizzazione del patrimonio culturale. Sede, telefono e PEC.">
+<meta name="keywords" content="contatti, regione siciliana, digitalizzazione, patrimonio culturale, Palazzo Orleans">
 {% endblock %}
 
 {% block nav_contatti %}active{% endblock %}
@@ -31,7 +31,7 @@
         <div class="hero-content">
             <h1>{{ _("Contatti") }}</h1>
             <p>
-                {{ _("Siamo qui per assisterti. Contattaci per informazioni sul progetto di digitalizzazione del patrimonio culturale della Regione Siciliana o per richiedere supporto tecnico.") }}
+                {{ _("Contattaci per informazioni sul progetto di digitalizzazione del patrimonio culturale della Regione Siciliana.") }}
             </p>
         </div>
     </div>
@@ -44,56 +44,51 @@
         <p class="section-subtitle" style="text-align: center; margin: 0 auto 3rem auto;">
             {{ _("Scegli il canale di comunicazione più adatto alle tue esigenze") }}
         </p>
-        
+
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-            <!-- Sede Principale -->
-            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); text-align: center; transition: all 0.3s ease;">
+
+            <!-- Sede -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); text-align: center;">
                 <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
                     <i class="fas fa-map-marker-alt" style="font-size: 2rem; color: white;"></i>
                 </div>
-                <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-primary);">{{ _("Sede Principale") }}</h3>
-                <p style="color: var(--text-secondary); line-height: 1.8;">
-                    {{ _("Assessorato Regionale dei Beni Culturali<br>e dell'Identità Siciliana<br><strong>Via delle Croci, 6</strong><br>90139 Palermo (PA)<br>Sicilia - Italia") }}
+                <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-primary);">{{ _("Sede") }}</h3>
+                <p style="color: var(--text-secondary); line-height: 1.9;">
+                    {{ _("Palazzo Orleans<br><strong>Piazza Indipendenza, 21</strong><br>90129 Palermo (PA)") }}
                 </p>
             </div>
-            
+
             <!-- Telefono -->
-            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); text-align: center; transition: all 0.3s ease;">
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); text-align: center;">
                 <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--success-color), #00b359); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
                     <i class="fas fa-phone" style="font-size: 2rem; color: white;"></i>
                 </div>
                 <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-primary);">{{ _("Telefono") }}</h3>
-                <p style="color: var(--text-secondary); line-height: 1.8;">
+                <p style="color: var(--text-secondary); line-height: 2;">
                     <strong>{{ _("Centralino:") }}</strong><br>
-                    <a href="tel:+390916965111" style="font-size: 1.125rem; font-weight: 600; color: var(--primary-color);">
-                        +39 091 696 5111
-                    </a><br>
+                    <a href="tel:0917071111" style="font-size: 1.125rem; font-weight: 600; color: var(--text-secondary);">091 707 1111</a>
+                    <br><br>
+                    <strong>{{ _("Numero Verde Cittadino:") }}</strong><br>
+                    <a href="tel:800894318" style="font-size: 1.125rem; font-weight: 600; color: var(--text-secondary);">800 894 318</a>
                     <br>
-                    <strong>{{ _("Supporto Tecnico:") }}</strong><br>
-                    <a href="tel:+390916965200" style="color: var(--primary-color);">
-                        +39 091 696 5200
-                    </a>
+                    <span style="font-size: 0.813rem; color: var(--text-muted);">{{ _("Gratuito da rete fissa") }}</span>
                 </p>
             </div>
-            
-            <!-- Email -->
-            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); text-align: center; transition: all 0.3s ease;">
+
+            <!-- PEC -->
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); text-align: center;">
                 <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--info-color), #138d9e); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
                     <i class="fas fa-envelope" style="font-size: 2rem; color: white;"></i>
                 </div>
-                <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-primary);">{{ _("Email") }}</h3>
-                <p style="color: var(--text-secondary); line-height: 1.8;">
-                    <strong>{{ _("Informazioni generali:") }}</strong><br>
-                    <a href="mailto:info.digitalizzazione@regione.sicilia.it" style="color: var(--primary-color); word-break: break-word;">
-                        info.digitalizzazione@regione.sicilia.it
-                    </a><br>
-                    <br>
-                    <strong>{{ _("PEC:") }}</strong><br>
-                    <a href="mailto:dipartimento.bca@certmail.regione.sicilia.it" style="color: var(--primary-color); word-break: break-word;">
-                        dipartimento.bca@certmail.regione.sicilia.it
+                <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-primary);">{{ _("Posta Certificata") }}</h3>
+                <p style="color: var(--text-secondary); line-height: 1.9;">
+                    <strong>PEC:</strong><br>
+                    <a href="mailto:segreteria.generale@certmail.regione.sicilia.it" style="color: var(--text-secondary); word-break: break-word; font-size: 0.938rem;">
+                        segreteria.generale@<br>certmail.regione.sicilia.it
                     </a>
                 </p>
             </div>
+
         </div>
     </div>
 </section>
@@ -105,9 +100,10 @@
         <p class="section-subtitle" style="text-align: center; margin: 0 auto 3rem auto;">
             {{ _("Compila il form sottostante e ti risponderemo al più presto") }}
         </p>
-        
+
         <div style="max-width: 800px; margin: 0 auto; background: white; padding: 3rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
             <form id="contactForm" style="display: flex; flex-direction: column; gap: 1.5rem;">
+
                 <!-- Nome e Cognome -->
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
                     <div>
@@ -127,7 +123,7 @@
                             placeholder="{{ _('Il tuo cognome') }}">
                     </div>
                 </div>
-                
+
                 <!-- Email e Telefono -->
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
                     <div>
@@ -144,10 +140,10 @@
                         </label>
                         <input type="tel" id="telefono" name="telefono"
                             style="width: 100%; padding: 0.75rem 1rem; border: 2px solid var(--border-color); border-radius: var(--radius-md); font-family: var(--font-primary); font-size: 1rem; transition: border-color 0.3s ease;"
-                            placeholder="+39 123 456 7890">
+                            placeholder="+39 091 707 1111">
                     </div>
                 </div>
-                
+
                 <!-- Oggetto -->
                 <div>
                     <label for="oggetto" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text-primary);">
@@ -163,7 +159,7 @@
                         <option value="altro">{{ _("Altro") }}</option>
                     </select>
                 </div>
-                
+
                 <!-- Messaggio -->
                 <div>
                     <label for="messaggio" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text-primary);">
@@ -173,136 +169,37 @@
                         style="width: 100%; padding: 0.75rem 1rem; border: 2px solid var(--border-color); border-radius: var(--radius-md); font-family: var(--font-primary); font-size: 1rem; resize: vertical; transition: border-color 0.3s ease;"
                         placeholder="{{ _('Scrivi qui il tuo messaggio...') }}"></textarea>
                 </div>
-                
+
                 <!-- Privacy -->
                 <div style="display: flex; align-items: start; gap: 0.75rem;">
                     <input type="checkbox" id="privacy" name="privacy" required
                         style="margin-top: 0.25rem; width: 18px; height: 18px; cursor: pointer;">
                     <label for="privacy" style="color: var(--text-secondary); font-size: 0.938rem; line-height: 1.6; cursor: pointer;">
                         {{ _("Acconsento al trattamento dei miei dati personali in conformità con la ") }}
-                        <a href="#" style="color: var(--primary-color); text-decoration: underline;">{{ _("Privacy Policy") }}</a> 
-                        {{ _("e il") }} <a href="#" style="color: var(--primary-color); text-decoration: underline;">{{ _("GDPR") }}</a>. 
+                        <a href="/privacy-policy" style="color: var(--primary-color); text-decoration: underline;">{{ _("Privacy Policy") }}</a>.
                         <span style="color: var(--danger-color);">*</span>
                     </label>
                 </div>
-                
+
                 <!-- Bottone Invio -->
                 <div style="margin-top: 1rem;">
                     <button type="submit" class="btn btn-secondary btn-large" style="width: 100%;">
                         <i class="fas fa-paper-plane"></i> {{ _("Invia Messaggio") }}
                     </button>
                 </div>
-                
+
                 <!-- Messaggio di feedback (nascosto di default) -->
                 <div id="formMessage" style="display: none; padding: 1rem; border-radius: var(--radius-md); margin-top: 1rem;"></div>
+
             </form>
         </div>
     </div>
 </section>
 
-<!-- Uffici e Dipartimenti -->
-<section class="section">
-    <div class="container">
-        <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("Uffici e Dipartimenti") }}</h2>
-        <p class="section-subtitle" style="text-align: center; margin: 0 auto 3rem auto;">
-            {{ _("Contatta direttamente l'ufficio di competenza per le tue esigenze specifiche") }}
-        </p>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
-            <!-- Direzione Generale -->
-            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-top: 4px solid var(--primary-color);">
-                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                    <div style="width: 50px; height: 50px; background: var(--bg-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                        <i class="fas fa-building" style="font-size: 1.5rem; color: var(--primary-color);"></i>
-                    </div>
-                    <h3 style="font-size: 1.125rem; color: var(--text-primary); margin: 0;">{{ _("Direzione Generale") }}</h3>
-                </div>
-                <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.6;">
-                    {{ _("Coordinamento del progetto e gestione amministrativa") }}
-                </p>
-                <div style="border-top: 1px solid var(--border-color); padding-top: 1rem;">
-                    <p style="margin: 0.5rem 0; color: var(--text-secondary); font-size: 0.938rem;">
-                        <i class="fas fa-envelope" style="color: var(--primary-color); width: 20px;"></i>
-                        <a href="mailto:direzione.generale@regione.sicilia.it" style="color: var(--primary-color);">
-                            direzione.generale@regione.sicilia.it
-                        </a>
-                    </p>
-                    <p style="margin: 0.5rem 0; color: var(--text-secondary); font-size: 0.938rem;">
-                        <i class="fas fa-phone" style="color: var(--primary-color); width: 20px;"></i>
-                        +39 091 696 5111
-                    </p>
-                </div>
-            </div>
-            
-            <!-- Ufficio Digitalizzazione -->
-            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-top: 4px solid var(--info-color);">
-                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                    <div style="width: 50px; height: 50px; background: var(--bg-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                        <i class="fas fa-digital-tachograph" style="font-size: 1.5rem; color: var(--info-color);"></i>
-                    </div>
-                    <h3 style="font-size: 1.125rem; color: var(--text-primary); margin: 0;">{{ _("Ufficio Digitalizzazione") }}</h3>
-                </div>
-                <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.6;">
-                    {{ _("Supporto tecnico e gestione operativa della digitalizzazione") }}
-                </p>
-                <div style="border-top: 1px solid var(--border-color); padding-top: 1rem;">
-                    <p style="margin: 0.5rem 0; color: var(--text-secondary); font-size: 0.938rem;">
-                        <i class="fas fa-envelope" style="color: var(--info-color); width: 20px;"></i>
-                        <a href="mailto:digitalizzazione@regione.sicilia.it" style="color: var(--info-color);">
-                            digitalizzazione@regione.sicilia.it
-                        </a>
-                    </p>
-                    <p style="margin: 0.5rem 0; color: var(--text-secondary); font-size: 0.938rem;">
-                        <i class="fas fa-phone" style="color: var(--info-color); width: 20px;"></i>
-                        +39 091 696 5200
-                    </p>
-                </div>
-            </div>
-            
-            <!-- Ufficio Comunicazione -->
-            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-top: 4px solid var(--success-color);">
-                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                    <div style="width: 50px; height: 50px; background: var(--bg-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                        <i class="fas fa-comments" style="font-size: 1.5rem; color: var(--success-color);"></i>
-                    </div>
-                    <h3 style="font-size: 1.125rem; color: var(--text-primary); margin: 0;">{{ _("Ufficio Comunicazione") }}</h3>
-                </div>
-                <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.6;">
-                    {{ _("Relazioni con i media e comunicazione istituzionale") }}
-                </p>
-                <div style="border-top: 1px solid var(--border-color); padding-top: 1rem;">
-                    <p style="margin: 0.5rem 0; color: var(--text-secondary); font-size: 0.938rem;">
-                        <i class="fas fa-envelope" style="color: var(--success-color); width: 20px;"></i>
-                        <a href="mailto:comunicazione@regione.sicilia.it" style="color: var(--success-color);">
-                            comunicazione@regione.sicilia.it
-                        </a>
-                    </p>
-                    <p style="margin: 0.5rem 0; color: var(--text-secondary); font-size: 0.938rem;">
-                        <i class="fas fa-phone" style="color: var(--success-color); width: 20px;"></i>
-                        +39 091 696 5150
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- FAQ Rapide -->
-
-
 {% endblock %}
 
 {% block extra_css %}
 <style>
-/* Stili specifici per la pagina contatti */
-.contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg) !important;
-}
-
-/* Focus styles per accessibilità form */
 #contactForm input:focus,
 #contactForm select:focus,
 #contactForm textarea:focus {
@@ -311,61 +208,26 @@
     box-shadow: 0 0 0 3px rgba(202, 129, 20, 0.1);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     #contactForm > div[style*="grid-template-columns"] {
         grid-template-columns: 1fr !important;
     }
-    
-    .hero-content h1 {
-        font-size: 2rem !important;
-    }
-}
-
-/* Animazioni per le card */
-section [style*="box-shadow: var(--shadow-md)"] {
-    transition: all 0.3s ease;
-}
-
-section [style*="box-shadow: var(--shadow-md)"]:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg) !important;
 }
 </style>
 {% endblock %}
 
 {% block extra_js %}
 <script>
-// Gestione del form di contatto
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    
-    // Recupera i dati del form
-    const formData = new FormData(this);
-    const data = {};
-    formData.forEach((value, key) => {
-        data[key] = value;
-    });
-    
-    // Messaggio di feedback
     const messageDiv = document.getElementById('formMessage');
-    
-    // Simulazione invio (in produzione, qui ci sarebbe una chiamata API)
     messageDiv.style.display = 'block';
     messageDiv.style.background = 'var(--success-color)';
     messageDiv.style.color = 'white';
     messageDiv.innerHTML = '<i class="fas fa-check-circle"></i> <strong>Messaggio inviato con successo!</strong><br>Ti risponderemo al più presto all\'indirizzo email fornito.';
-    
-    // Reset del form
     this.reset();
-    
-    // Scroll al messaggio
     messageDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    
-    // Nascondi il messaggio dopo 5 secondi
-    setTimeout(() => {
-        messageDiv.style.display = 'none';
-    }, 5000);
+    setTimeout(() => { messageDiv.style.display = 'none'; }, 5000);
 });
 </script>
 {% endblock %}

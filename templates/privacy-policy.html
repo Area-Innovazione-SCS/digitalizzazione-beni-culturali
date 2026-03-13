@@ -3,8 +3,8 @@
 {% block title %}{{ _("Privacy Policy - Digitalizzazione del patrimonio culturale") }}{% endblock %}
 
 {% block meta_tags %}
-<meta name="description" content="Informativa sulla Privacy - Trattamento dei dati personali secondo il GDPR">
-<meta name="keywords" content="privacy, GDPR, dati personali, protezione dati">
+<meta name="description" content="Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR) e del D.Lgs. 196/2003">
+<meta name="keywords" content="privacy, GDPR, dati personali, protezione dati, Garante Privacy, Regione Siciliana">
 {% endblock %}
 
 {% block breadcrumb %}
@@ -29,126 +29,151 @@
         <div class="hero-content">
             <h1>{{ _("Privacy Policy") }}</h1>
             <p>
-                {{ _("Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR)") }}
+                {{ _("Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR) e del D.Lgs. 196/2003") }}
             </p>
         </div>
     </div>
 </section>
 
-<!-- Titolare e DPO -->
+<!-- Normativa e principi -->
 <section class="section">
     <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-            <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
-                <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--text-primary);">{{ _("1. Titolare del Trattamento") }}</h2>
-                <p style="margin-bottom: 1rem; line-height: 1.8;">
-                    {{ _("Il Titolare del trattamento dei dati personali è la <strong>Regione Siciliana - Assessorato dei Beni Culturali e dell'Identità Siciliana</strong>") }}
-                </p>
-                <p style="margin-bottom: 0.5rem;"><strong>{{ _("Sede legale:") }}</strong> Via delle Croci, 6 - 90139 Palermo</p>
-                <p style="margin-bottom: 0.5rem;"><strong>{{ _("Email:") }}</strong> <a href="mailto:privacy@regione.sicilia.it">privacy@regione.sicilia.it</a></p>
-                <p style="margin: 0;"><strong>{{ _("PEC:") }}</strong> <a href="mailto:assessorato.bca@certmail.regione.sicilia.it">assessorato.bca@certmail.regione.sicilia.it</a></p>
-            </div>
-
-            <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
-                <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--text-primary);">{{ _("2. Responsabile Protezione Dati") }}</h2>
-                <p style="margin-bottom: 1rem; line-height: 1.8;">
-                    {{ _("Il Responsabile della Protezione dei Dati (Data Protection Officer - DPO) può essere contattato:") }}
-                </p>
-                <p style="margin-bottom: 0.5rem;"><strong>{{ _("Email:") }}</strong> <a href="mailto:dpo@regione.sicilia.it">dpo@regione.sicilia.it</a></p>
-                <p style="margin: 0;"><strong>{{ _("PEC:") }}</strong> <a href="mailto:dpo@pec.regione.sicilia.it">dpo@pec.regione.sicilia.it</a></p>
+        <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+            <div style="display: flex; align-items: start; gap: 1.5rem; margin-bottom: 2rem;">
+                <div style="width: 56px; height: 56px; min-width: 56px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-balance-scale" style="font-size: 1.4rem; color: white;"></i>
+                </div>
+                <div>
+                    <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--text-primary);">{{ _("Normativa di riferimento") }}</h2>
+                    <p style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 1rem;">
+                        {{ _("Il trattamento dei dati personali contenuti nel portale internet della Regione Siciliana è effettuato in applicazione del <strong>Regolamento UE 2016/679</strong> del Parlamento Europeo e del Consiglio del 27/4/2016, in materia di protezione dei dati personali, e delle disposizioni di cui al <strong>D.Lgs. 196/2003</strong>, nonché delle indicazioni contenute nelle <em>«Linee guida in materia di trattamento di dati personali contenuti anche in atti e documenti amministrativi, effettuato da soggetti pubblici per finalità di pubblicazione e diffusione sul web»</em>, adottate con provvedimento n. 88 del 2 marzo 2011 del Garante per la Protezione dei dati personali.") }}
+                    </p>
+                    <div style="background: var(--bg-secondary); padding: 1.25rem 1.5rem; border-radius: var(--radius-md); border-left: 3px solid var(--primary-color);">
+                        <p style="margin: 0; line-height: 1.8; color: var(--text-secondary);">
+                            {{ _("Secondo la predetta normativa, il trattamento è improntato ai principi di <strong>correttezza, liceità, pertinenza e trasparenza</strong>, tutelando la riservatezza e i diritti dell'interessato ai sensi di legge.") }}
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Tipi di Dati -->
+<!-- Titolare e DPO -->
 <section class="section section-alt">
     <div class="container">
-        <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("3. Tipi di Dati Raccolti") }}</h2>
+        <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("Titolare del Trattamento e DPO") }}</h2>
         <p style="text-align: center; color: var(--text-secondary); margin: 0 auto 3rem auto; max-width: 700px;">
-            {{ _("Il portale raccoglie e tratta le seguenti categorie di dati personali") }}
+            {{ _("Soggetti responsabili del trattamento dei dati personali") }}
         </p>
 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+
+            <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--primary-color);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="width: 50px; height: 50px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-university" style="font-size: 1.3rem; color: white;"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin: 0; color: var(--text-primary);">{{ _("Titolare del Trattamento") }}</h3>
+                </div>
+                <p style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.25rem;">
+                    {{ _("Ai sensi dell'art. 56 L.R. 27 aprile 1999, n. 10, il Titolare del trattamento dei dati personali è l'<strong>Assessorato Regionale dell'Economia</strong>, nella persona dell'Assessore pro-tempore.") }}
+                </p>
+                <p style="margin-bottom: 0.5rem; color: var(--text-secondary);"><i class="fas fa-map-marker-alt" style="color: var(--primary-color); width: 1.2rem;"></i> <strong>{{ _("Sede:") }}</strong> Via Notarbartolo, 17/a – 90141 Palermo</p>
+                <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem; margin-top: 1rem; line-height: 1.7;">
+                    {{ _("<strong>Nota:</strong> L'Assessorato dell'Economia della Regione Siciliana non ha alcuna responsabilità per quanto riguarda i siti esterni e/o istituzionali ai quali è possibile accedere tramite i collegamenti presenti nel sito. Dei siti collegati sono responsabili i rispettivi Titolari, ai cui termini e condizioni si rimanda.") }}
+                </p>
+            </div>
+
+            <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--secondary-color);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="width: 50px; height: 50px; background: var(--secondary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-user-shield" style="font-size: 1.3rem; color: white;"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin: 0; color: var(--text-primary);">{{ _("Responsabile Protezione Dati (DPO)") }}</h3>
+                </div>
+                <p style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.25rem;">
+                    {{ _("Il <strong>Regolamento UE 2016/679</strong>, entrato in vigore il 25 maggio 2018, ha previsto l'istituzione della figura del Responsabile della protezione dei dati (<strong>RPD</strong>) o <em>Data Protection Officer</em> (<strong>DPO</strong>).") }}
+                </p>
+                <p style="margin-bottom: 0.5rem; color: var(--text-secondary);"><i class="fas fa-envelope" style="color: var(--secondary-color); width: 1.2rem;"></i> <strong>{{ _("Email:") }}</strong> <a href="mailto:dpo@regione.sicilia.it" style="color: var(--secondary-color);">dpo@regione.sicilia.it</a></p>
+                <p style="margin-top: 1.25rem; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7;">
+                    {{ _("Per esercitare i diritti di cui all'art. 7 del D.Lgs. 196/2003 o ai sensi degli artt. 15-22 GDPR, dovrà rivolgere richiesta scritta al Titolare del Trattamento o al DPO ai recapiti sopra indicati.") }}
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Dati trattati -->
+<section class="section">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("Dati Trattati") }}</h2>
+        <p style="text-align: center; color: var(--text-secondary); margin: 0 auto 3rem auto; max-width: 700px;">
+            {{ _("Il portale tratta esclusivamente dati di navigazione e dati forniti volontariamente dall'utente, per finalità istituzionali") }}
+        </p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+
+            <!-- Dati di navigazione -->
             <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--primary-color);">
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
                     <div style="width: 50px; height: 50px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-network-wired" style="font-size: 1.5rem; color: white;"></i>
+                        <i class="fas fa-network-wired" style="font-size: 1.3rem; color: white;"></i>
                     </div>
-                    <h3 style="font-size: 1.25rem; margin: 0; color: var(--text-primary);">{{ _("Dati di Navigazione") }}</h3>
+                    <h3 style="font-size: 1.2rem; margin: 0; color: var(--text-primary);">{{ _("Dati di Navigazione") }}</h3>
                 </div>
-                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
-                    {{ _("I sistemi informatici acquisiscono alcuni dati la cui trasmissione è implicita nell'uso dei protocolli di comunicazione di Internet.") }}
+                <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.25rem;">
+                    {{ _("Acquisiti nel corso del normale utilizzo del portale, la cui trasmissione è implicita nell'uso dei protocolli di comunicazione di Internet. Non sono acquisiti per identificare gli interessati, ma potrebbero esserlo attraverso elaborazione con dati di terzi.") }}
                 </p>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Indirizzi IP") }}</li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Tipo di browser e dispositivo") }}</li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Sistema operativo") }}</li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Pagine visitate") }}</li>
-                    <li style="padding: 0.5rem 0;">• {{ _("Data e orario di accesso") }}</li>
+                <ul style="list-style: none; padding: 0; margin-bottom: 1.25rem;">
+                    <li style="padding: 0.4rem 0; border-bottom: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.9rem;">• {{ _("Indirizzi IP o nomi di dominio dei computer") }}</li>
+                    <li style="padding: 0.4rem 0; border-bottom: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.9rem;">• {{ _("Indirizzi URI delle risorse richieste") }}</li>
+                    <li style="padding: 0.4rem 0; border-bottom: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.9rem;">• {{ _("Orario della richiesta e metodo utilizzato") }}</li>
+                    <li style="padding: 0.4rem 0; border-bottom: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.9rem;">• {{ _("Dimensione del file ottenuto in risposta") }}</li>
+                    <li style="padding: 0.4rem 0; color: var(--text-secondary); font-size: 0.9rem;">• {{ _("Codice di stato del server e parametri del sistema operativo") }}</li>
                 </ul>
+                <div style="background: var(--bg-secondary); padding: 0.75rem 1rem; border-radius: var(--radius-sm); font-size: 0.875rem; color: var(--text-secondary);">
+                    {{ _("<strong>Finalità:</strong> solo statistiche anonime sull'utilizzo del sito e controllo del corretto funzionamento. Nessun dato personale è acquisito tramite cookie di sessione.") }}
+                </div>
             </div>
 
+            <!-- Dati forniti volontariamente -->
             <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--success-color);">
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
                     <div style="width: 50px; height: 50px; background: var(--success-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-user-check" style="font-size: 1.5rem; color: white;"></i>
+                        <i class="fas fa-envelope-open-text" style="font-size: 1.3rem; color: white;"></i>
                     </div>
-                    <h3 style="font-size: 1.25rem; margin: 0; color: var(--text-primary);">{{ _("Dati Forniti Volontariamente") }}</h3>
+                    <h3 style="font-size: 1.2rem; margin: 0; color: var(--text-primary);">{{ _("Dati Forniti Volontariamente") }}</h3>
                 </div>
-                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
-                    {{ _("L'invio volontario di messaggi agli indirizzi di contatto del sito comporta l'acquisizione dei dati del mittente.") }}
+                <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.25rem;">
+                    {{ _("L'invio facoltativo, esplicito e volontario di dati mediante messaggi di posta elettronica o tramite form dedicate comporta l'inevitabile acquisizione dei dati del mittente, inclusi eventuali altri dati personali inseriti nella comunicazione.") }}
                 </p>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Nome e cognome") }}</li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Indirizzo email") }}</li>
-                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">• {{ _("Numero di telefono") }}</li>
-                    <li style="padding: 0.5rem 0;">• {{ _("Messaggio o richiesta") }}</li>
-                </ul>
+                <div style="background: #fff8e1; padding: 0.75rem 1rem; border-radius: var(--radius-sm); border-left: 3px solid var(--warning-color); font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                    {{ _("<strong>Dati sensibili e giudiziari:</strong> qualora forniti dall'utente, saranno rimossi. Il Titolare tratta esclusivamente dati di carattere anagrafico, identificativo, personale e di navigazione.") }}
+                </div>
+                <div style="background: var(--bg-secondary); padding: 0.75rem 1rem; border-radius: var(--radius-sm); font-size: 0.875rem; color: var(--text-secondary);">
+                    {{ _("<strong>Finalità:</strong> i dati sono utilizzati al solo fine di fruire del servizio richiesto e comunicati a terzi solo ove strettamente necessario a tal fine.") }}
+                </div>
             </div>
+
         </div>
-    </div>
-</section>
 
-<!-- Finalità del Trattamento -->
-<section class="section">
-    <div class="container">
-        <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("4. Finalità del Trattamento") }}</h2>
-        <p style="text-align: center; color: var(--text-secondary); margin: 0 auto 3rem auto; max-width: 700px;">
-            {{ _("I dati personali vengono trattati per le seguenti finalità") }}
-        </p>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-            <div style="background: var(--bg-light); padding: 2rem; border-radius: var(--radius-lg); border-left: 4px solid var(--info-color);">
-                <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-primary);">
-                    <i class="fas fa-check-circle" style="color: var(--info-color); margin-right: 0.5rem;"></i>{{ _("Funzionalità del sito") }}
-                </h3>
-                <p style="color: var(--text-secondary); margin-bottom: 1rem;">{{ _("Garantire il corretto funzionamento del portale e dei suoi servizi") }}</p>
-                <p style="margin: 0; font-size: 0.875rem;"><strong>{{ _("Base giuridica:") }}</strong> {{ _("Esecuzione di un compito di interesse pubblico") }}</p>
-            </div>
-
-            <div style="background: var(--bg-light); padding: 2rem; border-radius: var(--radius-lg); border-left: 4px solid var(--info-color);">
-                <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-primary);">
-                    <i class="fas fa-envelope" style="color: var(--info-color); margin-right: 0.5rem;"></i>{{ _("Risposta alle richieste") }}
-                </h3>
-                <p style="color: var(--text-secondary); margin-bottom: 1rem;">{{ _("Gestire e rispondere alle richieste di informazioni inviate tramite i moduli di contatto") }}</p>
-                <p style="margin: 0; font-size: 0.875rem;"><strong>{{ _("Base giuridica:") }}</strong> {{ _("Consenso dell'interessato") }}</p>
-            </div>
-
-            <div style="background: var(--bg-light); padding: 2rem; border-radius: var(--radius-lg); border-left: 4px solid var(--info-color);">
-                <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-primary);">
-                    <i class="fas fa-chart-line" style="color: var(--info-color); margin-right: 0.5rem;"></i>{{ _("Analisi statistiche") }}
-                </h3>
-                <p style="color: var(--text-secondary); margin-bottom: 1rem;">{{ _("Analizzare l'utilizzo del sito per migliorare i servizi offerti") }}</p>
-                <p style="margin: 0; font-size: 0.875rem;"><strong>{{ _("Base giuridica:") }}</strong> {{ _("Legittimo interesse del titolare") }}</p>
-            </div>
-
-            <div style="background: var(--bg-light); padding: 2rem; border-radius: var(--radius-lg); border-left: 4px solid var(--info-color);">
-                <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-primary);">
-                    <i class="fas fa-shield-alt" style="color: var(--info-color); margin-right: 0.5rem;"></i>{{ _("Sicurezza") }}
-                </h3>
-                <p style="color: var(--text-secondary); margin-bottom: 1rem;">{{ _("Prevenire attività illecite e garantire la sicurezza del sistema informatico") }}</p>
-                <p style="margin: 0; font-size: 0.875rem;"><strong>{{ _("Base giuridica:") }}</strong> {{ _("Obbligo legale e legittimo interesse") }}</p>
+        <!-- Modalità di trattamento -->
+        <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+            <div style="display: flex; align-items: start; gap: 1.5rem;">
+                <div style="width: 56px; height: 56px; min-width: 56px; background: var(--info-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-cogs" style="font-size: 1.4rem; color: white;"></i>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--text-primary);">{{ _("Modalità di trattamento") }}</h3>
+                    <p style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 1rem;">
+                        {{ _("Il trattamento dei dati avverrà con l'ausilio di <strong>procedure informatizzate e/o manuali e/o sistemi automatizzati</strong> atti a memorizzare, gestire e/o trasmettere gli stessi, nei limiti necessari per perseguire le finalità istituzionali. I dati sono mantenuti per il periodo minimo richiesto dalla normativa vigente.") }}
+                    </p>
+                    <p style="line-height: 1.8; color: var(--text-secondary); margin: 0;">
+                        {{ _("I dati potranno essere comunicati a responsabili e/o incaricati di altri soggetti pubblici o incaricati di pubblico servizio che debbano partecipare al procedimento amministrativo, anche a seguito di ispezioni o verifiche. Nessun dato derivante dal servizio web viene comunicato o diffuso al di fuori dei casi espressamente previsti dalla legge. L'interessato è chiamato a comunicare tempestivamente eventuali correzioni o aggiornamenti dei propri dati personali.") }}
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -157,72 +182,81 @@
 <!-- Diritti dell'Interessato -->
 <section class="section section-alt">
     <div class="container">
-        <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("5. Diritti dell'Interessato") }}</h2>
+        <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("Diritti dell'Interessato") }}</h2>
         <p style="text-align: center; color: var(--text-secondary); margin: 0 auto 3rem auto; max-width: 700px;">
-            {{ _("In conformità al GDPR (artt. 15-22), l'interessato ha i seguenti diritti") }}
+            {{ _("Ai sensi dell'art. 7 del D.Lgs. 30 giugno 2003, n. 196, l'interessato può esercitare i seguenti diritti con richiesta rivolta senza formalità al Titolare o al Responsabile del Trattamento, anche tramite lettera raccomandata, telefax o posta elettronica (art. 9 D.Lgs. 196/2003)") }}
         </p>
 
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
-            <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
-                <i class="fas fa-search" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--text-primary);">{{ _("Accesso") }}</h3>
-                <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0;">{{ _("Conferma del trattamento dei dati personali") }}</p>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
+
+            <div style="background: white; padding: 1.75rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-top: 3px solid var(--primary-color);">
+                <i class="fas fa-search" style="font-size: 2.25rem; color: var(--primary-color); margin-bottom: 1rem; display: block;"></i>
+                <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--text-primary);">{{ _("Conoscenza") }}</h3>
+                <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0; line-height: 1.6;">{{ _("Conoscere l'esistenza dei propri dati personali e la loro comunicazione in forma intelligibile") }}</p>
             </div>
 
-            <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
-                <i class="fas fa-edit" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--text-primary);">{{ _("Rettifica") }}</h3>
-                <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0;">{{ _("Correzione dei dati inesatti") }}</p>
+            <div style="background: white; padding: 1.75rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-top: 3px solid var(--primary-color);">
+                <i class="fas fa-info-circle" style="font-size: 2.25rem; color: var(--primary-color); margin-bottom: 1rem; display: block;"></i>
+                <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--text-primary);">{{ _("Informazione") }}</h3>
+                <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0; line-height: 1.6;">{{ _("Essere informato sul Titolare, sulle finalità, sulle modalità del trattamento e sui soggetti a cui i dati possono essere comunicati") }}</p>
             </div>
 
-            <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
-                <i class="fas fa-trash" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--text-primary);">{{ _("Cancellazione") }}</h3>
-                <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0;">{{ _("Diritto all'oblio") }}</p>
+            <div style="background: white; padding: 1.75rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-top: 3px solid var(--primary-color);">
+                <i class="fas fa-edit" style="font-size: 2.25rem; color: var(--primary-color); margin-bottom: 1rem; display: block;"></i>
+                <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--text-primary);">{{ _("Aggiornamento e rettifica") }}</h3>
+                <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0; line-height: 1.6;">{{ _("Ottenere l'aggiornamento, la rettificazione o l'integrazione dei propri dati") }}</p>
             </div>
 
-            <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
-                <i class="fas fa-ban" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--text-primary);">{{ _("Limitazione") }}</h3>
-                <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0;">{{ _("Limitazione del trattamento") }}</p>
+            <div style="background: white; padding: 1.75rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-top: 3px solid var(--secondary-color);">
+                <i class="fas fa-trash-alt" style="font-size: 2.25rem; color: var(--secondary-color); margin-bottom: 1rem; display: block;"></i>
+                <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--text-primary);">{{ _("Cancellazione e blocco") }}</h3>
+                <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0; line-height: 1.6;">{{ _("Ottenere la cancellazione, la trasformazione in forma anonima o il blocco dei dati trattati in violazione di legge") }}</p>
             </div>
 
-            <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
-                <i class="fas fa-exchange-alt" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--text-primary);">{{ _("Portabilità") }}</h3>
-                <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0;">{{ _("Ricezione in formato strutturato") }}</p>
+            <div style="background: white; padding: 1.75rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-top: 3px solid var(--secondary-color);">
+                <i class="fas fa-hand-paper" style="font-size: 2.25rem; color: var(--secondary-color); margin-bottom: 1rem; display: block;"></i>
+                <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--text-primary);">{{ _("Opposizione") }}</h3>
+                <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0; line-height: 1.6;">{{ _("Opporsi per motivi legittimi al trattamento dei dati, salvi i limiti stabiliti dalla legge") }}</p>
             </div>
 
-            <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
-                <i class="fas fa-hand-paper" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--text-primary);">{{ _("Opposizione") }}</h3>
-                <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0;">{{ _("Opporsi al trattamento") }}</p>
+            <div style="background: white; padding: 1.75rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-top: 3px solid var(--secondary-color);">
+                <i class="fas fa-ban" style="font-size: 2.25rem; color: var(--secondary-color); margin-bottom: 1rem; display: block;"></i>
+                <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--text-primary);">{{ _("Opposizione al marketing") }}</h3>
+                <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0; line-height: 1.6;">{{ _("Opporsi all'invio di materiale pubblicitario o per il compimento di ricerche di mercato o comunicazioni commerciali") }}</p>
             </div>
+
         </div>
 
-        <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); margin-top: 2rem;">
+        <div style="background: white; padding: 1.75rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); display: flex; align-items: start; gap: 1.25rem;">
+            <i class="fas fa-external-link-alt" style="font-size: 1.5rem; color: var(--secondary-color); margin-top: 0.2rem;"></i>
             <p style="margin: 0; line-height: 1.8; color: var(--text-secondary);">
-                {{ _("Per esercitare i propri diritti, l'interessato può contattare il Titolare o il DPO ai recapiti indicati nella presente informativa. L'interessato ha inoltre il diritto di proporre reclamo all'Autorità Garante per la Protezione dei Dati Personali.") }}
+                {{ _("Il testo completo dell'art. 7 relativo ai diritti dell'interessato, dell'art. 13 relativo all'informativa e degli artt. 23, 26 e 27 relativi al consenso e alle garanzie, è disponibile sul sito <a href=\"https://www.garanteprivacy.it\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--secondary-color); font-weight: 600;\">www.garanteprivacy.it</a>.") }}
             </p>
         </div>
     </div>
 </section>
 
-<!-- Contatti -->
+<!-- Conferimento dati e contatti -->
 <section class="section">
     <div class="container">
-        <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
-            <h2 style="margin-bottom: 1.5rem; font-size: 1.75rem; color: var(--text-primary);">{{ _("6. Contatti e Informazioni") }}</h2>
-            <p style="margin-bottom: 2rem; line-height: 1.8; color: var(--text-secondary);">
-                {{ _("Per qualsiasi domanda riguardo la presente Privacy Policy o per esercitare i propri diritti, è possibile contattare il Titolare del trattamento o il Data Protection Officer.") }}
-            </p>
-            <p style="margin: 0; line-height: 2;"><strong>{{ _("Ultimo aggiornamento:") }}</strong> Dicembre 2025</p>
+        <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); margin-bottom: 2rem;">
+            <div style="display: flex; align-items: start; gap: 1.5rem;">
+                <div style="width: 56px; height: 56px; min-width: 56px; background: var(--warning-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 1.4rem; color: white;"></i>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--text-primary);">{{ _("Obbligatorietà del conferimento") }}</h3>
+                    <p style="line-height: 1.8; color: var(--text-secondary); margin: 0;">
+                        {{ _("I dati forniti sono obbligatori per abilitare l'accesso e l'utilizzo dei servizi erogati dal portale. <strong>In caso di rifiuto</strong> a fornire i dati o ad acconsentire al loro trattamento – inclusa la loro comunicazione nei limiti sopra indicati – ne deriva l'<strong>impossibilità di accesso</strong> ai servizi previsti dal portale istituzionale.") }}
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div style="background: #e3f2fd; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--info-color); margin-top: 2rem; display: flex; align-items: start; gap: 1rem;">
-            <i class="fas fa-info-circle" style="font-size: 1.5rem; color: var(--info-color); margin-top: 0.25rem;"></i>
-            <p style="margin: 0; color: #01579b;">
-                {{ _("<strong>Nota:</strong> Proseguendo nella navigazione del sito, l'utente accetta la presente Privacy Policy. Per maggiori informazioni sull'utilizzo dei cookie, consultare la <a href=\"/cookie-policy\" style=\"color: #01579b; font-weight: 600;\">Cookie Policy</a>.") }}
+        <div style="background: #e3f2fd; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--info-color); display: flex; align-items: start; gap: 1rem;">
+            <i class="fas fa-info-circle" style="font-size: 1.5rem; color: var(--info-color); margin-top: 0.2rem;"></i>
+            <p style="margin: 0; color: #01579b; line-height: 1.7;">
+                {{ _("<strong>Nota:</strong> Per ulteriori informazioni sull'utilizzo dei cookie, consultare la <a href=\"/cookie-policy\" style=\"color: #01579b; font-weight: 600;\">Cookie Policy</a> e le <a href=\"/note-legali\" style=\"color: #01579b; font-weight: 600;\">Note Legali</a> del sito. Ultimo aggiornamento: Dicembre 2025.") }}
             </p>
         </div>
     </div>

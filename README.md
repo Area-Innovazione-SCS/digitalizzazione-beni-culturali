@@ -9,13 +9,8 @@ Portale web istituzionale sviluppato per la **Regione Siciliana** nell'ambito de
 - [Tecnologie utilizzate](#tecnologie-utilizzate)
 - [Struttura del progetto](#struttura-del-progetto)
 - [Installazione e avvio](#installazione-e-avvio)
-- [Pagine e template](#pagine-e-template)
 - [Dati dei cantieri](#dati-dei-cantieri)
-- [Internazionalizzazione (IT/EN)](#internazionalizzazione-iten)
-- [Design system](#design-system)
-- [Conformità legale e privacy](#conformità-legale-e-privacy)
-- [Note per i collaboratori](#note-per-i-collaboratori)
-
+  
 ---
 
 ## Tecnologie utilizzate
