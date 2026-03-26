@@ -31,8 +31,10 @@ app = Flask(__name__,
     static_url_path='/static')
 
 # Configurazione
-app.config['SECRET_KEY'] = 'portale-cantieri-secret-key-2025'
-app.config['DEBUG'] = True
+import os
+ 
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'portale-cantieri-secret-key-2025')
+app.config['DEBUG'] = os.environ.get('FLASK_DEBUG', '0') == '1'
 
 # ========================================
 # CONFIGURAZIONE BABEL (Traduzioni)
@@ -574,45 +576,11 @@ def info():
 # ========================================
 
 if __name__ == '__main__':
-    print(f"""
-    ╔══════════════════════════════════════════════════════╗
-    ║                                                      ║
-    ║     🗂️  PORTALE DEI CANTIERI - Server Locale         ║
-    ║                                                      ║
-    ║     📦 DATI ESTERNI: cantieri_data.py                ║
-    ║                                                      ║
-    ╚══════════════════════════════════════════════════════╝
-    
-    🌐 Server avviato su: http://localhost:5005
-    📱 Accessibile anche da: http://127.0.0.1:5005
-    
-    📊 Cantieri caricati: {len(CANTIERI_DATA)}
-    
-    📂 Struttura Progetto:
-       ✓ app.py                  → Applicazione Flask (logica)
-       ✓ cantieri_data.py        → Dati dei cantieri (separato)
-       ✓ templates/              → Template HTML
-       ✓ static/                 → CSS, JS, immagini
-    
-    📄 Pagine disponibili:
-       • Homepage:           http://localhost:5005/
-       • Il Progetto:        http://localhost:5005/progetto
-       • Cantieri:           http://localhost:5005/cantieri
-       • Dettaglio:          http://localhost:5005/cantieri/1
-       • Info Server:        http://localhost:5005/info
-    
-    📌 API Endpoints:
-       • Lista cantieri:     http://localhost:5005/api/cantieri
-       • Dettaglio:          http://localhost:5005/api/cantieri/1
-       • Statistiche:        http://localhost:5005/api/stats
-    
-    ⚙️  Per fermare il server: Ctrl+C
-    
-    """)
-    
+    port = int(os.environ.get('PORT', 5005))
+    debug = os.environ.get('FLASK_DEBUG', '0') == '1'
     app.run(
-        host='0.0.0.0',  # Accessibile da altri dispositivi sulla rete
-        port=5005,
-        debug=True,
-        use_reloader=True
+        host='0.0.0.0',
+        port=port,
+        debug=debug,
+        use_reloader=debug
     )

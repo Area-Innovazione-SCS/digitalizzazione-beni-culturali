@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: digitalizzazione-beni-culturali
+    runtime: python
+    region: frankfurt    # Regione EU più vicina all'Italia
+    plan: free
+
+    # Comando eseguito una volta sola prima dell'avvio
+    buildCommand: pip install -r requirements.txt && pybabel compile -d translations
+
+    # Comando di avvio del server di produzione (gunicorn al posto di Flask dev server)
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 2 --timeout 120 app:app
+
+    # Variabili d'ambiente
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_DEBUG
+        value: "0"
+      - key: BABEL_DEFAULT_LOCALE
+        value: it
+      # SECRET_KEY: impostala manualmente nella dashboard Render come variabile segreta
+      # Non mettere mai la SECRET_KEY in chiaro in questo file se è pubblico su GitHub
+      - key: SECRET_KEY
+        generateValue: true    # Render genererà automaticamente un valore sicuro
+
+    # Health check: Render verifica che l'app risponda prima di marcarla "live"
+    healthCheckPath: /
