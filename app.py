@@ -2,8 +2,9 @@
 Portale dei Cantieri - Flask Application
 Server di sviluppo locale per il portale dei cantieri
 
-NOTA: I dati dei cantieri sono ora nel file separato 'cantieri_data.py'
-Questo rende il codice più pulito e facilita la manutenzione
+NOTA: I dati dei cantieri sono ora su MongoDB.
+      Connessione gestita da db/connection.py
+      Query gestite da db/cantieri_repository.py
 """
 
 from flask import Flask, render_template, send_from_directory, jsonify, request, abort, session, redirect, url_for
@@ -12,17 +13,18 @@ import os
 from datetime import datetime
 
 # ========================================
-# IMPORTAZIONE DATI DA FILE ESTERNO
+# IMPORTAZIONE REPOSITORY DATABASE
 # ========================================
-# I dati dei cantieri sono ora in un file separato per una migliore organizzazione
 try:
-    from cantieri_data import CANTIERI_DATA
-    print(f"✓ Dati caricati con successo: {len(CANTIERI_DATA)} cantieri trovati")
+    from db.cantieri_repository import Cantieri
+    from db.connection import get_db
+    _db_ok = True
+    print("✓ Modulo database importato correttamente")
 except ImportError as e:
-    print(f"❌ ERRORE: Impossibile importare i dati dei cantieri!")
-    print(f"   Assicurati che il file 'cantieri_data.py' sia nella stessa cartella di app.py")
+    print(f"❌ ERRORE: Impossibile importare il modulo database!")
+    print(f"   Assicurati che la cartella db/ sia presente accanto ad app.py")
     print(f"   Errore: {e}")
-    CANTIERI_DATA = []  # Lista vuota come fallback
+    _db_ok = False
 
 # Configurazione Flask con le nuove cartelle
 app = Flask(__name__, 
@@ -31,8 +33,6 @@ app = Flask(__name__,
     static_url_path='/static')
 
 # Configurazione
-import os
- 
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'portale-cantieri-secret-key-2025')
 app.config['DEBUG'] = os.environ.get('FLASK_DEBUG', '0') == '1'
 
@@ -133,16 +133,16 @@ def cantieri():
 @app.route('/cantieri/<int:cantiere_id>')
 def dettaglio_cantiere(cantiere_id):
     """Pagina dettaglio cantiere con ID dinamico"""
-    cantiere = next((c for c in CANTIERI_DATA if c['id'] == cantiere_id), None)
-    
+    cantiere = Cantieri.get_by_id(cantiere_id)
+
     if not cantiere:
         abort(404)
-    
+
     lang = session.get('lang', 'it')
     cantiere_locale = localize_cantiere(cantiere, lang)
-    
-    return render_template('dettaglio-cantiere.html', 
-                         cantiere=cantiere_locale)
+
+    return render_template('dettaglio-cantiere.html',
+                           cantiere=cantiere_locale)
 
 @app.route('/statistiche.html')
 @app.route('/statistiche')
@@ -193,10 +193,6 @@ def log_consent():
 # ROUTES - File Statici (CSS, JS, Immagini)
 # ========================================
 
-# Flask gestisce automaticamente i file in /static
-# Accessibili tramite: /static/css/style.css, /static/js/script.js, ecc.
-
-# Route opzionali per compatibilità con vecchi percorsi
 @app.route('/style.css')
 def style_css_compat():
     """Compatibilità: redirect a /static/css/style.css"""
@@ -233,48 +229,49 @@ def api_cantieri():
     - page: numero pagina (default: 1)
     - per_page: risultati per pagina (default: 9)
     """
-    cantieri = CANTIERI_DATA.copy()
-    
-    # ✅ FILTRO PER CATEGORIA - Cerca nell'array categorie
+    # Recupera tutti i cantieri dal database
+    cantieri = Cantieri.get_all()
+
+    # Filtro per categoria
     categoria_filter = request.args.get('categoria', '').lower()
     if categoria_filter:
         cantieri = [
-            c for c in cantieri 
+            c for c in cantieri
             if any(cat.lower() == categoria_filter for cat in c.get('categorie', []))
         ]
-    
-    # ✅ FILTRO PER PROVINCIA - Confronta con sigla provincia
+
+    # Filtro per provincia
     provincia_filter = request.args.get('provincia', '').upper()
     if provincia_filter:
         cantieri = [
-            c for c in cantieri 
+            c for c in cantieri
             if c.get('provincia', '') == provincia_filter
         ]
-    
+
     # Filtro per stato
     stato = request.args.get('stato', '').lower()
     if stato:
         cantieri = [c for c in cantieri if stato in c.get('stato', '').lower()]
-    
-    # ✅ RICERCA TESTUALE - Cerca in titolo e località
+
+    # Ricerca testuale
     search = request.args.get('search', '').lower()
     if search:
         cantieri = [
-            c for c in cantieri if 
-            search in c.get('titolo', '').lower() or 
+            c for c in cantieri if
+            search in c.get('titolo', '').lower() or
             search in c.get('localita', '').lower()
         ]
-    
+
     # Paginazione
     page = int(request.args.get('page', 1))
-    per_page = int(request.args.get('per_page', 9))  # 9 cantieri per pagina
-    
+    per_page = int(request.args.get('per_page', 9))
+
     total = len(cantieri)
     start = (page - 1) * per_page
     end = start + per_page
-    
+
     cantieri_page = cantieri[start:end]
-    
+
     return jsonify({
         'success': True,
         'cantieri': cantieri_page,
@@ -288,8 +285,8 @@ def api_cantieri():
 @app.route('/api/cantieri/<int:cantiere_id>')
 def api_cantiere_dettaglio(cantiere_id):
     """API: Restituisce i dettagli di un cantiere specifico"""
-    cantiere = next((c for c in CANTIERI_DATA if c['id'] == cantiere_id), None)
-    
+    cantiere = Cantieri.get_by_id(cantiere_id)
+
     if cantiere:
         return jsonify({
             'success': True,
@@ -301,34 +298,39 @@ def api_cantiere_dettaglio(cantiere_id):
             'error': 'Cantiere non trovato'
         }), 404
 
+
 @app.route('/api/cantieri/<int:cantiere_id>/follow', methods=['POST'])
 def api_cantiere_follow(cantiere_id):
     """API: Segui un cantiere per ricevere aggiornamenti"""
-    cantiere = next((c for c in CANTIERI_DATA if c['id'] == cantiere_id), None)
-    
+    cantiere = Cantieri.get_by_id(cantiere_id)
+
     if not cantiere:
         return jsonify({
             'success': False,
             'error': 'Cantiere non trovato'
         }), 404
-    
-    # Qui implementeresti la logica per salvare la preferenza dell'utente
-    # Per ora restituiamo solo un messaggio di successo
+
     return jsonify({
         'success': True,
         'message': f'Ora segui il cantiere "{cantiere["titolo"]}"'
     })
 
+
 @app.route('/api/stats')
 def api_stats():
     """API: Restituisce le statistiche generali"""
-    totale = len(CANTIERI_DATA)
-    in_corso = len([c for c in CANTIERI_DATA if c['stato'] == 'in-corso'])
-    completati = len([c for c in CANTIERI_DATA if c['stato'] == 'completato'])
-    pianificati = len([c for c in CANTIERI_DATA if c['stato'] == 'pianificato'])
-    
-    budget_totale = sum(c.get('importo', 0) for c in CANTIERI_DATA if isinstance(c.get('importo'), (int, float)))
-    
+    tutti = Cantieri.get_all()
+
+    totale = len(tutti)
+    in_corso = len([c for c in tutti if c['stato'] == 'in-corso'])
+    completati = len([c for c in tutti if c['stato'] == 'completato'])
+    pianificati = len([c for c in tutti if c['stato'] == 'pianificato'])
+
+    budget_totale = sum(
+        c.get('importo', 0) for c in tutti
+        if isinstance(c.get('importo'), (int, float))
+    )
+
     return jsonify({
         'success': True,
         'stats': {
@@ -470,6 +472,15 @@ def internal_error(error):
 @app.route('/info')
 def info():
     """Pagina informativa del server"""
+    try:
+        num_cantieri = len(Cantieri.get_all_summary())
+        db_status = "✓ Connesso"
+        db_class = "success"
+    except Exception as e:
+        num_cantieri = 0
+        db_status = f"❌ Errore: {e}"
+        db_class = "warning"
+
     html = f'''
     <!DOCTYPE html>
     <html lang="it">
@@ -485,9 +496,7 @@ def info():
                 padding: 2rem;
                 background: #f5f7fa;
             }}
-            h1 {{
-                color: #0048ad;
-            }}
+            h1 {{ color: #0048ad; }}
             .card {{
                 background: white;
                 padding: 1.5rem;
@@ -503,23 +512,16 @@ def info():
                 border-radius: 4px;
                 font-size: 0.875rem;
             }}
-            .badge-warning {{
-                background: #ffab00;
-            }}
-            a {{
-                color: #0048ad;
-                text-decoration: none;
-            }}
-            a:hover {{
-                text-decoration: underline;
-            }}
+            .badge-warning {{ background: #ffab00; }}
+            a {{ color: #0048ad; text-decoration: none; }}
+            a:hover {{ text-decoration: underline; }}
             .success {{ color: #00cc66; font-weight: bold; }}
             .warning {{ color: #ffab00; font-weight: bold; }}
         </style>
     </head>
     <body>
         <h1>🗂️ Portale dei Cantieri - Server Info</h1>
-        
+
         <div class="card">
             <h2>Status Server</h2>
             <p><span class="badge">✓ Online</span></p>
@@ -527,14 +529,14 @@ def info():
             <p><strong>Debug Mode:</strong> {'Attivo' if app.debug else 'Non attivo'}</p>
             <p><strong>Time:</strong> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>
         </div>
-        
+
         <div class="card">
-            <h2>Dati Cantieri</h2>
-            <p><strong>Fonte dati:</strong> <code>cantieri_data.py</code></p>
-            <p><strong>Cantieri caricati:</strong> <span class="{'success' if len(CANTIERI_DATA) > 0 else 'warning'}">{len(CANTIERI_DATA)}</span></p>
-            {f'<p class="warning">⚠️ Nessun cantiere caricato! Verifica che il file cantieri_data.py sia presente.</p>' if len(CANTIERI_DATA) == 0 else '<p class="success">✓ Dati caricati correttamente!</p>'}
+            <h2>Database MongoDB</h2>
+            <p><strong>Stato connessione:</strong> <span class="{db_class}">{db_status}</span></p>
+            <p><strong>Cantieri nel database:</strong> <span class="{'success' if num_cantieri > 0 else 'warning'}">{num_cantieri}</span></p>
+            {f'<p class="warning">⚠️ Nessun cantiere trovato! Esegui: python db/seed.py --verbose</p>' if num_cantieri == 0 else '<p class="success">✓ Dati caricati correttamente da MongoDB!</p>'}
         </div>
-        
+
         <div class="card">
             <h2>Struttura Cartelle</h2>
             <ul>
@@ -542,11 +544,11 @@ def info():
                 <li>📁 <strong>static/css/</strong> - File CSS</li>
                 <li>📁 <strong>static/js/</strong> - File JavaScript</li>
                 <li>📁 <strong>static/img/</strong> - Immagini</li>
-                <li>📁 <strong>static/docs/</strong> - Documentazione</li>
-                <li>📄 <strong>cantieri_data.py</strong> - Dati dei cantieri (separato)</li>
+                <li>📁 <strong>db/</strong> - Moduli database (connection, repository, seed)</li>
+                <li>📄 <strong>cantieri_data.py</strong> - Sorgente dati (solo per seed)</li>
             </ul>
         </div>
-        
+
         <div class="card">
             <h2>Pagine Disponibili</h2>
             <ul>
@@ -556,7 +558,7 @@ def info():
                 <li><a href="/cantieri/1">📋 Dettaglio Cantiere Esempio</a></li>
             </ul>
         </div>
-        
+
         <div class="card">
             <h2>API Endpoints</h2>
             <ul>
@@ -568,7 +570,7 @@ def info():
     </body>
     </html>
     '''
-    
+
     return html
 
 # ========================================

@@ -4,7 +4,7 @@
 
 {% block meta_tags %}
 <meta name="description" content="Cookie Policy - Informazioni sull'utilizzo dei cookie sul portale">
-<meta name="keywords" content="cookie policy, cookie, privacy, tracciamento, GDPR, Garante Privacy">
+<meta name="keywords" content="cookie policy, cookie, privacy, GDPR, Garante Privacy">
 {% endblock %}
 
 {% block breadcrumb %}
@@ -46,7 +46,7 @@
                 <div>
                     <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--text-primary);">{{ _("Riferimenti normativi") }}</h2>
                     <p style="line-height: 1.8; color: var(--text-secondary); margin: 0;">
-                        {{ _("La presente informativa è resa ai sensi dell'<strong>art. 13 del GDPR – Regolamento (UE) 2016/679</strong>, degli <strong>artt. 13 e 122 del D.Lgs. 196/2003</strong>, e in accordo con le modalità semplificate per l'informativa e l'acquisizione del consenso per l'utilizzo dei cookie, pubblicate sulla <strong>Gazzetta Ufficiale n. 126 del 3 giugno 2014</strong> e con il provvedimento generale del <strong>Garante Privacy dell'8 maggio 2014</strong>.") }}
+                        {{ _("La presente informativa è resa ai sensi dell'<strong>art. 13 del GDPR – Regolamento (UE) 2016/679</strong>, degli <strong>artt. 13 e 122 del D.Lgs. 196/2003</strong>, e in accordo con le Linee guida cookie e altri strumenti di tracciamento del <strong>Garante per la protezione dei dati personali del 10 giugno 2021</strong>.") }}
                     </p>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                 {{ _("I cookie sono stringhe di testo di piccole dimensioni che i siti visitati dall'utente inviano al suo terminale (solitamente al browser), dove vengono memorizzati per essere poi ritrasmessi agli stessi siti alla successiva visita del medesimo utente.") }}
             </p>
             <p style="line-height: 1.8; color: var(--text-secondary); margin: 0;">
-                {{ _("I cookie sono costituiti da porzioni di codice installate all'interno del browser che assistono il Titolare nell'erogazione del servizio in base alle finalità descritte. Alcune finalità di installazione dei cookie potrebbero, inoltre, necessitare del consenso dell'utente.") }}
+                {{ _("I cookie sono costituiti da porzioni di codice installate all'interno del browser che assistono il Titolare nell'erogazione del servizio in base alle finalità descritte. I cookie tecnici non richiedono il consenso dell'utente ai sensi dell'art. 122, comma 1, D.Lgs. 196/2003.") }}
             </p>
         </div>
     </div>
@@ -69,120 +69,127 @@
     <div class="container">
         <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("Tipologie di Cookie") }}</h2>
         <p style="text-align: center; color: var(--text-secondary); margin: 0 auto 3rem auto; max-width: 700px;">
-            {{ _("Per questo sito vengono utilizzati esclusivamente cookie tecnici e analitici di prima parte. Non vengono utilizzati cookie di profilazione né cookie di terze parti.") }}
+            {{ _("Questo sito utilizza esclusivamente cookie tecnici necessari al funzionamento del portale. Non vengono utilizzati cookie analitici, di profilazione o di terze parti.") }}
         </p>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
-
+        <div style="margin-bottom: 2rem;">
             <!-- Cookie Tecnici -->
-            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--success-color);">
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--success-color); margin-bottom: 2rem;">
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;">
                     <div style="display: flex; align-items: center; gap: 1rem;">
                         <div style="width: 50px; height: 50px; background: var(--success-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
                             <i class="fas fa-cog" style="font-size: 1.4rem; color: white;"></i>
                         </div>
-                        <h3 style="font-size: 1.2rem; margin: 0; color: var(--text-primary);">{{ _("Cookie Tecnici") }}</h3>
+                        <h3 style="font-size: 1.2rem; margin: 0; color: var(--text-primary);">{{ _("Cookie Tecnici Necessari") }}</h3>
                     </div>
-                    <span style="background: var(--success-color); color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; white-space: nowrap;">{{ _("In uso") }}</span>
+                    <span style="background: var(--success-color); color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; white-space: nowrap;">{{ _("In uso · Nessun consenso richiesto") }}</span>
                 </div>
-                <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.25rem;">
-                    {{ _("Servono ad effettuare la navigazione o a fornire un servizio richiesto dall'utente. Il loro utilizzo non richiede il consenso dell'utente e non può essere rifiutato.") }}
+                <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+                    {{ _("Sono indispensabili per il corretto funzionamento del sito. Senza questi cookie alcune funzionalità del portale non sarebbero disponibili. Il loro utilizzo <strong>non richiede il consenso dell'utente</strong> ai sensi dell'art. 122, comma 1, D.Lgs. 196/2003.") }}
                 </p>
-                <div style="background: var(--bg-secondary); padding: 1rem; border-radius: var(--radius-md);">
-                    <p style="font-size: 0.875rem; margin-bottom: 0.4rem; color: var(--text-secondary);">{{ _("<strong>Cookie di sessione:</strong> identificativi numerici casuali, trasmessi esclusivamente per consentire l'esplorazione sicura ed efficiente del sito. Non consentono l'acquisizione di dati personali identificativi dell'utente e si eliminano alla chiusura del browser.") }}</p>
-                    <p style="font-size: 0.875rem; margin: 0; color: var(--text-secondary);">{{ _("<strong>Base giuridica:</strong> legittimo interesse – non richiedono consenso.") }}</p>
-                </div>
-            </div>
 
-            <!-- Cookie Analitici -->
-            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--info-color);">
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;">
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <div style="width: 50px; height: 50px; background: var(--info-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-chart-bar" style="font-size: 1.4rem; color: white;"></i>
-                        </div>
-                        <h3 style="font-size: 1.2rem; margin: 0; color: var(--text-primary);">{{ _("Cookie Analitici") }}</h3>
-                    </div>
-                    <span style="background: var(--info-color); color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; white-space: nowrap;">{{ _("In uso") }}</span>
+                <!-- Tabella cookie tecnici -->
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
+                        <thead>
+                            <tr style="background: var(--bg-secondary);">
+                                <th style="padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-primary); border-bottom: 2px solid var(--border-color);">{{ _("Nome") }}</th>
+                                <th style="padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-primary); border-bottom: 2px solid var(--border-color);">{{ _("Finalità") }}</th>
+                                <th style="padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-primary); border-bottom: 2px solid var(--border-color);">{{ _("Durata") }}</th>
+                                <th style="padding: 0.75rem 1rem; text-align: left; font-weight: 600; color: var(--text-primary); border-bottom: 2px solid var(--border-color);">{{ _("Fornitore") }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--border-color);">
+                                <td style="padding: 0.75rem 1rem;"><code style="background: var(--bg-secondary); padding: 0.2rem 0.4rem; border-radius: 3px;">session</code></td>
+                                <td style="padding: 0.75rem 1rem; color: var(--text-secondary);">{{ _("Gestione della sessione utente e memorizzazione della lingua selezionata (IT/EN)") }}</td>
+                                <td style="padding: 0.75rem 1rem; color: var(--text-secondary);">{{ _("Sessione") }}</td>
+                                <td style="padding: 0.75rem 1rem; color: var(--text-secondary);">{{ _("Proprio") }}</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border-color);">
+                                <td style="padding: 0.75rem 1rem;"><code style="background: var(--bg-secondary); padding: 0.2rem 0.4rem; border-radius: 3px;">csrf_token</code></td>
+                                <td style="padding: 0.75rem 1rem; color: var(--text-secondary);">{{ _("Protezione da attacchi Cross-Site Request Forgery (sicurezza)") }}</td>
+                                <td style="padding: 0.75rem 1rem; color: var(--text-secondary);">{{ _("Sessione") }}</td>
+                                <td style="padding: 0.75rem 1rem; color: var(--text-secondary);">{{ _("Proprio") }}</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem 1rem;"><code style="background: var(--bg-secondary); padding: 0.2rem 0.4rem; border-radius: 3px;">cookie_notice_dismissed</code></td>
+                                <td style="padding: 0.75rem 1rem; color: var(--text-secondary);">{{ _("Memorizza la chiusura della barra informativa cookie (localStorage)") }}</td>
+                                <td style="padding: 0.75rem 1rem; color: var(--text-secondary);">{{ _("12 mesi") }}</td>
+                                <td style="padding: 0.75rem 1rem; color: var(--text-secondary);">{{ _("Proprio") }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.25rem;">
-                    {{ _("Servono a monitorare l'uso del sito per finalità di ottimizzazione. Vengono utilizzati esclusivamente per raccogliere informazioni in <strong>forma aggregata</strong> sul numero degli utenti e sulle modalità di visita del sito.") }}
-                </p>
-                <div style="background: var(--bg-secondary); padding: 1rem; border-radius: var(--radius-md);">
-                    <p style="font-size: 0.875rem; margin-bottom: 0.4rem; color: var(--text-secondary);">{{ _("<strong>Prima parte:</strong> realizzati e gestiti direttamente da questo sito, senza l'intervento di soggetti terzi.") }}</p>
-                    <p style="font-size: 0.875rem; margin: 0; color: var(--text-secondary);">{{ _("<strong>Dati raccolti:</strong> esclusivamente in forma aggregata e anonima.") }}</p>
+
+                <div style="background: var(--bg-secondary); padding: 1rem; border-radius: var(--radius-md); margin-top: 1.25rem;">
+                    <p style="font-size: 0.875rem; margin: 0; color: var(--text-secondary);">
+                        {{ _("<strong>Base giuridica:</strong> legittimo interesse e necessità tecnica — non richiedono consenso (art. 122, comma 1, D.Lgs. 196/2003).") }}
+                    </p>
                 </div>
             </div>
         </div>
 
         <!-- Non utilizzati -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem;">
+
+            <!-- Cookie Analitici -->
+            <div style="background: white; padding: 1.75rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--border-color); opacity: 0.6;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <div style="width: 44px; height: 44px; background: var(--text-muted); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-chart-bar" style="font-size: 1.2rem; color: white;"></i>
+                        </div>
+                        <h3 style="font-size: 1.1rem; margin: 0; color: var(--text-secondary);">{{ _("Cookie Analitici") }}</h3>
+                    </div>
+                    <span style="background: var(--text-muted); color: white; padding: 0.2rem 0.6rem; border-radius: var(--radius-sm); font-size: 0.7rem; font-weight: 600; text-transform: uppercase; white-space: nowrap;">{{ _("Non utilizzati") }}</span>
+                </div>
+                <p style="color: var(--text-secondary); line-height: 1.6; margin: 0; font-size: 0.9rem;">
+                    {{ _("Questo sito <strong>non utilizza</strong> cookie analitici per raccogliere statistiche di navigazione.") }}
+                </p>
+            </div>
 
             <!-- Cookie di Profilazione -->
-            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--border-color); opacity: 0.6;">
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;">
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <div style="width: 50px; height: 50px; background: var(--text-muted); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-bullseye" style="font-size: 1.4rem; color: white;"></i>
+            <div style="background: white; padding: 1.75rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--border-color); opacity: 0.6;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <div style="width: 44px; height: 44px; background: var(--text-muted); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-bullseye" style="font-size: 1.2rem; color: white;"></i>
                         </div>
-                        <h3 style="font-size: 1.2rem; margin: 0; color: var(--text-secondary);">{{ _("Cookie di Profilazione") }}</h3>
+                        <h3 style="font-size: 1.1rem; margin: 0; color: var(--text-secondary);">{{ _("Cookie di Profilazione") }}</h3>
                     </div>
-                    <span style="background: var(--text-muted); color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; white-space: nowrap;">{{ _("Non utilizzati") }}</span>
+                    <span style="background: var(--text-muted); color: white; padding: 0.2rem 0.6rem; border-radius: var(--radius-sm); font-size: 0.7rem; font-weight: 600; text-transform: uppercase; white-space: nowrap;">{{ _("Non utilizzati") }}</span>
                 </div>
-                <p style="color: var(--text-secondary); line-height: 1.7; margin: 0;">
-                    {{ _("Questo sito <strong>non utilizza</strong> cookie di profilazione, ossia quelli volti a creare profili relativi all'utente e a inviare messaggi pubblicitari in linea con le preferenze manifestate durante la navigazione.") }}
+                <p style="color: var(--text-secondary); line-height: 1.6; margin: 0; font-size: 0.9rem;">
+                    {{ _("Questo sito <strong>non utilizza</strong> cookie di profilazione per creare profili utente o inviare pubblicità personalizzata.") }}
                 </p>
             </div>
 
             <!-- Cookie di Terze Parti -->
-            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--border-color); opacity: 0.6;">
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;">
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <div style="width: 50px; height: 50px; background: var(--text-muted); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-external-link-alt" style="font-size: 1.4rem; color: white;"></i>
+            <div style="background: white; padding: 1.75rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-left: 4px solid var(--border-color); opacity: 0.6;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <div style="width: 44px; height: 44px; background: var(--text-muted); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-external-link-alt" style="font-size: 1.2rem; color: white;"></i>
                         </div>
-                        <h3 style="font-size: 1.2rem; margin: 0; color: var(--text-secondary);">{{ _("Cookie di Terze Parti") }}</h3>
+                        <h3 style="font-size: 1.1rem; margin: 0; color: var(--text-secondary);">{{ _("Cookie di Terze Parti") }}</h3>
                     </div>
-                    <span style="background: var(--text-muted); color: white; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; white-space: nowrap;">{{ _("Non utilizzati") }}</span>
+                    <span style="background: var(--text-muted); color: white; padding: 0.2rem 0.6rem; border-radius: var(--radius-sm); font-size: 0.7rem; font-weight: 600; text-transform: uppercase; white-space: nowrap;">{{ _("Non utilizzati") }}</span>
                 </div>
-                <p style="color: var(--text-secondary); line-height: 1.7; margin: 0;">
-                    {{ _("Questo sito <strong>non consente</strong> l'invio di cookie di terze parti, ossia quelli installati da un dominio diverso per il tramite del presente sito.") }}
+                <p style="color: var(--text-secondary); line-height: 1.6; margin: 0; font-size: 0.9rem;">
+                    {{ _("Questo sito <strong>non consente</strong> l'installazione di cookie da domini terzi.") }}
                 </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Servizio Text to Speech -->
-<section class="section">
-    <div class="container">
-        <div style="background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
-            <div style="display: flex; align-items: start; gap: 1.5rem;">
-                <div style="width: 56px; height: 56px; min-width: 56px; background: var(--secondary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                    <i class="fas fa-volume-up" style="font-size: 1.4rem; color: white;"></i>
-                </div>
-                <div>
-                    <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">{{ _("Servizio Text to Speech") }}</h2>
-                    <p style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.25rem;">
-                        {{ _("Il servizio SaaS di <strong>Text to Speech</strong> elabora (legge) il contenuto testuale pubblicato nelle pagine del sito web, e nello specifico nelle pagine in cui il servizio è implementato. Considerato che il servizio elabora informazioni pubbliche, queste ultime non contengono alcun dato personale sensibile.") }}
-                    </p>
-                    <div style="background: var(--bg-secondary); padding: 1.25rem 1.5rem; border-radius: var(--radius-md); border-left: 3px solid var(--secondary-color);">
-                        <p style="line-height: 1.8; color: var(--text-secondary); margin: 0;">
-                            {{ _("Nel caso in cui l'utente cambi le <strong>impostazioni di personalizzazione del lettore</strong> (evidenziazione, dimensione del testo, ecc.), le informazioni vengono memorizzate nel cookie del browser della postazione utilizzata. Al fine di mantenere le impostazioni selezionate dall'utente, il cookie viene collegato al dominio specifico.") }}
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Gestione Cookie -->
-<section class="section section-alt">
+<section class="section">
     <div class="container">
         <h2 style="text-align: center; margin-bottom: 0.5rem; font-size: 2.25rem; font-weight: 700; color: var(--text-primary);">{{ _("Gestione dei Cookie") }}</h2>
         <p style="text-align: center; color: var(--text-secondary); margin: 0 auto 3rem auto; max-width: 700px;">
-            {{ _("L'utente può in ogni istante e a suo piacimento impedire l'uso dei cookie modificando le opzioni del browser") }}
+            {{ _("L'utente può in ogni momento impedire l'uso dei cookie modificando le impostazioni del proprio browser") }}
         </p>
 
         <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
@@ -218,7 +225,7 @@
                 <div>
                     <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem; color: var(--text-primary);">{{ _("Conseguenze della disabilitazione") }}</h3>
                     <p style="margin: 0; line-height: 1.8; color: var(--text-secondary);">
-                        {{ _("La disabilitazione dei <strong>cookie tecnici</strong> può compromettere alcune funzionalità del sito, inclusa la navigazione sicura ed efficiente. La disabilitazione dei <strong>cookie analitici</strong> non influisce sulla navigazione, ma impedisce la raccolta di statistiche aggregate per l'ottimizzazione del servizio.") }}
+                        {{ _("La disabilitazione dei <strong>cookie tecnici</strong> può compromettere il corretto funzionamento del sito, in particolare la navigazione multilingue (IT/EN) e le funzionalità di sicurezza.") }}
                     </p>
                 </div>
             </div>
@@ -226,25 +233,20 @@
     </div>
 </section>
 
-<!-- CTA Gestione + Nota finale -->
-<section class="section">
+<!-- Nota finale -->
+<section class="section section-alt">
     <div class="container">
-        <div style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--text-primary) 100%); color: white; padding: 3rem; border-radius: var(--radius-lg); text-align: center; margin-bottom: 2rem;">
-            <i class="fas fa-sliders-h" style="font-size: 3rem; margin-bottom: 1rem;"></i>
-            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">{{ _("Gestisci le tue preferenze") }}</h3>
-            <p style="margin-bottom: 2rem; opacity: 0.95; font-size: 1.125rem;">
-                {{ _("Puoi modificare le preferenze sui cookie in qualsiasi momento") }}
+        <div style="background: #e8f5e9; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--success-color); display: flex; align-items: start; gap: 1rem; margin-bottom: 1.5rem;">
+            <i class="fas fa-check-circle" style="font-size: 1.5rem; color: var(--success-color); margin-top: 0.2rem;"></i>
+            <p style="margin: 0; color: #1b5e20; line-height: 1.7;">
+                {{ _("<strong>Nessun consenso richiesto.</strong> Poiché questo sito utilizza esclusivamente cookie tecnici necessari, non viene mostrato alcun banner di consenso obbligatorio. La navigazione non è condizionata all'accettazione di cookie.") }}
             </p>
-            <button style="background: white; color: var(--primary-color); padding: 1rem 2.5rem; border: none; border-radius: var(--radius-md); font-weight: 600; font-size: 1rem; cursor: pointer; transition: transform 0.2s;"
-                    onclick="window.CookieConsent && window.CookieConsent.openPanel();">
-                <i class="fas fa-cog" style="margin-right: 0.5rem;"></i>{{ _("Gestisci Cookie") }}
-            </button>
         </div>
 
         <div style="background: #e3f2fd; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--info-color); display: flex; align-items: start; gap: 1rem;">
             <i class="fas fa-info-circle" style="font-size: 1.5rem; color: var(--info-color); margin-top: 0.2rem;"></i>
             <p style="margin: 0; color: #01579b; line-height: 1.7;">
-                {{ _("<strong>Nota:</strong> Per ulteriori informazioni sul trattamento dei dati personali, consultare la <a href=\"/privacy-policy\" style=\"color: #01579b; font-weight: 600;\">Privacy Policy</a> e le <a href=\"/note-legali\" style=\"color: #01579b; font-weight: 600;\">Note Legali</a> del sito. Ultimo aggiornamento: Dicembre 2025.") }}
+                {{ _("<strong>Nota:</strong> Per ulteriori informazioni sul trattamento dei dati personali, consultare la <a href=\"/privacy-policy\" style=\"color: #01579b; font-weight: 600;\">Privacy Policy</a> e le <a href=\"/note-legali\" style=\"color: #01579b; font-weight: 600;\">Note Legali</a> del sito. Ultimo aggiornamento: Giugno 2026.") }}
             </p>
         </div>
     </div>
