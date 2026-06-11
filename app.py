@@ -37,6 +37,23 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'portale-cantieri-secret
 app.config['DEBUG'] = os.environ.get('FLASK_DEBUG', '0') == '1'
 
 # ========================================
+# HEADER DI SICUREZZA HTTP
+# ========================================
+
+@app.after_request
+def set_security_headers(response):
+    """Aggiunge header di sicurezza HTTP a ogni risposta."""
+    # Impedisce che il sito venga inserito in iframe da altri siti (clickjacking)
+    response.headers['X-Frame-Options'] = 'SAMEORIGIN'
+    # Impedisce al browser di indovinare il tipo MIME dei file
+    response.headers['X-Content-Type-Options'] = 'nosniff'
+    # Limita le informazioni di provenienza passate ai siti esterni
+    response.headers['Referrer-Policy'] = 'strict-origin-when-cross-origin'
+    # Disabilita funzionalità browser non utilizzate dal portale
+    response.headers['Permissions-Policy'] = 'camera=(), microphone=(), geolocation=(), payment=()'
+    return response
+
+# ========================================
 # CONFIGURAZIONE BABEL (Traduzioni)
 # ========================================
 app.config['BABEL_DEFAULT_LOCALE'] = 'it'
@@ -465,113 +482,7 @@ def internal_error(error):
     </html>
     ''', 500
 
-# ========================================
-# UTILITÀ
-# ========================================
 
-@app.route('/info')
-def info():
-    """Pagina informativa del server"""
-    try:
-        num_cantieri = len(Cantieri.get_all_summary())
-        db_status = "✓ Connesso"
-        db_class = "success"
-    except Exception as e:
-        num_cantieri = 0
-        db_status = f"❌ Errore: {e}"
-        db_class = "warning"
-
-    html = f'''
-    <!DOCTYPE html>
-    <html lang="it">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Info Server - Portale Cantieri</title>
-        <style>
-            body {{
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 2rem;
-                background: #f5f7fa;
-            }}
-            h1 {{ color: #0048ad; }}
-            .card {{
-                background: white;
-                padding: 1.5rem;
-                border-radius: 8px;
-                margin-bottom: 1rem;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            }}
-            .badge {{
-                display: inline-block;
-                padding: 0.25rem 0.75rem;
-                background: #00cc66;
-                color: white;
-                border-radius: 4px;
-                font-size: 0.875rem;
-            }}
-            .badge-warning {{ background: #ffab00; }}
-            a {{ color: #0048ad; text-decoration: none; }}
-            a:hover {{ text-decoration: underline; }}
-            .success {{ color: #00cc66; font-weight: bold; }}
-            .warning {{ color: #ffab00; font-weight: bold; }}
-        </style>
-    </head>
-    <body>
-        <h1>🗂️ Portale dei Cantieri - Server Info</h1>
-
-        <div class="card">
-            <h2>Status Server</h2>
-            <p><span class="badge">✓ Online</span></p>
-            <p><strong>Flask Version:</strong> {__import__('flask').__version__}</p>
-            <p><strong>Debug Mode:</strong> {'Attivo' if app.debug else 'Non attivo'}</p>
-            <p><strong>Time:</strong> {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>
-        </div>
-
-        <div class="card">
-            <h2>Database MongoDB</h2>
-            <p><strong>Stato connessione:</strong> <span class="{db_class}">{db_status}</span></p>
-            <p><strong>Cantieri nel database:</strong> <span class="{'success' if num_cantieri > 0 else 'warning'}">{num_cantieri}</span></p>
-            {f'<p class="warning">⚠️ Nessun cantiere trovato! Esegui: python db/seed.py --verbose</p>' if num_cantieri == 0 else '<p class="success">✓ Dati caricati correttamente da MongoDB!</p>'}
-        </div>
-
-        <div class="card">
-            <h2>Struttura Cartelle</h2>
-            <ul>
-                <li>📁 <strong>templates/</strong> - File HTML con Jinja2</li>
-                <li>📁 <strong>static/css/</strong> - File CSS</li>
-                <li>📁 <strong>static/js/</strong> - File JavaScript</li>
-                <li>📁 <strong>static/img/</strong> - Immagini</li>
-                <li>📁 <strong>db/</strong> - Moduli database (connection, repository, seed)</li>
-                <li>📄 <strong>cantieri_data.py</strong> - Sorgente dati (solo per seed)</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>Pagine Disponibili</h2>
-            <ul>
-                <li><a href="/">🏠 Homepage</a></li>
-                <li><a href="/progetto">📋 Il Progetto</a></li>
-                <li><a href="/cantieri">🗂️ Elenco Cantieri</a></li>
-                <li><a href="/cantieri/1">📋 Dettaglio Cantiere Esempio</a></li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>API Endpoints</h2>
-            <ul>
-                <li><a href="/api/cantieri">/api/cantieri</a> - Lista cantieri (JSON)</li>
-                <li><a href="/api/cantieri/1">/api/cantieri/1</a> - Dettaglio cantiere (JSON)</li>
-                <li><a href="/api/stats">/api/stats</a> - Statistiche (JSON)</li>
-            </ul>
-        </div>
-    </body>
-    </html>
-    '''
-
-    return html
 
 # ========================================
 # MAIN

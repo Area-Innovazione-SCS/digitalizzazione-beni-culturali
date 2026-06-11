@@ -12,16 +12,17 @@
     <meta name="author" content="Regione Siciliana">
     {% endblock %}
     
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="{% block og_title %}Portale della Digitalizzazione del patrimonio culturale{% endblock %}">
-    <meta property="og:description" content="Monitora l'avanzamento dei cantieri e delle opere pubbliche">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.esempio.it">
-    <meta property="og:image" content="/static/img/og-image.jpg">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png">
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="{% block og_title %}Portale della Digitalizzazione del patrimonio culturale{% endblock %}">
+<meta property="og:description" content="{% block og_description %}Il portale della Regione Siciliana dedicato alla digitalizzazione del patrimonio culturale siciliano nell'ambito del PNRR.{% endblock %}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{% block og_url %}https://digitalizzazione-beni-culturali.regione.sicilia.it{% endblock %}">
+<meta property="og:image" content="/static/img/logo-regione-siciliana.png">
+<meta property="og:locale" content="{{ 'it_IT' if session.get('lang', 'it') == 'it' else 'en_US' }}">
+<meta property="og:site_name" content="Regione Siciliana - Beni Culturali">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="/static/img/logo-regione-sicilia.png">
     
     <!-- Title -->
     <title>{% block title %}Digitalizzazione del patrimonio culturale{% endblock %}</title>
